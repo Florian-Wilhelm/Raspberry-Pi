@@ -1,21 +1,3 @@
-################################
-### Automatische Bewässerung ###
-################################
-#
-# Ersteller: Florian Dirnberger
-#
-# Historie: 
-# Datum     Version      Kommentar 
-# 01.12.20  1.0          Erstversion 
-# 13.12.20  1.1          speicherfile ausgelagert      
-# 
-# Zusatzinfos:
-# 1. https://wiki.ubuntuusers.de/nohup/
-# 2. & = ampersand, bedeutet in shell kann gleich weitergearbeitet werden
-# 3. alle Prozesse auflisten ps -e
-# 4. kill pid
-# 5. falls python3 Prozess gekillt werden muss
-#################################
 import schattenspeicher
 import RPi.GPIO as GPIO
 import time
