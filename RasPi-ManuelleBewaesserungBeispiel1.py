@@ -45,7 +45,8 @@ if auswahl == 1:
     print("0% = dry soil (0.0V)")
     print("100% = wet soil (1.7V)")
     print("")
-    # Zeitlicher Versatz der Sensorabfrage um Ausgänge weniger zu belasten
+    # Zeitlicher Versatz der Sensorabfrage um System weniger zu belasten
+    # Hier kann natürlich experimentiert und optimiert werden
     # Sensor 1
     GPIO.setup(27, GPIO.OUT)
     GPIO.output(27, GPIO.HIGH)
