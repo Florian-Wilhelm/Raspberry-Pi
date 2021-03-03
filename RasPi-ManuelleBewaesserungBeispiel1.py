@@ -1,32 +1,25 @@
-##########################################
-### Manuelle Bewässerung mit dem RasPi ###
-##########################################
-#
-# Ersteller: Florian Wilhelm Dirnberger
-#
 import umrechnung
 import RPi.GPIO as GPIO
 import time
 import board
 import busio
-import adafruit_ads1x15.ads1115 as ADS 
+import adafruit_ads1x15.ads1115 as ADS
 from adafruit_ads1x15.analog_in import AnalogIn
 # Create the I2C bus
 i2c = busio.I2C(board.SCL, board.SDA)
 # Create the ADC object using the I2C bus
 ads = ADS.ADS1115(i2c)
-# GPIO setmode
 GPIO.setmode(GPIO.BCM)
 # Variables
 s=0.0
 i=1
-auswahl=0
 moistureLevel_1 = 0.0
 moistureLevel_2 = 0.0
-voltage1 = 0.0
-voltage2 = 0.0
-pumpenMessSpannung = 0.0
-# Startmenü
+SensorVoltage1 = 0.0
+SensorVoltage2 = 0.0
+opVoltage = 0.0
+pumpMeasurementVoltage = 0.0
+# Menu
 print("*** Plant Watering via Raspberry Pi ***")
 print("** Manual program **")
 print("")
@@ -39,40 +32,36 @@ print("(3) Abort")
 auswahl=int(input("Your choice: "))
 print("")
 auswahl, type(auswahl)
-# Programm
 if auswahl == 1:    
     print("Please take care of proper positioning of the sensors!")
     print("0% = dry soil (0.0V)")
     print("100% = wet soil (1.7V)")
     print("")
-    # Zeitlicher Versatz der Sensorabfrage um System weniger zu belasten
-    # Hier kann natürlich experimentiert und optimiert werden
+    # Time gap between Sensor 1 and Sensor 2
     # Sensor 1
     GPIO.setup(27, GPIO.OUT)
     GPIO.output(27, GPIO.HIGH)
     time.sleep(1)
     chan0 = AnalogIn(ads, ADS.P0)
-    voltage1 = chan0.voltage
-    print("Moisture Sensor 1 reads (raw value): ","{:>1.4f}".format(voltage1), "V")    
-    moistureLevel_1 = umrechnung.prozent(voltage1)
-    # moistureLevel_1 = ((voltage1/1.7)*100)
-    print("Moisture Level 1: ","{:>5.2f}".format(moistureLevel_1), "%") # :> align right    
+    SensorVoltage1 = chan0.voltage
+    print("Moisture Sensor 1 reads (raw value): ","{:>1.4f}".format(SensorVoltage1), "V")    
+    moistureLevel_1 = umrechnung.prozent(SensorVoltage1)    
+    print("Moisture Level 1: ","{:>5.2f}".format(moistureLevel_1), "%")   
     time.sleep(1)
     GPIO.output(27, GPIO.LOW)
-    time.sleep(1)
+    time.sleep(0.5)
     # Sensor 2
     GPIO.setup(12, GPIO.OUT)
     GPIO.output(12, GPIO.HIGH)
     time.sleep(1)
     chan1 = AnalogIn(ads, ADS.P1)
-    voltage2 = chan1.voltage
-    print("Moisture Sensor 2 reads (raw value): ","{:>1.4f}".format(voltage2), "V")
-    # moistureLevel_2 = (chan1.voltage/1.7)*100
-    moistureLevel_2 = umrechnung.prozent(voltage2)
+    SensorVoltage2 = chan1.voltage
+    print("Moisture Sensor 2 reads (raw value): ","{:>1.4f}".format(SensorVoltage2), "V")
+    moistureLevel_2 = umrechnung.prozent(SensorVoltage2)    
     print("Moisture Level 2: ","{:>5.1f}".format(moistureLevel_2), "%")
     time.sleep(1)
     GPIO.output(12, GPIO.LOW)
-    time.sleep(1)   
+    time.sleep(0.5)   
     print("")
     print("* Finished *")
 elif auswahl == 2:
@@ -91,8 +80,8 @@ elif auswahl == 2:
         print(">Non-inverting OP input reads: ","{:>1.3f}".format(opVoltage), "V")        
         time.sleep(0.5)
         chan2 = AnalogIn(ads, ADS.P2)
-        pumpenMessSpannung = chan2.voltage # "shunt"
-        print(">Pump shunt reads: ","{:>1.3f}".format(pumpenMessSpannung), "V")
+        pumpMeasurementVoltage = chan2.voltage # shunt-resistor
+        print(">Pump shunt reads: ","{:>1.3f}".format(pumpMeasurementVoltage), "V")
         try:
            while i<=zeit:
                time.sleep(1)
