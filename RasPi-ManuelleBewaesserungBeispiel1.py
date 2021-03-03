@@ -13,8 +13,8 @@ GPIO.setmode(GPIO.BCM)
 # Variables
 s=0.0
 i=1
-moistureLevel_1 = 0.0
-moistureLevel_2 = 0.0
+moistureLevel1 = 0.0
+moistureLevel2 = 0.0
 SensorVoltage1 = 0.0
 SensorVoltage2 = 0.0
 opVoltage = 0.0
@@ -29,10 +29,10 @@ print("Please choose:")
 print("(1) Soil moisture measurement")
 print("(2) Plant watering (0-60s)")
 print("(3) Abort")
-auswahl=int(input("Your choice: "))
+select=int(input("Your choice: "))
 print("")
-auswahl, type(auswahl)
-if auswahl == 1:    
+select, type(select)
+if select == 1:    
     print("Please take care of proper positioning of the sensors!")
     print("0% = dry soil (0.0V)")
     print("100% = wet soil (1.7V)")
@@ -45,8 +45,8 @@ if auswahl == 1:
     chan0 = AnalogIn(ads, ADS.P0)
     SensorVoltage1 = chan0.voltage
     print("Moisture Sensor 1 reads (raw value): ","{:>1.4f}".format(SensorVoltage1), "V")    
-    moistureLevel_1 = umrechnung.prozent(SensorVoltage1)    
-    print("Moisture Level 1: ","{:>5.2f}".format(moistureLevel_1), "%")   
+    moistureLevel1 = umrechnung.prozent(SensorVoltage1)    
+    print("Moisture Level 1: ","{:>5.2f}".format(moistureLevel1), "%")   
     time.sleep(1)
     GPIO.output(27, GPIO.LOW)
     time.sleep(0.5)
@@ -57,14 +57,14 @@ if auswahl == 1:
     chan1 = AnalogIn(ads, ADS.P1)
     SensorVoltage2 = chan1.voltage
     print("Moisture Sensor 2 reads (raw value): ","{:>1.4f}".format(SensorVoltage2), "V")
-    moistureLevel_2 = umrechnung.prozent(SensorVoltage2)    
-    print("Moisture Level 2: ","{:>5.1f}".format(moistureLevel_2), "%")
+    moistureLevel2 = umrechnung.prozent(SensorVoltage2)    
+    print("Moisture Level 2: ","{:>5.1f}".format(moistureLevel2), "%")
     time.sleep(1)
     GPIO.output(12, GPIO.LOW)
     time.sleep(0.5)   
     print("")
     print("* Finished *")
-elif auswahl == 2:
+elif select == 2:
     GPIO.setup(5, GPIO.OUT) 
     GPIO.output(5, GPIO.HIGH)    
     zeit=int(input("Please choose time (0-60s): "))
@@ -99,7 +99,7 @@ elif auswahl == 2:
         print("Aborted")
     else:
         print("Input invalid. Aborted")
-elif auswahl == 3:
+elif select == 3:
     print("Aborted")
 else:
     print("Input invalid. Aborted")
