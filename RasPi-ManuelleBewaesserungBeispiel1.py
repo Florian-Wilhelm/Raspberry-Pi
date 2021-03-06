@@ -31,7 +31,6 @@ print("(2) Plant watering (0-60s)")
 print("(3) Abort")
 select=int(input("Your choice: "))
 print("")
-select, type(select)
 if select == 1:    
     print("Please take care of proper positioning of the sensors!")
     print("0% = dry soil (0.0V)")
@@ -67,8 +66,7 @@ if select == 1:
 elif select == 2:
     GPIO.setup(5, GPIO.OUT) 
     GPIO.output(5, GPIO.HIGH)    
-    zeit=int(input("Please choose time (0-60s): "))
-    zeit, type(zeit)
+    zeit=int(input("Please choose time (0-60s): "))   
     if zeit<60:
         print("Program will activate driver for", zeit, "seconds")
         print("")
