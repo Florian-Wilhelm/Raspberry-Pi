@@ -12,13 +12,13 @@ B = Pin(10, Pin.OUT) #B
 C = Pin(11, Pin.OUT) #C    
 D = Pin(12, Pin.OUT) #D
 while True:
-    #ADC
+    # ADC
     neuerWert = int((ADC_A0.read_u16()/1.7)*3.3)
     if neuerWert < 0:
       neuerWert = 0
     if neuerWert > 65535:
       neuerWert = 65535
-    #LED-Ansteuerung
+    # LED-Ansteuerung
     duty3=0
     duty4 = (65535-neuerWert)    
     duty5 = neuerWert    
