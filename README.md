@@ -7,5 +7,7 @@ Sidenote: I am not really a skilled coder, so the code examples may look bulky o
 Feel free to improve and experiment, if you choose to use these code examples.
 
 Further information:
+
 https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
+
 https://ome-eng.net/raspi-pico-bodenfeuchte/
