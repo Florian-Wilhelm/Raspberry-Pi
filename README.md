@@ -6,16 +6,6 @@ Sidenote: I am not really a skilled coder, so the code examples may look bulky o
 
 Feel free to improve and experiment, if you choose to use these code examples.
 
-SCRIPTS:
-
-RasPi-ManuelleBewaesserungBeispiel1.py: Manual control of a water pump via Raspberry Pi according to 
-
-RasPi-ManuelleBewaesserungBeispiel2.py: Identical to the above but including a temperature sensor BMP280
-
-umrechnung.py: additional function
-
-Sensor-LongTermMeasurement.py: A simple stand alone long term measurement script using the xlsxwriter module
-
-See also https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
-
-
+Further information:
+https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
+https://ome-eng.net/raspi-pico-bodenfeuchte/
