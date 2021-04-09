@@ -12,7 +12,7 @@ B = Pin(10, Pin.OUT) #B
 C = Pin(11, Pin.OUT) #C    
 D = Pin(12, Pin.OUT) #D
 while True:
-    # ADC
+    # ADC and ME110 soil moisture sensor
     ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3)
     if ExpandedSensorValueS < 0:
       ExpandedSensorValueS = 0
