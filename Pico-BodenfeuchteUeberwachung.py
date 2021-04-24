@@ -7,19 +7,20 @@ pwm5 = PWM(Pin(5)) #grün
 pwm3.freq(500) #PWM-Frequenz
 pwm4.freq(500) #PWM-Frequenz
 pwm5.freq(500) #PWM-Frequenz
-A = Pin(13, Pin.OUT) #A
-B = Pin(10, Pin.OUT) #B    
-C = Pin(11, Pin.OUT) #C    
-D = Pin(12, Pin.OUT) #D
+A = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE
+B = Pin(10, Pin.OUT) # B: Pin 1    
+C = Pin(11, Pin.OUT) # C: Pin 2    
+D = Pin(12, Pin.OUT) # D: Pin 6
 while True:
-    # ADC (Skalierung für ME110-Sensor!)
+    # ADC (Skalierung für ME110-Sensor, siehe Datenblatt)
     ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3)
+    # Werte ausserhalb des Wertebereiches (Spannungsspitzen etc.) werden abgefangen
     if ExpandedSensorValueS < 0:
       ExpandedSensorValueS = 0
     if ExpandedSensorValueS > 65535:
       ExpandedSensorValueS = 65535
     # RGB-LED Ansteuerung
-    duty3=0
+    duty3 = 0 # blau wird vorerst nicht verwendet
     duty4 = (65535-ExpandedSensorValueS)    
     duty5 = ExpandedSensorValueS    
     pwm3.duty_u16(duty3)
