@@ -14,7 +14,7 @@ D = Pin(12, Pin.OUT) # D: Pin 6
 while True:
     # ADC (Skalierung für ME110-Sensor, siehe Datenblatt)
     ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3)
-    # Werte ausserhalb des Wertebereiches (Spannungsspitzen etc.) werden abgefangen
+    # Werte ausserhalb des Wertebereiches (Spannungsspitzen etc.) werden ausgeblendet
     if ExpandedSensorValueS < 0:
       ExpandedSensorValueS = 0
     if ExpandedSensorValueS > 65535:
