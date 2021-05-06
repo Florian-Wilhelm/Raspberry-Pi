@@ -11,7 +11,10 @@ A1 = Pin(18, Pin.OUT) # A: Pin 7 CD4511BE
 B1 = Pin(21, Pin.OUT) # B: Pin 1    
 C1 = Pin(20, Pin.OUT) # C: Pin 2    
 D1 = Pin(19, Pin.OUT) # D: Pin 6
-ExpandedSensorValueS = ADC_A0.read_u16() # Erstes und einmaliges Einlesen für die Erkennung ob Kapazitiv- oder Resistiv-Sensor; wichtig ist hier dass Sensor keinen Kontakt mit dem Medium hat
+ExpandedSensorValueS = ADC_A0.read_u16()
+# Einmaliges Einlesen zur Erkennung ob ein Kapazitiv- (HW-390) oder ein Resistiv- (ME110) Typ Sensor angeschlossen ist;
+# Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat;
+# Anschließend kann das System ganz normal verwendet werden.
 if ExpandedSensorValueS < 1024: # relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (kapazitiver Sensor >2V) 
     resistivTrue=1
 else:
@@ -26,7 +29,7 @@ while True:
     if resistivTrue==0:
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3)
       ExpandedSensorValueS = 65535 - ExpandedSensorValueS
-    # Werte ausserhalb des Wertebereiches (Spannungsspitzen etc.) werden abgefangen
+    # Werte ausserhalb des Wertebereiches (Spannungsspitzen etc.) werden ausgeblendet
     if ExpandedSensorValueS < 0:
       ExpandedSensorValueS = 0
     if ExpandedSensorValueS > 65535:
