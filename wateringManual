@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/pi/mu_code
+python3 Manual_Program.py
+python3 GPIO5__init.py
