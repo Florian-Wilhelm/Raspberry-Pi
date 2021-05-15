@@ -945,6 +945,6 @@ while True:
       B1.low()      
       C1.low()      
       D1.high()
-    print("Expanded ADC: ", ExpandedSensorValueS)
-    print("ADC: ", SensorValueS) 
+    print("Expanded ADC: ", ExpandedSensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
+    print("ADC: ", SensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
     utime.sleep(0.5) # Sensor wird zweimal pro Sekunde abgefragt; Wert hat sich praktisch bewährt, muss aber nicht "optimal" sein
