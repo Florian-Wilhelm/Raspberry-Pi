@@ -38,7 +38,7 @@ if select == 1:
     print("0% = dry soil (0.0V)")
     print("100% = wet soil (1.7V)")
     print("")
-    # Time gap between Sensor 1 and Sensor 2
+    # Time gap between Sensor 1 and Sensor 2 request (for debugging etc.)
     # Sensor 1
     GPIO.setup(27, GPIO.OUT)
     GPIO.output(27, GPIO.HIGH)
