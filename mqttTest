@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/pi/mu_code
+nohup python3 mqtt_test.py &
