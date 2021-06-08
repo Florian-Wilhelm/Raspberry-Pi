@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/pi/mu_code
-nohup python3 mqtt_test.py &
+cd /home/pi/mu_code # Pfad anpassen
+nohup python3 mqtt_test.py & # geschützter Hintergrundprozess; Namen des Files anpassen 
