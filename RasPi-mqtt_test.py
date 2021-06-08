@@ -8,10 +8,10 @@ sensor = BMP280.BMP280()
 
 import paho.mqtt.client as mqtt
 
-def on_connect(client, userdata, flags, rc):
+def on_connect(client, userdata, flags, rc): # callback function
     print("Connected with result code " + str(rc))
 
-client=mqtt.Client()
+client=mqtt.Client() # Konstruktor
 client.on_connect = on_connect
 
 username="florian"
