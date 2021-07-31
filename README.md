@@ -11,3 +11,5 @@ Further information:
 https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
 
 https://ome-eng.net/raspi-pico-bodenfeuchte/
+
+https://youtu.be/zaLC5N0qXek
