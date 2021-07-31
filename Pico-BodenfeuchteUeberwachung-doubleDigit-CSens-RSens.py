@@ -12,7 +12,7 @@ B1 = Pin(21, Pin.OUT) # B: Pin 1
 C1 = Pin(20, Pin.OUT) # C: Pin 2    
 D1 = Pin(19, Pin.OUT) # D: Pin 6
 ExpandedSensorValueS = ADC_A0.read_u16()
-# Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder ein Resistiv- (ME110) Typ Sensor angeschlossen ist;
+# Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
 # Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat;
 # Anschließend kann das System ganz normal verwendet werden.
 if ExpandedSensorValueS < 1024: # relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (kapazitiver Sensor >2V) 
@@ -25,7 +25,7 @@ while True:
     if resistivTrue==1:
     # Skalierung für Iduino ME110-Sensor (s. Datenblatt):
       ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3)
-    # Skalierung/Invertierung für HW-390 Sensor (Capacitive Soil Moisture Sensor v2.0, siehe Datenblatt):
+    # Skalierung/Invertierung für HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", siehe Datenblatt):
     if resistivTrue==0:
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3)
       ExpandedSensorValueS = 65535 - ExpandedSensorValueS
