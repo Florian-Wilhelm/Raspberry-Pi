@@ -1,12 +1,12 @@
 from machine import Pin, PWM
 import utime
 ADC_A0 = machine.ADC(26)
-# 1. 7-segment
+# 7-segment #1
 A0 = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# 2. 7-segment
+# 7-segment #2
 A1 = Pin(18, Pin.OUT) # A: Pin 7 CD4511BE
 B1 = Pin(21, Pin.OUT) # B: Pin 1    
 C1 = Pin(20, Pin.OUT) # C: Pin 2    
@@ -953,6 +953,6 @@ while True:
       B1.low()      
       C1.low()      
       D1.high()
-    print("Expanded ADC: ", ExpandedSensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
-    print("ADC: ", SensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
+    # print("Expanded ADC: ", ExpandedSensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
+    # print("ADC: ", SensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
     utime.sleep(0.5) # Sensor wird zweimal pro Sekunde abgefragt; Wert hat sich praktisch bewährt, muss aber nicht "optimal" sein
