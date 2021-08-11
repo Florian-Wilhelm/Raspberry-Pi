@@ -1,21 +1,28 @@
 from machine import Pin, PWM
 import utime
 ADC_A0 = machine.ADC(26)
-# Erstes Siebensegment
+# 1. 7-segment
 A0 = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# Zweites Siebensegment
+# 2. 7-segment
 A1 = Pin(18, Pin.OUT) # A: Pin 7 CD4511BE
 B1 = Pin(21, Pin.OUT) # B: Pin 1    
 C1 = Pin(20, Pin.OUT) # C: Pin 2    
 D1 = Pin(19, Pin.OUT) # D: Pin 6
 ExpandedSensorValueS = ADC_A0.read_u16()
+# DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
-# Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat;
+# Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
 # Anschließend kann das System ganz normal verwendet werden.
-if ExpandedSensorValueS < 1024: # relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (kapazitiver Sensor >2V) 
+# ENGLISH
+# After plugging in the power supply one singular read what type of sensor has been connected (HW-390 or ME110);
+# Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
+# After that the device is ready for use.
+if ExpandedSensorValueS < 1024: 
+# 1024: relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2V) 
+# 1024: quite arbitrary value; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2V)
     resistivTrue=1
 else:
     resistivTrue=0
@@ -23,8 +30,9 @@ while True:
     # ADC Einlesen
     SensorValueS = ADC_A0.read_u16()
     if resistivTrue==1:
-    # Skalierung für Iduino ME110-Sensor (s. Datenblatt):
-      ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3)
+    # Skalierung für Iduino ME110 Sensor (s. Datenblatt):
+      ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3) # Betrieb mit 3.3V
+      # ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*5.0) # Betrieb mit 5.0V
     # Skalierung/Invertierung für HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", siehe Datenblatt):
     if resistivTrue==0:
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3)
