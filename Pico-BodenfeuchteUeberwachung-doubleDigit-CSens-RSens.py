@@ -1,12 +1,13 @@
+# SOIL MOISTURE MEASUREMENT ON 7-SEGMENT-DISPLAY WITH SENSOR TYPE DETECTION
 from machine import Pin, PWM
 import utime
 ADC_A0 = machine.ADC(26)
-# 7-segment #1
+# 7-segment #1, customize pins if necessary
 A0 = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# 7-segment #2
+# 7-segment #2, customize pins if necessary
 A1 = Pin(18, Pin.OUT) # A: Pin 7 CD4511BE
 B1 = Pin(21, Pin.OUT) # B: Pin 1    
 C1 = Pin(20, Pin.OUT) # C: Pin 2    
@@ -17,32 +18,32 @@ ExpandedSensorValueS = ADC_A0.read_u16()
 # Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
 # Anschließend kann das System ganz normal verwendet werden.
 # ENGLISH
-# After plugging in the power supply one singular read what type of sensor has been connected (HW-390 or ME110);
+# After plugging in the power supply, one singular read is carried out in order to determine the sensor type (HW-390 or ME110);
 # Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
 # After that the device is ready for use.
 if ExpandedSensorValueS < 1024: 
-# 1024: relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2V) 
-# 1024: quite arbitrary value; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2V)
+# 1024: relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
+# 1024: quite arbitrary value; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
     resistivTrue=1
 else:
     resistivTrue=0
 while True:
-    # ADC Einlesen
+    # ADC Read
     SensorValueS = ADC_A0.read_u16()
     if resistivTrue==1:
-    # Skalierung für Iduino ME110 Sensor (s. datasheet), ADC range 0.0-3.3V:
-      # ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3) # Betrieb mit 3.3V
-      ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # Betrieb mit 5.0V
-    # Skalierung/Invertierung für HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", s. datasheet):
+    # Scaling for Iduino ME110 Sensor (see datasheet), ADC range 0.0-3.3V:
+      # ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3) # sensor gets supplied with 3.3V
+      ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # sensor gets supplied with 5.0V
+    # Scaling/Inverting for HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", see datasheet):
     if resistivTrue==0:
-      ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3)
+      ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # sensor has an on-board 3.3V voltage regulator
       ExpandedSensorValueS = 65535 - ExpandedSensorValueS
-    # Werte ausserhalb des Wertebereiches (Spannungsspitzen etc.) werden ausgeblendet
+    # Suppressing values outside the allowed range (voltage peaks etc.)
     if ExpandedSensorValueS < 0:
       ExpandedSensorValueS = 0
     if ExpandedSensorValueS > 65535:
       ExpandedSensorValueS = 65535    
-    # 7-Segmentansteuerung
+    # Driving 7-Segment-Display
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):      
       A0.low()      
@@ -953,7 +954,7 @@ while True:
       B1.low()      
       C1.low()      
       D1.high()
-      utime.sleep(0.5) # Blinken bei Wert 99
+      utime.sleep(0.5) # Blinking by reaching 99
       A0.high()
       B0.high()
       C0.high()
@@ -962,6 +963,6 @@ while True:
       B1.high()      
       C1.high()      
       D1.high()
-    # print("Expanded ADC: ", ExpandedSensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
-    # print("ADC: ", SensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
-    utime.sleep(0.5) # Sensor wird zweimal pro Sekunde abgefragt; Wert hat sich praktisch bewährt, muss aber nicht "optimal" sein
+    # print("Expanded ADC: ", ExpandedSensorValueS) 
+    # print("ADC: ", SensorValueS) 
+    utime.sleep(0.5) # "Sample rate"
