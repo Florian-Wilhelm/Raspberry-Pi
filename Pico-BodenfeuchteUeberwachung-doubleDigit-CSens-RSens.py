@@ -30,10 +30,10 @@ while True:
     # ADC Einlesen
     SensorValueS = ADC_A0.read_u16()
     if resistivTrue==1:
-    # Skalierung für Iduino ME110 Sensor (s. Datenblatt):
+    # Skalierung für Iduino ME110 Sensor (s. datasheet), ADC range 0.0-3.3V:
       # ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3) # Betrieb mit 3.3V
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # Betrieb mit 5.0V
-    # Skalierung/Invertierung für HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", siehe Datenblatt):
+    # Skalierung/Invertierung für HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", s. datasheet):
     if resistivTrue==0:
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3)
       ExpandedSensorValueS = 65535 - ExpandedSensorValueS
