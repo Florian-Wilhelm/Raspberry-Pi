@@ -953,6 +953,15 @@ while True:
       B1.low()      
       C1.low()      
       D1.high()
+      utime.sleep(0.5) # Blinken bei Wert 99
+      A0.high()
+      B0.high()
+      C0.high()
+      D0.high()
+      A1.high()      
+      B1.high()      
+      C1.high()      
+      D1.high()
     # print("Expanded ADC: ", ExpandedSensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
     # print("ADC: ", SensorValueS) # Konsolen-Ausgabe (in Thonny); kann auskommentiert werden
     utime.sleep(0.5) # Sensor wird zweimal pro Sekunde abgefragt; Wert hat sich praktisch bewährt, muss aber nicht "optimal" sein
