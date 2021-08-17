@@ -8,10 +8,10 @@ B0 = Pin(10, Pin.OUT) # B: Pin 1
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
 # 7-segment #2, customize pins if necessary
-A1 = Pin(18, Pin.OUT) # A: Pin 7 CD4511BE
-B1 = Pin(21, Pin.OUT) # B: Pin 1    
-C1 = Pin(20, Pin.OUT) # C: Pin 2    
-D1 = Pin(19, Pin.OUT) # D: Pin 6
+A1 = Pin(5, Pin.OUT) # A: Pin 7 CD4511BE
+B1 = Pin(2, Pin.OUT) # B: Pin 1    
+C1 = Pin(3, Pin.OUT) # C: Pin 2    
+D1 = Pin(4, Pin.OUT) # D: Pin 6
 ExpandedSensorValueS = ADC_A0.read_u16()
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
