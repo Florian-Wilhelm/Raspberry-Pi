@@ -12,7 +12,7 @@ A1 = Pin(5, Pin.OUT) # A: Pin 7 CD4511BE
 B1 = Pin(2, Pin.OUT) # B: Pin 1    
 C1 = Pin(3, Pin.OUT) # C: Pin 2    
 D1 = Pin(4, Pin.OUT) # D: Pin 6
-ExpandedSensorValueS = ADC_A0.read_u16()
+SensorValueS = ADC_A0.read_u16()
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
 # Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
@@ -21,17 +21,17 @@ ExpandedSensorValueS = ADC_A0.read_u16()
 # After plugging in the power supply, one singular read is carried out in order to determine the sensor type (HW-390 or ME110);
 # Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
 # After that the device is ready for use.
-if ExpandedSensorValueS < 4096: 
-# 4096: relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
-# 4096: quite arbitrary value; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
+if SensorValueS < 4096: 
+# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
+# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
     resistivTrue=1
 else:
     resistivTrue=0
 while True:
-    # ADC Read
+    # ADC Reading
     SensorValueS = ADC_A0.read_u16()
-    if resistivTrue==1:
     # Scaling for Iduino ME110 Sensor (see datasheet), ADC range 0.0-3.3V:
+    if resistivTrue==1:    
       # ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3) # sensor gets supplied with 3.3V
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # sensor gets supplied with 5.0V
     # Scaling/Inverting for HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", see datasheet):
@@ -43,7 +43,7 @@ while True:
       ExpandedSensorValueS = 0
     if ExpandedSensorValueS > 65535:
       ExpandedSensorValueS = 65535    
-    # Driving 7-Segment-Display
+    # Driving 7-Segment-Display, ranges equidistant
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):      
       A0.low()      
