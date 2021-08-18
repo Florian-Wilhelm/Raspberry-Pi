@@ -21,9 +21,9 @@ ExpandedSensorValueS = ADC_A0.read_u16()
 # After plugging in the power supply, one singular read is carried out in order to determine the sensor type (HW-390 or ME110);
 # Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
 # After that the device is ready for use.
-if ExpandedSensorValueS < 1024: 
-# 1024: relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
-# 1024: quite arbitrary value; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
+if ExpandedSensorValueS < 4096: 
+# 4096: relativ willkürlicher Wert; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
+# 4096: quite arbitrary value; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
     resistivTrue=1
 else:
     resistivTrue=0
