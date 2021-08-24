@@ -13,7 +13,7 @@ D0 = Pin(12, Pin.OUT) # D: Pin 6
 A2 = Pin(2, Pin.OUT) 
 B2 = Pin(5, Pin.OUT)
 # One singlular ADC read
-ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience on this particular point, it is not expanded of course
+ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience on this particular point, there is nothing expanded of course
 # print("ADC initial: ", ExpandedSensorValueS) 
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
