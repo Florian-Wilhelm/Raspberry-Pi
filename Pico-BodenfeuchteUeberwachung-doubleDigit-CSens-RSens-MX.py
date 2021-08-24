@@ -9,12 +9,11 @@ A0 = Pin(13, Pin.OUT) # A: Pin 7
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# A2/B2 used for switching between 7-Segment-Displays by using 2 transistors (2xBD243C with 1k base electrode resistors)
+# A2/B2 used for switching between the two 7-Segment-Displays (additional electronic: 2x BD243C transistor, 2x 1k base electrode resistor)
 A2 = Pin(2, Pin.OUT) 
 B2 = Pin(5, Pin.OUT)
-# One singlular ADC read
-ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience on this particular point, there is nothing expanded of course
-# print("ADC initial: ", ExpandedSensorValueS) 
+# One singular ADC read
+ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience her, there is nothing expanded of course
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
 # Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
