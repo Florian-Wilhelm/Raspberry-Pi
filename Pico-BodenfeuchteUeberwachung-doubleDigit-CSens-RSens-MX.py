@@ -1,7 +1,7 @@
 # SOIL MOISTURE MEASUREMENT ON 7-SEGMENT-DISPLAY WITH SENSOR TYPE DETECTION
 # USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS: 
 # I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
-from machine import Pin, PWM
+from machine import Pin
 import utime
 ADC_A0 = machine.ADC(26)
 # 7-segment, using only one CD4511BE IC
@@ -49,7 +49,7 @@ while True:
        sample_hold = 0       
     else: # old value is maintained
        sample_hold = sample_hold+2*mx_time
-    # Driving 7-Segment-Display, ranges equidistant
+    # Driving 7-Segment-Displays, ranges equidistant
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):
       A2.high()
