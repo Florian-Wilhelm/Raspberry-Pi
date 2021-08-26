@@ -1,4 +1,4 @@
-from machine import Pin, PWM
+from machine import Pin
 import utime
 ADC_A0 = machine.ADC(26)
 # Erstes Siebensegment
