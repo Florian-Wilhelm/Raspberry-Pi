@@ -1,5 +1,5 @@
 # SOIL MOISTURE MEASUREMENT ON 7-SEGMENT-DISPLAY WITH SENSOR TYPE DETECTION
-from machine import Pin
+from machine import Pin, mem8
 import utime
 ADC_A0 = machine.ADC(26)
 # 7-segment #1, customize pins if necessary
@@ -44,7 +44,7 @@ while True:
     if ExpandedSensorValueS > 65535:
       ExpandedSensorValueS = 65535    
     # Driving 7-Segment-Displays, ranges equidistant
-    # there exist more elegant algorithms to set the pins high/low (manipulating the registers), what you see below is quite lengthy
+    # there exist more elegant algorithms to set the pins high/low (manipulating the registers, e.g. "mem8[0xd0000014] = 0x10" for getting an 8 on 7-segment #2), what you see below is quite lengthy
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):      
       A0.low()      
