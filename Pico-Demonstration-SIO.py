@@ -1,4 +1,5 @@
-# Demonstration how to write several Pico GPIO ports at once 
+# Demonstration how to write several Pico GPIO ports at once by using the Single-cycle IO block (SIO);
+# See figure 2 and chapter 2.3.1 in the rp2040-datasheet
 
 from machine import Pin, mem8 # mem16, mem32 also possible
 import utime
@@ -10,9 +11,6 @@ A1 = Pin(5, Pin.OUT) # A: Pin 7
 B1 = Pin(2, Pin.OUT) # B: Pin 1    
 C1 = Pin(3, Pin.OUT) # C: Pin 2    
 D1 = Pin(4, Pin.OUT) # D: Pin 6
-
-# Driving the GPIOs directly by using the Single-cycle IO block (SIO)
-# see figure 2 and chapter 2.3.1 in the rp2040-datasheet
 
 # -- 1267 --  Pins of CD4511BE
 # -- BCDA --  BCD (Binary Coded Decimal) input for CD4511BE
@@ -28,29 +26,31 @@ D1 = Pin(4, Pin.OUT) # D: Pin 6
 # 00 0010 00  0x10 8
 # 00 0011 00  0x30 9
 #
-# Note: Reading from right (MSB) to left (LSB) to formulate the hex from the binary code
+# Note: Reading from right (MSB) to left (LSB) to formulate the hex number from the binary code
 
-def gpio_clr_mask():
+def gpio_clr():
     utime.sleep(switch_time)
     mem8[0xd0000018] = 0xff # GPIO_OUT_CLEAR
 
 while True:    
-   # GPIO_OUT_SET, counting from 1 to 9    
+   # GPIO_OUT_SET, counting from 0 to 9 
+   mem8[0xd0000014] = 0x00
+   gpio_clr()
    mem8[0xd0000014] = 0x20
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x04
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x24
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x08
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x28
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x0C
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x2C
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x10
-   gpio_clr_mask()
+   gpio_clr()
    mem8[0xd0000014] = 0x30
-   gpio_clr_mask()
+   gpio_clr()
