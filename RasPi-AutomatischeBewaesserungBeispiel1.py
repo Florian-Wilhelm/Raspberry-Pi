@@ -1,4 +1,3 @@
-### !!! THIS CODE IS NOT PROPERLY TESTET YET. USE AT YOUR OWN RISK !!!
 import schattenspeicher
 import Adafruit_BMP.BMP280 as BMP280
 import RPi.GPIO as GPIO
@@ -46,7 +45,7 @@ bewZeit = 10 # Bewässerungszeit in Sekunden (wenn bewässert wird)
 zeitStunden = 168 # Gesamtlaufzeit
 einstellmodus = 4 # PlausiCheck für die ersten n Zyklen deaktiviert
 # ### Ende
-zeitSekunden = zeitStunden*3600 # hier bitte nichts verändern!!
+zeitSekunden = zeitStunden*3600 # hier bitte nichts verändern!! Zeile dient nur der allgemeinen Lesbarkeit
 while i<=zeitSekunden: # oder "while True:", dann endlos (nicht empfehlenswert)
        temperature = tempSensor.read_temperature()            
        # Sensor 1
@@ -86,7 +85,7 @@ while i<=zeitSekunden: # oder "while True:", dann endlos (nicht empfehlenswert)
          chan3 = AnalogIn(ads, ADS.P3) # nichtinvertierender OP-Eingang, zeigt an ob Schwimmerschalter ausgelöst hat (dann auf 0V)
          opVoltage = chan3.voltage
          time.sleep(0.5)
-         chan2 = AnalogIn(ads, ADS.P2) # Pumpen-"Shunt" (normalerweise nur im Versuchsaufbau verwendet)
+         chan2 = AnalogIn(ads, ADS.P2) # Pumpen-"Shunt" (normalerweise nur im Versuchsaufbau verwendet; wenn A2 nicht verbunden ist wird irgendein Wert ausgegeben)
          pumpenMessSpannung = chan2.voltage 
          while n<bewZeit:
            time.sleep(1)
