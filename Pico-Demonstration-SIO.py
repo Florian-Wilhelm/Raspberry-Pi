@@ -1,7 +1,7 @@
 # Demonstration how to write several Pico GPIO ports at once by using the Single-cycle IO block (SIO);
 # See figure 2 and chapter 2.3.1 in the rp2040-datasheet
 
-from machine import Pin, mem8 # mem16, mem32 also possible
+from machine import Pin, mem8 # mem8 = 8bit; mem16, mem32 also possible (Pico "fills" missing digits with zeros then) 
 import utime
 
 switch_time = 1
