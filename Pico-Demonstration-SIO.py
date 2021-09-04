@@ -1,9 +1,11 @@
 # Demonstration how to write several Pico GPIO ports at once by using the Single-cycle IO block (SIO);
-# See figure 2 and chapter 2.3.1 in the RP2040 datasheet
+# See figure 2 and chapter 2.3.1 in the RP2040 datasheet;
+# "The SIO is connected to the single-cycle IOPORT bus of each processor, and provides GPIO access, two-way communications, and other core-local peripherals".
 
 from machine import Pin, mem8 # mem8 = 8bit; mem16, mem32 also possible (RP2040 "fills" missing digits with zeros then) 
 import utime
 
+# Switching time for the displayed values
 switch_time = 1
 
 # Using a CD4511BE BCD-to-7-Segment Latch Decoder
@@ -26,7 +28,7 @@ D1 = Pin(4, Pin.OUT) # D: Pin 6
 # 00 0010 00  0x10 8
 # 00 0011 00  0x30 9
 #
-# Note: Reading from right (MSB) to left (LSB) to formulate the hex number from the binary code
+# Important note: Reading from right (MSB) to left (LSB) to formulate the hex number from the binary code
 
 def gpio_clr():
     utime.sleep(switch_time)
