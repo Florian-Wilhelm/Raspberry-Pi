@@ -23,8 +23,8 @@ ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience
 # Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
 # After that the device is ready for use.
 if ExpandedSensorValueS < 4096: 
-# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
-# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
+# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V, siehe Schaltplan) 
+# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V, see circuit diagram)
     resistivTrue=1
 else:
     resistivTrue=0
