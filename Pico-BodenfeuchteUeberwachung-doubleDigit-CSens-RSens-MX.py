@@ -4,7 +4,7 @@
 from machine import Pin
 import utime
 ADC_A0 = machine.ADC(26)
-# 7-segment, using only one CD4511BE IC
+# 7-segment, using only one CD4511BE IC BCD-to-7-Segment Latch Decoder
 A0 = Pin(13, Pin.OUT) # A: Pin 7 
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
@@ -13,7 +13,7 @@ D0 = Pin(12, Pin.OUT) # D: Pin 6
 A2 = Pin(2, Pin.OUT) 
 B2 = Pin(5, Pin.OUT)
 # One singular ADC read
-ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience her, there is nothing expanded of course
+ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience here, there is nothing expanded of course
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
 # Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
