@@ -9,10 +9,10 @@ import utime
 switch_time = 1
 
 # Using a CD4511BE BCD-to-7-Segment Latch Decoder
-A1 = Pin(5, Pin.OUT) # A: Pin 7 
-B1 = Pin(2, Pin.OUT) # B: Pin 1    
-C1 = Pin(3, Pin.OUT) # C: Pin 2    
-D1 = Pin(4, Pin.OUT) # D: Pin 6
+# A1 = Pin(5, Pin.OUT) # A: Pin 7 
+# B1 = Pin(2, Pin.OUT) # B: Pin 1    
+# C1 = Pin(3, Pin.OUT) # C: Pin 2    
+# D1 = Pin(4, Pin.OUT) # D: Pin 6
 
 # -- 1267 --  Pins of CD4511BE
 # -- BCDA --  BCD (Binary Coded Decimal) input for CD4511BE
