@@ -20,7 +20,7 @@ while True:
     if ExpandedSensorValueS > 65535:
       ExpandedSensorValueS = 65535    
     # Driving 7-Segment-Displays, ranges equidistant
-    # there exist more elegant algorithms to set the pins high/low (manipulating the registers), what you see below is quite lengthy
+    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):      
       A0.low()      
