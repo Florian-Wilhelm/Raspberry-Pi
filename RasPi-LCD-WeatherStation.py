@@ -10,8 +10,8 @@ sensor = BMP280.BMP280()
 # initial values
 temperature = sensor.read_temperature()
 pressure = sensor.read_pressure()
-lcd.lcd_display_string("Temp = {0:0.2f} C".format(temperature),1)
-lcd.lcd_display_string("Druck = {0:0.0f} Pa".format(pressure),2)
+lcd.lcd_display_string("Temp: {0:0.1f} C ".format(temperature),1)
+lcd.lcd_display_string("Druck: {0:0.0f} Pa ".format(pressure),2)
 
 i = 0
 
@@ -20,10 +20,10 @@ while True:
   temperature = sensor.read_temperature()
   pressure = sensor.read_pressure()
   # temperature value is updated every second on the LCD
-  lcd.lcd_display_string("Temp = {0:0.2f} C".format(temperature),1)
+  lcd.lcd_display_string("Temp: {0:0.1f} C ".format(temperature),1)
   # pressure value is updated once every minute on the LCD 
   if i == 60:
-    lcd.lcd_display_string("Druck = {0:0.0f} Pa".format(pressure),2)
+    lcd.lcd_display_string("Druck: {0:0.0f} Pa".format(pressure),2)
     i = 0
   time.sleep(1)
   i=i+1
