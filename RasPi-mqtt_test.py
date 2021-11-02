@@ -1,4 +1,5 @@
-# MQTT publishing data (test script)
+# MQTT publishing data (what you see below is just a rudimentary test script)
+# A broker (mosquitto) has to be installed on the system as well
 
 import Adafruit_BMP.BMP280 as BMP280
 import time
@@ -10,7 +11,7 @@ sensor = BMP280.BMP280()
 
 import paho.mqtt.client as mqtt
 
-def on_connect(client, userdata, flags, rc): # callback function
+def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
 
 client=mqtt.Client()
