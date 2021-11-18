@@ -1,3 +1,4 @@
+# This code works solely for ME110 resistive type sensors that get supplied with 3.3V
 from machine import Pin
 import utime
 ADC_A0 = machine.ADC(26)
