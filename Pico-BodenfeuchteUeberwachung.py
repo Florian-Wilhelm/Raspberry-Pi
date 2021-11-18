@@ -1,3 +1,5 @@
+# RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
+# early prototype with ME110 sensor, RGB-LED and one single 7-Segment-Display
 from machine import Pin, PWM
 #import utime
 ADC_A0 = machine.ADC(26)
