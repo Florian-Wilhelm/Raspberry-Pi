@@ -36,7 +36,9 @@ while True:
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # sensor gets supplied with 5.0V
     # Scaling/Inverting for HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", see datasheet):
     if resistivTrue==0:
-      # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays
+      # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays (cannot be perfect though because there exists always variance in any individual sensor)
+      # capacitive sensor HW-390 delivers around 3.0V (here: approximately 65535 after ADC conversion and expansion) output voltage when the soil is completely dry
+      # and 1.0V (here: approximately 21.845 after ADC conversion and expansion) when the soil is completely wet
       ExpandedSensorValueS = (ADC_A0.read_u16()/3.0)*3.3         
       ExpandedSensorValueS = int(98000-(1.5*ExpandedSensorValueS)) 
     # Suppressing values outside the allowed range (voltage peaks etc.)
