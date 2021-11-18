@@ -1,4 +1,5 @@
-# SOIL MOISTURE MEASUREMENT ON 7-SEGMENT-DISPLAY WITH SENSOR TYPE DETECTION
+# RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
+# SOIL MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS WITH SENSOR TYPE DETECTION
 # USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS: 
 # I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
 from machine import Pin
