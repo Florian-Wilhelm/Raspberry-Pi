@@ -1,3 +1,4 @@
+# RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
 # This code works solely for ME110 resistive type sensors that get supplied with 3.3V
 from machine import Pin
 import utime
