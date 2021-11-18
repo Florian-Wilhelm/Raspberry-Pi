@@ -6,10 +6,20 @@ Sidenote: I am not really a skilled coder (my background is mechanical engineeri
 
 Feel free to improve and experiment, if you choose to use these code examples.
 
-Further information:
+Further information (projects):
+
+Peroject 1:
 
 https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
 
+https://hackaday.io/project/177954-remotely-controlled-plant-watering
+
+Project 2:
+
 https://ome-eng.net/raspi-pico-bodenfeuchte/
 
-https://youtu.be/zaLC5N0qXek
+https://hackaday.io/project/178522-soil-moisture-measurement-device
+
+Project 3:
+
+https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
