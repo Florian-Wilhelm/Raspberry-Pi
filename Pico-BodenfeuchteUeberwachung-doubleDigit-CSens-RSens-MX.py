@@ -59,8 +59,8 @@ while True:
        sample_hold = 0       
     else: # old value is maintained
        sample_hold = sample_hold+2*mx_time
-    # Driving 7-Segment-Displays, ranges equidistant
-    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy
+    # Driving 7-Segment-Displays, ranges equidistant;
+    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy.
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):
       switchA2()
