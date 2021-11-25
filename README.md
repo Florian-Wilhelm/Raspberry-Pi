@@ -8,7 +8,7 @@ Feel free to improve and experiment, if you choose to use these code examples.
 
 Further information (projects):
 
-Peroject 1:
+Project 1:
 
 https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
 
