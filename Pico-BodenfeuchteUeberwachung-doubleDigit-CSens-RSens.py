@@ -16,7 +16,7 @@ D1 = Pin(4, Pin.OUT) # D: Pin 6
 SensorValueS = ADC_A0.read_u16()
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
-# Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
+# Wichtig ist dass der Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
 # Anschließend kann das System ganz normal verwendet werden.
 # ENGLISH
 # After plugging in the power supply, one singular read is carried out in order to determine the sensor type (HW-390 or ME110);
@@ -37,9 +37,9 @@ while True:
       ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # sensor gets supplied with 5.0V
     # Scaling/Inverting for HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", see datasheet):
     if resistivTrue==0:
-      # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays (cannot be perfect though because there exists always variance in any individual sensor)
-      # capacitive sensor HW-390 delivers around 3.0V (here: approximately 65535 after ADC conversion and expansion) output voltage when the soil is completely dry
-      # and 1.0V (here: approximately 21.845 after ADC conversion and expansion) when the soil is completely wet
+      # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays (cannot be perfect though because there exists always variance in any individual sensor);
+      # capacitive sensor HW-390 delivers around 3.0V (here: approximately 65535 after ADC conversion and expansion) output voltage when the soil is completely dry;
+      # and 1.0V (here: approximately 21.845 after ADC conversion and expansion) when the soil is completely wet.
       ExpandedSensorValueS = (ADC_A0.read_u16()/3.0)*3.3         
       ExpandedSensorValueS = int(98000-(1.5*ExpandedSensorValueS)) 
     # Suppressing values outside the allowed range (voltage peaks etc.)
@@ -47,8 +47,8 @@ while True:
       ExpandedSensorValueS = 0
     if ExpandedSensorValueS > 65535:
       ExpandedSensorValueS = 65535    
-    # Driving 7-Segment-Displays, ranges equidistant
-    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy
+    # Driving 7-Segment-Displays, ranges equidistant;
+    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy.
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):      
       A0.low()      
