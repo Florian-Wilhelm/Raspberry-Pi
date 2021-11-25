@@ -10,7 +10,7 @@ A0 = Pin(13, Pin.OUT) # A: Pin 7
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# A2/B2 used for switching between the two 7-Segment-Displays (additional electronic: 2x BD243C transistor, 2x 1k base electrode resistor)
+# A2/B2 used for switching between the two 7-Segment-Displays (necessary additional electronic: 2x BD243C transistor (or similar), 2x 1k base electrode resistor)
 A2 = Pin(2, Pin.OUT) 
 B2 = Pin(5, Pin.OUT)
 def switchA2():
