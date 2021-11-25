@@ -19,19 +19,19 @@ def switchA2():
 def switchB2():
    A2.low()
    B2.high()
-# One singlular ADC read
+# One singular ADC read:
 ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience her, there is nothing expanded of course
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
-# Wichtig ist dass Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
+# Wichtig ist dass der Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
 # Anschließend kann das System ganz normal verwendet werden.
 # ENGLISH
 # After plugging in the power supply, one singular read is carried out in order to determine the sensor type (HW-390 or ME110);
 # Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
 # After that the device is ready for use.
 if ExpandedSensorValueS < 4096: 
-# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
-# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
+# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V). 
+# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V).
     resistivTrue=1
 else:
     resistivTrue=0
@@ -46,9 +46,9 @@ while True:
           ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # sensor gets supplied with 5.0V
        # Scaling/Inverting for HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", see datasheet):
        if resistivTrue==0:
-          # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays (cannot be perfect though because there exists always variance in any individual sensor)
-          # capacitive sensor HW-390 delivers around 3.0V (here: approximately 65535 after ADC conversion and expansion) output voltage when the soil is completely dry
-          # and 1.0V (here: approximately 21.845 after ADC conversion and expansion) when the soil is completely wet
+          # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays (cannot be perfect though because there exists always variance in any individual sensor);
+          # capacitive sensor HW-390 delivers around 3.0V (here: approximately 65535 after ADC conversion and expansion) output voltage when the soil is completely dry;
+          # and 1.0V (here: approximately 21.845 after ADC conversion and expansion) when the soil is completely wet.
           ExpandedSensorValueS = (ADC_A0.read_u16()/3.0)*3.3         
           ExpandedSensorValueS = int(98000-(1.5*ExpandedSensorValueS))
        # Suppressing values outside the allowed range (voltage peaks etc.)
