@@ -1,15 +1,15 @@
 # RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
 # SOIL MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS WITH SENSOR TYPE DETECTION
-from machine import Pin, mem8
+from machine import Pin
 import utime
 ADC_A0 = machine.ADC(26)
-# 7-segment #1, customize pins if necessary
-A0 = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE
+# Driving 7-Segment-Display #1 with CD4511BE IC BCD-to-7-Segment Latch Decoder
+A0 = Pin(13, Pin.OUT) # A: Pin 7
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# 7-segment #2, customize pins if necessary
-A1 = Pin(5, Pin.OUT) # A: Pin 7 CD4511BE
+# Driving 7-Segment-Display #2 with CD4511BE IC BCD-to-7-Segment Latch Decoder
+A1 = Pin(5, Pin.OUT) # A: Pin 7
 B1 = Pin(2, Pin.OUT) # B: Pin 1    
 C1 = Pin(3, Pin.OUT) # C: Pin 2    
 D1 = Pin(4, Pin.OUT) # D: Pin 6
@@ -23,8 +23,8 @@ SensorValueS = ADC_A0.read_u16()
 # Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
 # After that the device is ready for use.
 if SensorValueS < 4096: 
-# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V, siehe Schaltplan) 
-# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V, see circuit diagram)
+# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V, siehe Schaltplan). 
+# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V, see circuit diagram).
     resistivTrue=1
 else:
     resistivTrue=0
