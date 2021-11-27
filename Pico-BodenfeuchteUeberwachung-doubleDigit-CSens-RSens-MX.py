@@ -1,11 +1,13 @@
 # RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
 # SOIL MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS WITH SENSOR TYPE DETECTION
 # USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS 
-# I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
+# ###
+# Note: I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
+# ###
 from machine import Pin
 import utime
 ADC_A0 = machine.ADC(26)
-# 7-segment, using only one CD4511BE IC BCD-to-7-Segment Latch Decoder
+# Driving the 7-Segment-Displays, using only one CD4511BE IC BCD-to-7-Segment Latch Decoder
 A0 = Pin(13, Pin.OUT) # A: Pin 7 
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
