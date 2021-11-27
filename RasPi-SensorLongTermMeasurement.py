@@ -1,4 +1,4 @@
-# This code was used on my Raspberry Pi for a 24h measurement of two ME110 ressistive type sensors
+# This (quick&dirty) code was used on my Raspberry Pi for a 24h measurement of two ME110 ressistive type sensors
 # results are written in a spreadsheet
 import xlsxwriter
 import Adafruit_BMP.BMP280 as BMP280
@@ -23,9 +23,9 @@ tempSensor = BMP280.BMP280()
 workbook = xlsxwriter.Workbook("LTM.xlsx")
 worksheet = workbook.add_worksheet()
 while i<gesamtZeitSekunden:
-       # Temperaturmessung
+       # temperature measurement
        temperature = tempSensor.read_temperature()   
-       # Sensor 1
+       # sensor 1
        GPIO.setup(27, GPIO.OUT)
        GPIO.output(27, GPIO.HIGH)
        time.sleep(0.5)
@@ -34,7 +34,7 @@ while i<gesamtZeitSekunden:
        time.sleep(0.1)
        GPIO.output(27, GPIO.LOW)
        time.sleep(0.1)
-       # Sensor 2
+       # sensor 2
        GPIO.setup(12, GPIO.OUT)
        GPIO.output(12, GPIO.HIGH)
        time.sleep(0.5)
@@ -42,7 +42,7 @@ while i<gesamtZeitSekunden:
        moistureLevel2_percent = (chan1.voltage/1.7)*100
        time.sleep(0.1)
        GPIO.output(12, GPIO.LOW)
-       # Writing       
+       # writing in spreadsheet       
        worksheet.write(n,0, moistureLevel1_percent)
        worksheet.write(n,1, moistureLevel2_percent)
        worksheet.write(n,2, temperature)
