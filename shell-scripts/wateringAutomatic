@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/pi/mu_code # customize your path here
+nohup python3 Automatic_Program.py & # customize the name of your script here
