@@ -1,6 +1,9 @@
-# SOIL MOISTURE MEASUREMENT ON 7-SEGMENT-DISPLAY WITH SENSOR TYPE DETECTION
-# USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS: 
-# I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
+# RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
+# SOIL MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS WITH SENSOR TYPE DETECTION
+# USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS 
+# ###
+# Note: I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
+# ###
 import utime
 from machine import Pin
 from machine import I2C
@@ -17,12 +20,12 @@ except OSError:
    print("OLED not connected")
    OLED_true = 0
 ADC_A0 = machine.ADC(26)
-# 7-segment, using only one CD4511BE IC BCD-to-7-Segment Latch Decoder
+# Driving the 7-Segment-Displays, using only one CD4511BE IC BCD-to-7-Segment Latch Decoder
 A0 = Pin(13, Pin.OUT) # A: Pin 7 
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# A2/B2 used for switching between the two 7-Segment-Displays (additional electronic: 2x BD243C transistor, 2x 1k base electrode resistor)
+# A2/B2 used for switching between the two 7-Segment-Displays (necessary additional electronic: 2x BD243C transistor (or similar), 2x 1k base electrode resistor)
 A2 = Pin(2, Pin.OUT) 
 B2 = Pin(5, Pin.OUT)
 def switchA2():
@@ -31,7 +34,7 @@ def switchA2():
 def switchB2():
    A2.low()
    B2.high()
-# One singlular ADC read
+# One singlular ADC read:
 ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience her, there is nothing expanded of course
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
@@ -66,7 +69,9 @@ while True:
           ExpandedSensorValueS = int((ADC_A0.read_u16()/3.0)*3.3) # sensor gets supplied with 5.0V          
        # Scaling/Inverting for HW-390 Sensor ("Capacitive Soil Moisture Sensor v2.0", see datasheet):
        if resistivTrue==0:
-          # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays
+          # mathematical optimization to utilize full 0-99 range on the 7-Segment-Displays (cannot be perfect though because there exists always variance in any individual sensor);
+          # capacitive sensor HW-390 delivers around 3.0V (here: approximately 65535 after ADC conversion and expansion) output voltage when the soil is completely dry;
+          # and 1.0V (here: approximately 21.845 after ADC conversion and expansion) when the soil is completely wet.
           ExpandedSensorValueS = (ADC_A0.read_u16()/3.0)*3.3         
           ExpandedSensorValueS = int(98000-(1.5*ExpandedSensorValueS))
        # Suppressing values outside the allowed range (voltage peaks etc.)
@@ -77,8 +82,8 @@ while True:
        sample_hold = 0       
     else: # old value is maintained
        sample_hold = sample_hold+2*mx_time
-    # Driving 7-Segment-Displays, ranges equidistant
-    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy
+    # Driving 7-Segment-Displays, ranges equidistant;
+    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy.
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):
       switchA2()
