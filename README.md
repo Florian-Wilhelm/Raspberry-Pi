@@ -1,10 +1,10 @@
 ### About
 
-This is for now just a random collection of Python and MicroPython code examples for the Raspberry Pi and the Raspberry Pi Pico (plus some shell scripts for convenience).
+This is a collection of Python and MicroPython code examples for the Raspberry Pi and the Raspberry Pi Pico (plus some shell scripts for convenience). These scripts are used in three different projects (see below).
 
 Comments and names of variables etc. will be partially in German. Sorry for that :-).
 
-Note: I am not really a skilled coder (my background is mechanical engineering), so the code examples may be a bit bulky. Focus was on readability, not on creating the shortest possible script.
+Note: I am not really a skilled coder (my background is mechanical engineering), so the code may be on the whole a bit bulky. Focus was on readability, not on creating the shortest possible script.
 
 
 ### Projects:
