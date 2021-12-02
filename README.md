@@ -7,7 +7,7 @@ Comments and names of variables etc. will be partially in German. Sorry for that
 Note: I am not really a skilled coder (my background is mechanical engineering), so the code may be on the whole a bit bulky. Focus was on readability, not on creating the shortest possible script.
 
 
-### Projects:
+### Projects
 
 *Project 1:*
 
