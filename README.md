@@ -1,6 +1,6 @@
 ### About
 
-The project-folders (see below) contain a collection of Python and MicroPython code examples for the Raspberry Pi and the Raspberry Pi Pico (plus an extra folder with shell scripts for convenience). 
+The project-folders contain a collection of Python and MicroPython code examples for the Raspberry Pi and the Raspberry Pi Pico (plus an extra folder with shell scripts for convenience). 
 
 Comments and names of variables etc. will be partially in German. Sorry for that :-).
 
