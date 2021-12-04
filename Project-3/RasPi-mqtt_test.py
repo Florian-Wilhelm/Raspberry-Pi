@@ -21,7 +21,8 @@ username="florian"
 password="12345"
 client.username_pw_set(username,password)
 
-client.connect("localhost", 1883, 60)
+# parameters: "localhost" MQTT broker; 1883 MQTT TCP-Port; 60 keepalive time in seconds
+client.connect("localhost", 1883, 60)  
 
 while True:   
    temperature = sensor.read_temperature()
