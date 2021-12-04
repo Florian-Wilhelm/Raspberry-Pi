@@ -1,5 +1,5 @@
 # MQTT publishing data (what you see below is just a rudimentary test script)
-# A broker (mosquitto) has to be installed on the system as well
+# important note: a broker (mosquitto) has to be installed on your system as well
 
 import Adafruit_BMP.BMP280 as BMP280
 import time
