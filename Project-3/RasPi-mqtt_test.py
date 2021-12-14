@@ -21,7 +21,7 @@ username="florian"
 password="12345"
 client.username_pw_set(username,password)
 
-# parameters: "localhost" MQTT broker; 1883 MQTT TCP-Port; 60 keepalive time in seconds
+# parameters: '"localhost"' MQTT broker; '1883' MQTT TCP-Port; '60' keep alive time in seconds
 client.connect("localhost", 1883, 60)  
 
 while True:   
