@@ -1,15 +1,15 @@
 # RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
-# early prototype with ME110 sensor, RGB-LED and one single 7-Segment-Display
+# code sequence below for early prototype with resistive ME110-sensor, RGB-LED and one single 7-Segment-Display
 from machine import Pin, PWM
 #import utime
 ADC_A0 = machine.ADC(26)
-pwm3 = PWM(Pin(3)) #blau
-pwm4 = PWM(Pin(4)) #rot
-pwm5 = PWM(Pin(5)) #grün
-pwm3.freq(500) #PWM-Frequenz
-pwm4.freq(500) #PWM-Frequenz
-pwm5.freq(500) #PWM-Frequenz
-A = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE
+pwm3 = PWM(Pin(3)) # blau
+pwm4 = PWM(Pin(4)) # rot
+pwm5 = PWM(Pin(5)) # grün
+pwm3.freq(500) # PWM-Frequenz blaue LED
+pwm4.freq(500) # PWM-Frequenz rote LED
+pwm5.freq(500) # PWM-Frequenz grüne LED
+A = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE IC BCD-to-7-Segment Latch Decoder
 B = Pin(10, Pin.OUT) # B: Pin 1    
 C = Pin(11, Pin.OUT) # C: Pin 2    
 D = Pin(12, Pin.OUT) # D: Pin 6
