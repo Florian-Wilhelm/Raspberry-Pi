@@ -23,7 +23,7 @@ while True:
   lcd.lcd_display_string("Temp: {0:0.1f} C ".format(temperature),1)
   # pressure value is updated once every minute on the LCD 
   if i == 60:
-    lcd.lcd_display_string("Druck: {0:0.0f} Pa".format(pressure),2)
+    lcd.lcd_display_string("Druck: {0:0.0f} Pa ".format(pressure),2)
     i = 0
   time.sleep(1)
   i=i+1
