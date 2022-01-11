@@ -24,3 +24,7 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 *Project 3:*
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
+
+*Project 4:*
+
+https://ome-eng.net/raspi-pico-motorsteuerung/
