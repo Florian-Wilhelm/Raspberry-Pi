@@ -6,22 +6,22 @@ pwm.freq(1000) # PWM-Frequenz
 def ramp(dutyCycleBin, sleeping):
    pwm.duty_u16(dutyCycleBin)
    utime.sleep(sleeping)
-# Größtwert PWM
+# Größtwert PWM (unveränderlich)
 groesstwert = pow(2, 16) # 2^16 = 65536
-# Inkrement
-teiler = pow(2, 3)
-inkrement = int(groesstwert/teiler)
-# Anlaufimpuls
+# Inkrement 
+teiler = pow(2, 3) # Exponent kann geändert werden
+inkrement = int(groesstwert/teiler) # Ergebnis immer ganzzahlig und Potenz von 2
+# Anlaufimpuls (empirische Werte)
 anlaufdutyCycle = int(groesstwert/4)
 anlaufImpulsZeit = 0.1
 ramp(anlaufdutyCycle, anlaufImpulsZeit)
 # Startwerte (bitte nicht ändern)
 i = 1
 dutyCycleBin = 0
-# Laufzeit jedes PWM-Schrittes (kann geändert werden)
+# Laufzeit jedes PWM-Schrittes in Sekunden (kann geändert werden)
 laufzeit = 10
 # Durchlauf
-durchlaufZahl = 4 # wie oft wird hochgezählt
+durchlaufZahl = 4 # so oft wird inkrementiert
 while i<=durchlaufZahl:
     dutyCycleBin = dutyCycleBin + inkrement
     dutyCyclePercent = 100*(dutyCycleBin/groesstwert)
