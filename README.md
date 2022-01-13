@@ -27,6 +27,8 @@ https://youtu.be/pk4ioUDHFbQ
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
+https://youtu.be/zaLC5N0qXek
+
 *Project 4:*
 
 https://ome-eng.net/raspi-pico-motorsteuerung/
