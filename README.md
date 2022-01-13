@@ -21,6 +21,8 @@ https://ome-eng.net/raspi-pico-bodenfeuchte/
 
 https://hackaday.io/project/178522-soil-moisture-measurement-device
 
+https://youtu.be/pk4ioUDHFbQ
+
 *Project 3:*
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
