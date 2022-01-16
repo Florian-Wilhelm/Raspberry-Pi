@@ -10,7 +10,7 @@ def ramp(dutyCycleBin, puls):
    pwm0.duty_u16(dutyCycleBin)
    pwm1.duty_u16(groesstwert-dutyCycleBin)
    utime.sleep(puls)
-# Größtwert PWM (unveränderlich)
+# Größtwert PWM (unveränderlich) + 1
 groesstwert = pow(2, 16) # 2^16 = 65536
 # Startwert (bitte nicht ändern)
 dutyCycleBin = 0
@@ -21,7 +21,7 @@ inkrement = pow(2, 8) # muss 2er Potenz sein
 while True:
     dutyCycleBin += inkrement            
     # print("Duty Cycle bin: ", dutyCycleBin)    
-    ramp(dutyCycleBin, puls)
+    ramp(dutyCycleBin, puls) # für den letzten Wert von 65536 nicht ganz sauber da ausserhalb des erlaubten Bereiches
     if dutyCycleBin == groesstwert:
         while dutyCycleBin > 0:          
           dutyCycleBin -= inkrement          
