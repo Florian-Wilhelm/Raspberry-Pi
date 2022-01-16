@@ -7,6 +7,9 @@ pwm1 = PWM(Pin(1)) # GP1
 pwm1.freq(1000) 
 # LED1 wird heller, LED2 wird dunkler
 def ramp(dutyCycleBin, puls):
+   if dutyCycleBin == 65536: # 65536 ausserhalb des erlaubten Bereiches
+      dutyCycleBin = 65535
+   print("Duty Cycle bin: ", dutyCycleBin) 
    pwm0.duty_u16(dutyCycleBin)
    pwm1.duty_u16(groesstwert-dutyCycleBin)
    utime.sleep(puls)
@@ -19,11 +22,9 @@ puls = 0.003
 # Durchlauf
 inkrement = pow(2, 8) # muss 2er Potenz sein
 while True:
-    dutyCycleBin += inkrement            
-    # print("Duty Cycle bin: ", dutyCycleBin)    
-    ramp(dutyCycleBin, puls) # für den letzten Wert von 65536 nicht ganz sauber da ausserhalb des erlaubten Bereiches
+    dutyCycleBin += inkrement 
+    ramp(dutyCycleBin, puls)
     if dutyCycleBin == groesstwert:
         while dutyCycleBin > 0:          
-          dutyCycleBin -= inkrement          
-          # print("Duty Cycle bin: ", dutyCycleBin)    
+          dutyCycleBin -= inkrement
           ramp(dutyCycleBin, puls)
