@@ -13,7 +13,7 @@ def ramp(dutyCycleBin, puls):
    pwm0.duty_u16(dutyCycleBin)
    pwm1.duty_u16(groesstwert-dutyCycleBin)
    utime.sleep(puls)
-# Größtwert PWM (unveränderlich) + 1
+# Größtwert PWM + 1 (unveränderlich)
 groesstwert = pow(2, 16) # 2^16 = 65536
 # Startwert (bitte nicht ändern)
 dutyCycleBin = 0
