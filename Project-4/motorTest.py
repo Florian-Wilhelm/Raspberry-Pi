@@ -7,7 +7,7 @@ def ramp(dutyCycleBin, sleeping):
    pwm.duty_u16(dutyCycleBin)
    utime.sleep(sleeping)
 # Größtwert PWM + 1 (unveränderlich)
-groesstwert = pow(2, 16) # 2^16 = 65536; Bezeichnung eigentlich irreführend da 65535 der größte PWM-Wert ist
+groesstwert = pow(2, 16) # 2^16 = 65536; Bezeichnung eigentlich irreführend da 65535 der größte erlaubte PWM-Wert ist
 # Inkrement 
 teiler = pow(2, 3) # Exponent kann geändert werden
 inkrement = int(groesstwert/teiler) # Ergebnis immer ganzzahlig und Potenz von 2
@@ -25,12 +25,13 @@ durchlaufZahl = 4 # so oft wird inkrementiert (es könnte auch direkt der "teile
 while i<=durchlaufZahl:
     dutyCycleBin = dutyCycleBin + inkrement
     dutyCyclePercent = 100*(dutyCycleBin/(groesstwert-1))
-    if dutyCyclePercent >= 100: # 100% und größer ist verriegelt (da außerhalb des erlaubten Bereiches)
+    if dutyCyclePercent >= 100: # 100% und größer ist verriegelt
         break
-    print("Duty Cycle bin: ", dutyCycleBin)
-    print("Duty Cycle percent: ", dutyCyclePercent, " %")
+        print("Wert >=100%, abgebrochen")
+    print("Tastgrad Rohwert: ", dutyCycleBin)
+    print("Tastgrad Prozent: ", dutyCyclePercent, " %")
     ramp(dutyCycleBin, laufzeit)
     i += 1
 # Abschaltung des Motors
 ramp(0, 1)
-print("Finished")
+print("Ende")
