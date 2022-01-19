@@ -26,8 +26,8 @@ while i<=durchlaufZahl:
     dutyCycleBin = dutyCycleBin + inkrement
     dutyCyclePercent = 100*(dutyCycleBin/(groesstwert-1))
     if dutyCyclePercent >= 100: # 100% und größer ist verriegelt
-        break
-        print("Wert >=100%, abgebrochen")
+      print("Wert >=100%, abgebrochen")  
+      break        
     print("Tastgrad Rohwert: ", dutyCycleBin)
     print("Tastgrad Prozent: ", dutyCyclePercent, " %")
     ramp(dutyCycleBin, laufzeit)
