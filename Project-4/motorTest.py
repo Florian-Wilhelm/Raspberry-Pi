@@ -23,6 +23,7 @@ laufzeit = 10
 # Durchlauf
 durchlaufZahl = 4 # so oft wird inkrementiert (es könnte auch direkt der "teiler" Wert verwendet werden)
 while i<=durchlaufZahl:
+    print("Sequenz", i, "von", teiler)
     dutyCycleBin = dutyCycleBin + inkrement
     dutyCyclePercent = 100*(dutyCycleBin/(groesstwert-1))
     if dutyCyclePercent >= 100: # 100% und größer ist verriegelt
