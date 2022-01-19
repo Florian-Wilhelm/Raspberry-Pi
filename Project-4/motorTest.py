@@ -1,4 +1,4 @@
-# Programm erhöht Schritt für Schritt die PWM für einen Motor
+# Programm erhöht Schritt für Schritt die PWM für einen DC-Motor
 from machine import Pin, PWM
 import utime
 pwm = PWM(Pin(1)) # GPIO 1, an sich frei wählbar
@@ -7,7 +7,7 @@ def ramp(dutyCycleBin, sleeping):
    pwm.duty_u16(dutyCycleBin)
    utime.sleep(sleeping)
 # Größtwert PWM + 1 (unveränderlich)
-groesstwert = pow(2, 16) # 2^16 = 65536
+groesstwert = pow(2, 16) # 2^16 = 65536; Bezeichnung eigentlich irreführend da 65535 der größte PWM-Wert ist
 # Inkrement 
 teiler = pow(2, 3) # Exponent kann geändert werden
 inkrement = int(groesstwert/teiler) # Ergebnis immer ganzzahlig und Potenz von 2
@@ -24,8 +24,8 @@ laufzeit = 10
 durchlaufZahl = 4 # so oft wird inkrementiert (es könnte auch direkt der "teiler" Wert verwendet werden)
 while i<=durchlaufZahl:
     dutyCycleBin = dutyCycleBin + inkrement
-    dutyCyclePercent = 100*(dutyCycleBin/groesstwert)
-    if dutyCyclePercent >= 100: # 100% (=65536) und größer ist verriegelt (außerhalb des erlaubtes Bereichs für "class PWM")
+    dutyCyclePercent = 100*(dutyCycleBin/(groesstwert-1))
+    if dutyCyclePercent >= 100: # 100% und größer ist verriegelt (da außerhalb des erlaubten Bereiches)
         break
     print("Duty Cycle bin: ", dutyCycleBin)
     print("Duty Cycle percent: ", dutyCyclePercent, " %")
