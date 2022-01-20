@@ -80,7 +80,7 @@ elif select == 2:
         print(">Non-inverting OP input reads: ","{:>1.3f}".format(opVoltage), "V")        
         time.sleep(0.5)
         chan2 = AnalogIn(ads, ADS.P2)
-        pumpMeasurementVoltage = chan2.voltage # shunt-resistor
+        pumpMeasurementVoltage = chan2.voltage # Pumpen-"Shunt" (normalerweise nur im Versuchsaufbau verwendet; wenn A2 nicht verbunden ist wird irgendein Wert ausgegeben)
         print(">Pump shunt reads: ","{:>1.3f}".format(pumpMeasurementVoltage), "V")
         try:
            while i<=zeit:
