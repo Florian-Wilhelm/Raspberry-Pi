@@ -92,7 +92,7 @@ elif select == 2:
         print("")
         print("* Finished *")
     elif zeit>=60:
-        print("For safety purposes, only times <60s are allowed")
+        print("For safety reasons, only times <60s are allowed")
         print("Aborted")
     else:
         print("Input invalid. Aborted")
