@@ -19,7 +19,7 @@ SensorVoltage1 = 0.0
 SensorVoltage2 = 0.0
 opVoltage = 0.0
 pumpMeasurementVoltage = 0.0
-# Menu
+# Shell-Menu
 print("*** Plant Watering via Raspberry Pi ***")
 print("** Manual program **")
 print("")
@@ -35,8 +35,7 @@ if select == 1:
     print("Please take care of proper positioning of the sensors!")
     print("0% = dry soil (0.0V)")
     print("100% = wet soil (1.7V)")
-    print("")
-    # Time gap between Sensor 1 and Sensor 2 request (for debugging etc.)
+    print("")    
     # Sensor 1
     GPIO.setup(27, GPIO.OUT)
     GPIO.output(27, GPIO.HIGH)
@@ -93,7 +92,7 @@ elif select == 2:
         print("")
         print("* Finished *")
     elif zeit>=60:
-        print("For safety purposes, only times<60s are allowed")
+        print("For safety purposes, only times <60s are allowed")
         print("Aborted")
     else:
         print("Input invalid. Aborted")
