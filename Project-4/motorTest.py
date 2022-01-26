@@ -1,4 +1,5 @@
-# Programm erhöht Schritt für Schritt die PWM für einen DC-Motor
+# Programmsequenz erhöht Schritt für Schritt die PWM für einen DC-Motor;
+# nur geeignet für ad-hoc Tests.
 from machine import Pin, PWM
 import utime
 pwm = PWM(Pin(1)) # GPIO 1, an sich frei wählbar
