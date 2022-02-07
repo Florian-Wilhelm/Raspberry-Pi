@@ -1,4 +1,4 @@
-# with BMP280 sensor
+# with BMP280 sensor, otherwise almost identical to "Beispiel1"
 import umrechnung
 import Adafruit_BMP.BMP280 as BMP280
 import RPi.GPIO as GPIO
