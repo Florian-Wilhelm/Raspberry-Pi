@@ -32,3 +32,5 @@ https://youtu.be/zaLC5N0qXek
 *Project 4:*
 
 https://ome-eng.net/raspi-pico-motorsteuerung/
+
+https://hackaday.io/project/183897-simple-motor-control
