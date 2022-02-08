@@ -1,4 +1,4 @@
-# mit BMP280 Sensor, ansonsten nahezu identisch zu "RasPi-ManuelleBewaesserung-Beispiel1.py"
+# Mit BMP280 Sensor, ansonsten nahezu identisch zu "RasPi-ManuelleBewaesserung-Beispiel1.py".
 import umrechnung
 import Adafruit_BMP.BMP280 as BMP280
 import RPi.GPIO as GPIO
@@ -101,8 +101,8 @@ elif select == 2:
         print("Input invalid. Aborted")
 elif select == 3:
     sensor = BMP280.BMP280()
-    print("Temp = {0:0.2f} °C".format(sensor.read_temperature()))
-    print ("Pressure = {0:0.2f} Pa".format(sensor.read_pressure()))    
+    print("Temp = {0:0.1f} °C".format(sensor.read_temperature()))
+    print ("Pressure = {0:0.0f} Pa".format(sensor.read_pressure()))    
 elif select == 4:
     print("Aborted")
 else:
