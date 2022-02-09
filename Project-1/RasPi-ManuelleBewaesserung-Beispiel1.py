@@ -12,7 +12,7 @@ ads = ADS.ADS1115(i2c)
 GPIO.setmode(GPIO.BCM)
 # Variables
 s=0.0
-i=1
+# i=1
 moistureLevel1 = 0.0
 moistureLevel2 = 0.0
 SensorVoltage1 = 0.0
@@ -80,11 +80,10 @@ elif select == 2:
         pumpMeasurementVoltage = chan2.voltage # Pumpen-"Shunt" (normalerweise nur im Versuchsaufbau verwendet; wenn A2 nicht verbunden ist wird irgendein Wert ausgegeben)
         print(">Pump shunt reads: ","{:>1.3f}".format(pumpMeasurementVoltage), "V")
         try:
-           while i<=zeit:
+           while s<zeit:
                time.sleep(1)
                s=s+1.0
-               print("Time elapsed:", s, "sec")
-               i=i+1
+               print("Time elapsed:", s, "sec")               
         except KeyboardInterrupt:
             print("Interrupted!")
         GPIO.output(5, GPIO.HIGH)
