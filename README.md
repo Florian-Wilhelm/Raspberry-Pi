@@ -37,4 +37,4 @@ https://hackaday.io/project/183897-simple-motor-control
 
 *Project 5: (Raspberry Pi Pico)*
 
-tbd
+https://ome-eng.net/raspi-pico-luftfeuchte (not published yet)
