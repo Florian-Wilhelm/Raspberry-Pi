@@ -34,3 +34,7 @@ https://youtu.be/zaLC5N0qXek
 https://ome-eng.net/raspi-pico-motorsteuerung/
 
 https://hackaday.io/project/183897-simple-motor-control
+
+*Project 5: (Raspberry Pi Pico)*
+
+tbd
