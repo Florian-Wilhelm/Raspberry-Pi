@@ -26,9 +26,9 @@ ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience
 while True:
     # ADC Reading plus "Sample&Hold"; that is supposed to suppress flickering and unsteady effects on the displays        
     if sample_hold>0.20: # new read
-       # see datasheet HIH-4020 sensor: Vout=(5V*(0.0062*RH(%) + 0.16); Vout_max = 3.9V (100% humidity); Vout_min = 0.8V (0% humidity)
+       # see datasheet HIH 4020-001 sensor: Vout=(5V*(0.0062*RH(%) + 0.16); Vout_max = 3.9V (100% RH); Vout_min = 0.8V (0% RH)
        # voltage divider 20k, 100k in order to generate Vout_max = 3.26V and Vout_min = 0.66V
-       ExpandedSensorValueS = int(((ADC_A0.read_u16()-13000)/2.6)*3.3) # offset "-13000" (=0.66V) to get 0 for 0% humidity; then expansion of the measurement range      
+       ExpandedSensorValueS = int(((ADC_A0.read_u16()-13000)/2.6)*3.3) # offset "-13000" (=0.66V) to get 0 for 0% RH; then expansion of the measurement range      
        # Suppressing values outside the allowed measurement range (voltage peaks etc.)
        if ExpandedSensorValueS < 0:
           ExpandedSensorValueS = 0
