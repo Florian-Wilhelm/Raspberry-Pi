@@ -46,3 +46,7 @@ https://hackaday.io/project/183897-simple-motor-control
 **Project 5 - Air humidity measurement**
 
 https://ome-eng.net/raspi-pico-luftfeuchte
+
+**Project 6 - Geiger counter**
+
+https://hackaday.io/project/184266-geiger-counter-with-z1a-tube
