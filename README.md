@@ -12,7 +12,7 @@ Note: I am not really a skilled coder (my background is mechanical engineering),
 Project numbers are in chronological order.
 
 
-## Raspberry Pi
+# Raspberry Pi
 
 **Project 1 - Plant irrigation system**
 
@@ -27,7 +27,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 https://youtu.be/zaLC5N0qXek
 
 
-## Raspberry Pi Pico
+# Raspberry Pi Pico
 
 **Project 2 - Soil moisture measurement device**
 
