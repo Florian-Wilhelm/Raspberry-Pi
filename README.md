@@ -1,4 +1,4 @@
-### About
+## About
 
 The folders contain a collection of Python and MicroPython code examples for Raspberry Pi and Raspberry Pi Pico projects (plus an extra folder with shell scripts intended for convenience). Compiled code such as .uf2-files is occasionally added for Pico projects.
 
@@ -7,12 +7,12 @@ Comments and names of variables etc. will be partially in German. Sorry for that
 Note: I am not really a skilled coder (my background is mechanical engineering), so some of the scripts may be on the whole a bit bulky. Focus was on readability (and I hope the scripts, which are of course tried&tested, are comprehensible), not on creating the least theoretically possible lines of code.
 
 
-### Projects
+## Projects
 
 Project numbers are in chronological order.
 
 
-# Raspberry Pi
+### Raspberry Pi
 
 **Project 1 - Plant irrigation system**
 
@@ -27,7 +27,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 https://youtu.be/zaLC5N0qXek
 
 
-# Raspberry Pi Pico
+### Raspberry Pi Pico
 
 **Project 2 - Soil moisture measurement device**
 
