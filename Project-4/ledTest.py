@@ -1,5 +1,4 @@
-# Test- und Demo-Script;
-# Hell/Dunkel-Steuerung zweier LEDs (externe HW) via PWM.
+# Hell/Dunkel-Steuerung zweier LEDs (externe HW) via PWM (Test- und Demo-Script).
 from machine import Pin, PWM
 import utime
 pwm0 = PWM(Pin(0)) # GP0
