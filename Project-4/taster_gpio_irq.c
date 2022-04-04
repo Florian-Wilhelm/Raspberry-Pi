@@ -1,6 +1,8 @@
 /**
  * Created 04/04/2022 by Florian Wilhelm Dirnberger
  *
+ * What is an IRQ? This script will probably tell you.
+ *
  * Use a pushbutton on GPIO1 that connects the GPIO with 3.3V when pushed.
  * GPIO1 and GND are coupled via 10 kOhm resistor. Hence logical 0 on GPIO1 is the default state.
  * 
