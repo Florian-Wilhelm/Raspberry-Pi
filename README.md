@@ -37,7 +37,7 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 
 https://youtu.be/pk4ioUDHFbQ
 
-**Project 4 - DC motor control**
+**Project 4 - DC motor control** (and how IRQs work)
 
 https://ome-eng.net/raspi-pico-motorsteuerung/
 
@@ -48,5 +48,7 @@ https://hackaday.io/project/183897-simple-motor-control
 https://ome-eng.net/raspi-pico-luftfeuchte
 
 **Project 6 - Geiger counter**
+
+No code yet.
 
 https://hackaday.io/project/184266-geiger-counter-with-z1a-tube
