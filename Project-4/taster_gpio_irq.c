@@ -3,7 +3,7 @@
  *
  * What is an IRQ? This script will probably tell you.
  *
- * Use a pushbutton on GPIO1 that connects the GPIO with 3.3V when pushed.
+ * Use a (debounced) pushbutton on GPIO1 that connects the GPIO with 3.3V when pushed.
  * GPIO1 and GND are coupled via 10 kOhm resistor. Hence logical 0 on GPIO1 is the default state.
  * 
  */
@@ -29,7 +29,7 @@ int main() {
     gpio_init(userLED);
     gpio_set_dir(userLED, GPIO_OUT);
     
-    gpio_set_irq_enabled_with_callback(userGPIO, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &taster_irq_handler);    
+    gpio_set_irq_enabled_with_callback(userGPIO, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &taster_irq_handler);   
 
     // Wait forever
     while (1);    
