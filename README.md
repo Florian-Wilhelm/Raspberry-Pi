@@ -37,7 +37,7 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 
 https://youtu.be/pk4ioUDHFbQ
 
-**Project 4 - DC motor control** (and how IRQs work)
+**Project 4 - DC motor control**
 
 https://ome-eng.net/raspi-pico-motorsteuerung/
 
