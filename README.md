@@ -51,7 +51,7 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 
 No proper code yet.
 
-https://hackaday.io/project/184266-geiger-counter-with-z1a-tube
+https://hackaday.io/project/184266-geiger-counter-with-z1a-or-sbm-20-tube
 
 **Project 7 - PIR sensor**
 
