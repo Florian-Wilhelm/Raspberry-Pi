@@ -1,5 +1,5 @@
 from machine import Pin, PWM
 import utime
-pwm = PWM(Pin(13))  # GPIO13 bzw. GP13; an sich frei wählbar
-pwm.freq(1250)  # PWM-Frequenz
-pwm.duty_u16(51000)  # Tastgrad, 16bit Wert (0-65.535)
+pwm = PWM(Pin(13))  # pick your GPIO
+pwm.freq(1250)  # PWM-frequency (empirical)
+pwm.duty_u16(55000)  # duty cycle (empirical), 16bit (0-65535)
