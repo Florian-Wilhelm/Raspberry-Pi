@@ -1,5 +1,12 @@
 from machine import Pin, PWM
 import utime
-pwm = PWM(Pin(13))  # pick your GPIO
-pwm.freq(1250)  # PWM-frequency (empirical)
-pwm.duty_u16(55000)  # duty cycle (empirical), 16bit (0-65535)
+anschluss = 16
+frequenz = 1250
+LED = Pin(25, Pin.OUT)
+pwm = PWM(Pin(anschluss))
+pwm.freq(frequenz)
+pwm.duty_u16(30000)
+LED.on()
+utime.sleep(5)
+LED.off()
+pwm.duty_u16(40000) 
