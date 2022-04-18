@@ -14,7 +14,7 @@
 const uint userLED = 25; // the green user LED
 const uint userGPIO = 1;
 
-void taster_irq_handler(uint gpio, uint32_t events) {
+void sensor_irq_handler(uint gpio, uint32_t events) {
     if (events == GPIO_IRQ_EDGE_RISE)
        gpio_put(userLED, 1);
     else
@@ -27,7 +27,7 @@ int main() {
     gpio_set_dir(userLED, GPIO_OUT);
     
     gpio_disable_pulls(userGPIO); // disabling the pullup/pulldown resistor; depends on the used PIR sensor whether necessary or not
-    gpio_set_irq_enabled_with_callback(userGPIO, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &taster_irq_handler);    
+    gpio_set_irq_enabled_with_callback(userGPIO, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &sensor_irq_handler);    
 
     // Wait forever
     while (1);    
