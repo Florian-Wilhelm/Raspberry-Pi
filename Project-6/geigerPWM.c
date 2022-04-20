@@ -1,7 +1,7 @@
 /**
  * Created 20/04/2022 by Florian Wilhelm Dirnberger
  *
- * Output PWM signal on GP1
+ * Output PWM signal on GP16
  * 
  */
 
