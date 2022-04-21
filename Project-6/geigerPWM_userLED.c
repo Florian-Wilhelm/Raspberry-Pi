@@ -8,9 +8,9 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
-#include "hardware/adc.h"
+// #include "hardware/adc.h"
 #include "hardware/pwm.h"
-//#include "hardware/irq.h"
+// #include "hardware/irq.h"
 #include "pico/time.h"
 
 
@@ -43,12 +43,16 @@ int main() {
     
     uint usedPin = 16;
     uint usedFrequency = 1250;
+    
     gpio_set_function(usedPin, GPIO_FUNC_PWM);
     uint slice_num = pwm_gpio_to_slice_num(usedPin);
     uint chan = pwm_gpio_to_channel(usedPin);
+    
     pwm_set_freq_duty(slice_num, chan, usedFrequency, 45);
     pwm_set_enabled(slice_num, true);
+    
     sleep_ms(5000);
+    
     pwm_set_freq_duty(slice_num, chan, usedFrequency, 60);
     pwm_set_enabled(slice_num, true);
     
@@ -56,8 +60,8 @@ int main() {
     gpio_init(userLED);
     gpio_set_dir(userLED, GPIO_OUT);
     
-    adc_gpio_init(26);
-    adc_select_input(0);
+    // adc_gpio_init(26);
+    // adc_select_input(0);
     
     //gpio_disable_pulls(userGPIO);
     gpio_set_irq_enabled_with_callback(userGPIO, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &geiger_irq_handler);    
