@@ -9,18 +9,17 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "hardware/pwm.h"
-//#include "hardware/irq.h"
+// #include "hardware/irq.h"
 #include "pico/time.h"
 
 
 const uint userLED = 25; // the green user LED
-const uint userIRQgpio = 1; // IRQ input
+const uint userIRQgpio = 1; 
 
 const uint usedPWMgpio = 16;
 const uint usedPWMfreq = 1250;
 
-uint32_t pwm_set_freq_duty(uint slice_num, uint chan,uint32_t f, int d)
-{
+uint32_t pwm_set_freq_duty(uint slice_num, uint chan,uint32_t f, int d) {
     uint32_t clock = 125000000;
     uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0);
     if (divider16 / 16 == 0)
@@ -41,14 +40,16 @@ void geiger_irq_handler(uint gpio, uint32_t events) {
        gpio_put(userLED, 0);
 }
 
-int main() {    
-    
+int main() {        
     gpio_set_function(usedPWMgpio, GPIO_FUNC_PWM);
     uint slice_num = pwm_gpio_to_slice_num(usedPWMgpio);
     uint chan = pwm_gpio_to_channel(usedPWMgpio);
+    
     pwm_set_freq_duty(slice_num, chan, usedPWMfreq, 45);
     pwm_set_enabled(slice_num, true);
+    
     sleep_ms(5000);
+    
     pwm_set_freq_duty(slice_num, chan, usedPWMfreq, 60);
     pwm_set_enabled(slice_num, true);
     
