@@ -10,7 +10,7 @@
 
 uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d)
 {
-    uint32_t clock = 125000000;
+    uint32_t clock = 125000000; // default clock 125 MHz
     uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0); // "(clock % (f * 4096) != 0)" - dieser Ausdruck ist entweder 1 (true) oder 0 (false)
     if (divider16 / 16 == 0)
       divider16 = 16;
