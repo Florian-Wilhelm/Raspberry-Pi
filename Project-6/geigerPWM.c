@@ -8,7 +8,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 
-uint32_t pwm_set_freq_duty(uint slice_num, uint chan,uint32_t f, int d)
+uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d)
 {
     uint32_t clock = 125000000;
     uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0);
