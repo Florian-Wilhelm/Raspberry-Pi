@@ -1,5 +1,8 @@
 /**
- * Created 21/04/2022 by Florian Wilhelm Dirnberger 
+ * Created 21/04/2022 by Florian Wilhelm Dirnberger
+ *
+ * Output PWM signal on GP16, IRQ handling on GP01
+ * 
  */
 
 #include <stdio.h>
