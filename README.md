@@ -1,6 +1,6 @@
 ## About
 
-The folders contain a collection of Python and MicroPython code examples for Raspberry Pi and Raspberry Pi Pico projects (plus an extra folder with shell scripts intended for convenience). C-Code and compiled code such as .uf2-files is occasionally added for Pico projects.
+The folders contain a collection of Python and MicroPython code examples for Raspberry Pi and Raspberry Pi Pico projects (plus an extra folder with shell scripts intended for convenience). C-Code and compiled code such as .uf2-files is added for certain Pico projects.
 
 Comments and names of variables etc. will be partially in German. Sorry for that :-).
 
@@ -50,6 +50,8 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 **Project 6 - Geiger counter**
 
 https://hackaday.io/project/184266-geiger-counter-with-z1a-or-sbm-20-tube
+
+https://youtu.be/-7hUNkRyJow
 
 **Project 7 - PIR sensor**
 
