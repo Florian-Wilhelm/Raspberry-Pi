@@ -4,8 +4,6 @@ The folders contain a collection of Python and MicroPython code examples for Ras
 
 Comments and names of variables etc. will be partially in German. Sorry for that :-).
 
-Note: I am not really a skilled coder (my background is mechanical engineering), so some of the scripts may be on the whole a bit bulky. Focus was on readability (and I hope the scripts, which are of course tried&tested, are comprehensible), not on creating the least theoretically possible lines of code.
-
 
 ## Projects
 
