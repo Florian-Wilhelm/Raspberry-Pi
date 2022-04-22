@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /home/pi/mu_code # customize your path here
+python3 Manual_Program.py # customize the name of your script here 
+python3 GPIO5__init.py # for safety reasons, the pump control GPIO (here: GPIO5) is always set to HIGH after executing the first script
+echo "Execution time: $SECONDS sec"
