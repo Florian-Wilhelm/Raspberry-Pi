@@ -1,3 +1,4 @@
+# quick&dirty Micropython program for testing a Geiger counter prototype
 from machine import Pin, PWM
 import utime
 anschluss = 16
