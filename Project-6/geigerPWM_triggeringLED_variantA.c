@@ -73,7 +73,7 @@ int main() {
     gpio_set_irq_enabled_with_callback(userIRQgpio, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &geiger_irq_handler);    
 
     // Wait forever
-    // while (1);    
+    while (1);    
     
     return 0;
 }
