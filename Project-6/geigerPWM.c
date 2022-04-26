@@ -37,5 +37,7 @@ int main() {
     pwm_set_freq_duty(slice_num, chan, usedFrequency, 60);
     pwm_set_enabled(slice_num, true);
     
+    // once set, it runs forever; no "while(1)" necessary in this case
+    
     return 0;    
 }
