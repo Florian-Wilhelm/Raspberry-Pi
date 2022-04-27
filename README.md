@@ -53,4 +53,4 @@ https://youtu.be/lmYGoaJ7Ud8
 
 **Project 7 - PIR sensor**
 
-Triggering the Pico user LED with a PIR sensor.
+Triggering the Pico user LED (Pin 25) with a PIR sensor via interrupt.
