@@ -1,7 +1,7 @@
 /**
  * Created 06/04/2022 by Florian Wilhelm Dirnberger
  *
- * A PIR sensor is connected to GPIO1.
+ * A PIR sensor is connected to a GP input
  *  
  */
 
@@ -26,7 +26,7 @@ int main() {
     gpio_init(userLED);
     gpio_set_dir(userLED, GPIO_OUT);
     
-    gpio_disable_pulls(userGPIO); // disabling the pullup/pulldown resistor (pure push-pull mode); depends on the used PIR sensor whether necessary or not
+    gpio_disable_pulls(userGPIO); // disabling the pull-down/up resistors (pure push-pull mode); depends on the used PIR sensor whether necessary or not
     gpio_set_irq_enabled_with_callback(userGPIO, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &sensor_irq_handler);    
 
     // Wait forever
