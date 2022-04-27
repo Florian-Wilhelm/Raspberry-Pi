@@ -1,7 +1,7 @@
 /**
  * Created 20/04/2022 by Florian Wilhelm Dirnberger
  *
- * Does nothing except generating the PWM signal
+ * Does not much except generating a PWM signal
  * 
  */
 
