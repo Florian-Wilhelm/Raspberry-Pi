@@ -1,7 +1,7 @@
 /**
  * Created 20/04/2022 by Florian Wilhelm Dirnberger
  *
- * Does nothing except generating a PWM signal on a Raspberry Pi Pico
+ * Does nothing except generating the PWM signal
  * 
  */
 
