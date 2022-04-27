@@ -15,8 +15,8 @@
 
 
 const uint userLED = 25; // the green user LED
-const uint userGPred = 9;
-const uint userGPyellow = 8;
+const uint userGPred = 9; // external HW (e.g. LED)
+const uint userGPyellow = 8; // external HW (e.g. LED)
 const uint userIRQgpio = 17; // IRQ input
 
 const uint usedPWMgpio = 16;
