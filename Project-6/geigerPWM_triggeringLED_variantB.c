@@ -3,7 +3,7 @@
  *
  * possible Geiger counter program running on a Raspberry Pi Pico  
  * outputs a PWM signal for HV-generation, switches on LEDs in case of an interrupt (counting event)
- * pull down resistors are disabled in this variant; depends on the connected HW revision whether that makes sense
+ * pull-down/up resistors are disabled in this variant (push-pull mode); depends on the connected HW revision whether that makes sense
  * 
  */
 
@@ -16,8 +16,8 @@
 
 
 const uint userLED = 25; // the green user LED
-const uint userGPred = 9;
-const uint userGPyellow = 8;
+const uint userGPred = 9; // external HW (e.g. LED)
+const uint userGPyellow = 8; // external HW (e.g. LED)
 const uint userIRQgpio = 17; // IRQ input
 
 const uint usedPWMgpio = 16;
