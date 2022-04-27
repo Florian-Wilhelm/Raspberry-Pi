@@ -1,4 +1,4 @@
-# Sequenz erhöht schrittweise PWM-Werte (gedacht für Präsentationszwecke, Tests etc.; kein Code für einen konkreten Anwendungsfall).
+# Sequenz erhöht schrittweise PWM-Werte (gedacht für Präsentationszwecke, Tests etc.; kein produktiver Code für einen Anwendungsfall).
 from machine import Pin, PWM
 import utime
 pwm = PWM(Pin(1)) # GPIO 1, an sich frei wählbar
