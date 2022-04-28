@@ -2,7 +2,7 @@
  * Created 23/04/2022 by Florian Wilhelm Dirnberger
  *
  * possible Geiger counter program running on a Raspberry Pi Pico  
- * outputs a PWM signal for HV-generation, switches on LEDs in case of an interrupt (counting event)
+ * outputs a PWM signal for HV-generation, can switch on LEDs in case of an interrupt (counting event)
  * 
  */
 
@@ -15,8 +15,8 @@
 
 
 const uint userLED = 25; // the green user LED
-const uint userGPred = 9; // external HW (e.g. LED)
-const uint userGPyellow = 8; // external HW (e.g. LED)
+const uint userGPred = 9; // external HW (e.g. red LED)
+const uint userGPyellow = 8; // external HW (e.g. yellow LED)
 const uint userIRQgpio = 17; // IRQ input
 
 const uint usedPWMgpio = 16;
