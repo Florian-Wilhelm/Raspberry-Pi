@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/pi/pico/pico-examples/build
-export PICO_SDK_PATH=../../pico-sdk # kennzeichnet die Variable PICO_SDK_PATH als global mit dem Wert =../../pico-sdk
-cmake ..
+export PICO_SDK_PATH=../../pico-sdk  # labels the variable PICO_SDK_PATH as global
+cmake ..  # preparing the CMAKE build directory
 echo "Change directory to '/home/pi/pico/pico-examples/build/...' (the project you wish to build) now"
 echo "Then type 'make' to create the compiled files. You're welcome"
