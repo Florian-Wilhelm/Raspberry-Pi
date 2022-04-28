@@ -1,8 +1,6 @@
 ## About
 
-The folders contain a collection of Python and MicroPython code examples for Raspberry Pi and Raspberry Pi Pico projects. C-Code and compiled code such as .uf2-files is added for certain Pico projects.
-
-Comments and names of variables etc. will be partially in German. Sorry for that :-).
+This repository contains a collection of (Micro)Python code examples and programs for Raspberry Pi and Raspberry Pi Pico projects. C-Code and compiled code such as .uf2-files is added for certain Pico projects.
 
 
 ## Projects
