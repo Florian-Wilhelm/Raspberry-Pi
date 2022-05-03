@@ -14,7 +14,7 @@
 //#include "hardware/irq.h"
 #include "pico/time.h"
 
-const uint userIRQgpio = 17; // IRQ input
+const uint userIRQgpio = 17;
 
 const uint usedPWMgpio = 16;
 const uint usedPWMfreq = 1250;
