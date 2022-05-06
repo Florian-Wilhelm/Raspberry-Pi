@@ -11,7 +11,7 @@
 uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d)
 {
     uint32_t clock = 125000000; // default clock 125 MHz
-    uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0); // "(clock % (f * 4096) != 0)" - either 1 (true) or 0 (false)
+    uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0); // summand "(clock % (f * 4096) != 0)" is either 1 (true) or 0 (false); standard way of rounding up positive values if there is a remainder
     if (divider16 / 16 == 0)
       divider16 = 16;
     uint32_t wrap = clock * 16 / divider16 / f - 1;
