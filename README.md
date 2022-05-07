@@ -1,6 +1,6 @@
 ## About
 
-This repository contains a collection of (Micro)Python code examples and programs for Raspberry Pi and Raspberry Pi Pico projects. C-Code and compiled code such as .uf2-files is added for certain Pico projects.
+This repository contains a collection of (Micro)Python code examples and programs for Raspberry Pi and Raspberry Pi Pico projects. Compiled code along with source code files (C code) is added for certain Pico projects.
 
 
 ## Projects
