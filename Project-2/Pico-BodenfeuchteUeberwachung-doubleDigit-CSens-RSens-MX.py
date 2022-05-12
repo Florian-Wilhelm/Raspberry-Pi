@@ -22,7 +22,7 @@ def switchB2():
    A2.low()
    B2.high()
 # One singular ADC read:
-ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience her, there is nothing expanded of course
+ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience here, there is nothing expanded of course
 # DEUTSCH
 # Nach Anschluss der Spannungsquelle einmaliges Einlesen zur Erkennung ob Kapazitiv- (HW-390) oder Resistiv- (ME110) Typ Sensor verbunden ist;
 # Wichtig ist dass der Sensor bei dieser "Initialisierung" keinen Kontakt mit dem Medium hat (d.h. der Fühler muss trocken sein);
