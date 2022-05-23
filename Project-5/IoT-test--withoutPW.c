@@ -1,4 +1,4 @@
-/**
+/*
  * Created 23/05/2022 by Florian Wilhelm Dirnberger
  *
  * For testing purposes with a DiP-Pi PIoT; this program is basically functional
