@@ -1,9 +1,10 @@
 /**
  * Created 29/04/2022 by Florian Wilhelm Dirnberger
  *
- * possible Geiger counter program running on a Raspberry Pi Pico  
- * delivers a PWM signal for HV-generation as well as an output in case of an interrupt (counting event)
- * pull-down/up resistors are disabled in this variant (push-pull mode); depends on the connected HW revision whether that makes sense
+ * Possible Geiger counter program running on a Raspberry Pi Pico  
+ *
+ * Delivers a PWM signal for HV-generation as well as an output in case of an interrupt (counting event)
+ * Pull-down/up resistors are disabled in this variant (push-pull mode); depends on the connected HW revision whether that makes sense
  * 
  */
 
