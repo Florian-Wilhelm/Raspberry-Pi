@@ -4,7 +4,7 @@
  * Possible Geiger counter program running on a Raspberry Pi Pico
  *   
  * Outputs a PWM signal for HV-generation, can switch on LEDs in case of an interrupt (counting event)
- * In addition, an LCD will show some activity (counts, elapsed time)
+ * In addition, a 16x2 LCD will show some activity (counts, elapsed time)
  * 
  * Pull-down/up resistors are disabled in this variant (push-pull mode); depends on the connected HW revision whether that makes sense
  * 
@@ -166,7 +166,7 @@ int main() {
     pwm_set_freq_duty(slice_num, chan, usedPWMfreq, 45);
     pwm_set_enabled(slice_num, true);
     
-    // This example will use I2C0 on the default SDA and SCL pins (4, 5 on a Pico)
+    // Uses I2C0 on the default SDA and SCL pins (GP4, GP5)
     i2c_init(i2c_default, 100 * 1000);
     gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
