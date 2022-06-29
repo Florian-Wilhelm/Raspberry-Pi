@@ -47,7 +47,7 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 
 https://hackaday.io/project/184266-geiger-counter-w-raspberry-pi-pico
 
-https://youtu.be/1Dynqv0Iu4U
+https://youtu.be/8chdKO5AX0I
 
 **Project 7 - PIR sensor**
 
