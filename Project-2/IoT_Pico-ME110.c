@@ -1,12 +1,11 @@
 /**
  * Created 28/06/2022 by Florian Wilhelm Dirnberger
  *
- * Code is for the most part copied from Harry Fairheads book, page 347
- *   
- * It is just a demo code so far and doesn't do very much
+ * code is for the most part copied from Harry Fairheads book, page 347 
+ * it's sort of a IoT demo code and doesn't do very much except reading a sensor (and send the value thru the internet)
  * 
- * note: WLAN-settings have to be modified
- * 
+ * note: WLAN-parameters have to be modified here (name, password)
+ *
  */
 
 #include <stdio.h>
@@ -149,21 +148,22 @@ int startServerWiFi(uint8_t buf[], int len)
     
     char temp[256];
     char id[10];
-    uart_write_blocking(uart1, "AT+CIPMUX=1\r\n", 13);
+    uart_write_blocking(uart1, "AT+CIPMUX=1\r\n", 13); // multiple connection moede
     if (getBlocks(buf, len, 10, "OK") < 0)
         return -1;
-    uart_write_blocking(uart1, "AT+CIPSERVER=1,80\r\n", 19);
+    uart_write_blocking(uart1, "AT+CIPSERVER=1,80\r\n", 19); // port 80 (standard http)
     if (getBlocks(buf, len, 10, "OK") < 0)
         return -1;   
         
     gpio_put(25, 0);
     sleep_ms(1000);
 
-    for (;;)    
+    for (;;) // infinite polling loop (typical for IoT applications)   
     {   
         if (getBlocks(buf, len, 1, "+IPD") < 0)
             continue;
 
+        // extract the ID (to communicate with the client)
         char *b = strstr(buf, "+IPD");
         b += 5;
         strncpy(temp, b, sizeof(temp));
@@ -219,7 +219,7 @@ int main()
     gpio_put(25, 1);
     sleep_ms(1000);
     
-    connectWiFi(buf, 512, "WLAN-ABC", "12345");
+    connectWiFi(buf, 512, "WLAN-ABC", "12345"); // modify WLAN settings here
     
     gpio_put(25, 0);
     sleep_ms(1000);
