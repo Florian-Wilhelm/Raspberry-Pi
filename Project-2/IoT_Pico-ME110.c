@@ -148,7 +148,7 @@ int startServerWiFi(uint8_t buf[], int len)
     
     char temp[256];
     char id[10];
-    uart_write_blocking(uart1, "AT+CIPMUX=1\r\n", 13); // multiple connection moede
+    uart_write_blocking(uart1, "AT+CIPMUX=1\r\n", 13); // multiple connection mode ("0" is default single connection mode)
     if (getBlocks(buf, len, 10, "OK") < 0)
         return -1;
     uart_write_blocking(uart1, "AT+CIPSERVER=1,80\r\n", 19); // port 80 (standard http)
@@ -175,7 +175,7 @@ int startServerWiFi(uint8_t buf[], int len)
         uint16_t result = adc_read();        
         //itoa(result, snum, 10);
 
-        char data[2048];
+        char data[2048]; // define type and size of the actual data array
         
         sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p>Measurement value: %u</p></body></html>\r\n", result);
         
