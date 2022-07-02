@@ -158,7 +158,7 @@ int startServerWiFi(uint8_t buf[], int len)
     gpio_put(25, 0);
     sleep_ms(1000);
 
-    for (;;) // infinite polling loop (typical for IoT applications)   
+    for (;;) // infinite polling loop (the typical construct for an IoT application)   
     {   
         if (getBlocks(buf, len, 1, "+IPD") < 0)
             continue;
