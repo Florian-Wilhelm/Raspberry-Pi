@@ -3,7 +3,7 @@
  *
  * Possible Geiger counter program running on a Raspberry Pi Pico
  *   
- * Outputs a PWM signal for HV-generation, can switch on LEDs in case of an interrupt (counting event)
+ * Outputs a PWM signal for HV-generation, can switch on LEDs or activate a buzzer in case of an interrupt (counting event)
  * In addition, a 16x2 LCD will show some activity (counts, elapsed time)
  * 
  * Pull-down/up resistors are disabled in this variant (push-pull mode); depends on the connected HW revision whether that makes sense
@@ -203,18 +203,18 @@ int main() {
                
     while (1) {             
           
-            uint AbsolutZeit = (to_us_since_boot(get_absolute_time())/1000000);            
+         uint AbsolutZeit = (to_us_since_boot(get_absolute_time())/1000000);            
                       
-            itoa(zaehlung, snum, 10); 
-            lcd_set_cursor(1,0);
-            lcd_string(snum); 
+         itoa(zaehlung, snum, 10); 
+         lcd_set_cursor(1,0);
+         lcd_string(snum); 
             
-            itoa(AbsolutZeit, snum, 10); 
-            lcd_set_cursor(1,8);
-            lcd_string(snum); 
+         itoa(AbsolutZeit, snum, 10); 
+         lcd_set_cursor(1,8);
+         lcd_string(snum); 
                   
-            //lcd_clear();             
-            //sleep_ms(100);      
+         //lcd_clear();             
+         //sleep_ms(100);      
     }           
       
     return 0;
