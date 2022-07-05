@@ -5,14 +5,14 @@
 from machine import Pin, mem8 # mem8 = 8bit; mem16, mem32 also possible (RP2040 "fills" missing digits with zeros then) 
 import utime
 
-# Switching time for the displayed values
+# Time for displaying one digit before switching to the next
 switch_time = 1
 
-# Using a CD4511BE BCD-to-7-Segment Latch Decoder
-# A1 = Pin(5, Pin.OUT) # A: Pin 7 
-# B1 = Pin(2, Pin.OUT) # B: Pin 1    
-# C1 = Pin(3, Pin.OUT) # C: Pin 2    
-# D1 = Pin(4, Pin.OUT) # D: Pin 6
+# Using a CD4511BE BCD-to-7-Segment Latch Decoder, setting GPIOs as output
+A1 = Pin(5, Pin.OUT) # A: Pin 7 
+B1 = Pin(2, Pin.OUT) # B: Pin 1    
+C1 = Pin(3, Pin.OUT) # C: Pin 2    
+D1 = Pin(4, Pin.OUT) # D: Pin 6
 
 # -- 1267 --  Pins of CD4511BE
 # -- BCDA --  BCD (Binary Coded Decimal) input for CD4511BE
@@ -31,11 +31,13 @@ switch_time = 1
 # Important note: Reading from right (MSB) to left (LSB) to formulate the hex number from the binary code
 
 def gpio_clr():
+    # 0xd0000018 is GPIO_OUT_CLEAR register
     utime.sleep(switch_time)
-    mem8[0xd0000018] = 0xff # GPIO_OUT_CLEAR
+    mem8[0xd0000018] = 0xff 
 
 while True:    
-   # GPIO_OUT_SET, counting from 0 to 9 
+   # 0xd0000014 is GPIO_OUT_SET register
+   # counting from 0 to 9 on a 7-Segment-Display and start all over again 
    mem8[0xd0000014] = 0x00
    gpio_clr()
    mem8[0xd0000014] = 0x20
