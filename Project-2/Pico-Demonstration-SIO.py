@@ -17,18 +17,18 @@ D1 = Pin(4, Pin.OUT) # D: Pin 6
 # -- 1267 --  Pins of CD4511BE
 # -- BCDA --  BCD (Binary Coded Decimal) input for CD4511BE
 # 01 2345 67  GPIO Number (0,1,6,7 n.c.)
-# 00 0000 00  0x00 0
-# 00 0001 00  0x20 1
-# 00 1000 00  0x04 2
-# 00 1001 00  0x24 3
-# 00 0100 00  0x08 4
-# 00 0101 00  0x28 5
-# 00 1100 00  0x0C 6
-# 00 1101 00  0x2C 7
-# 00 0010 00  0x10 8
-# 00 0011 00  0x30 9
+# 00 0000 00  0x00  ->0
+# 00 0001 00  0x20  ->1
+# 00 1000 00  0x04  ->2
+# 00 1001 00  0x24  ->3
+# 00 0100 00  0x08  ->4
+# 00 0101 00  0x28  ->5
+# 00 1100 00  0x0C  ->6
+# 00 1101 00  0x2C  ->7
+# 00 0010 00  0x10  ->8
+# 00 0011 00  0x30  ->9
 #
-# Important note: Reading from right (MSB) to left (LSB) to formulate the hex number from the binary code
+# Important note: Reading from right (MSB) to left (LSB) to formulate the hex value by virtue of the binary code
 
 def gpio_clr():
     # 0xd0000018 is GPIO_OUT_CLEAR register
