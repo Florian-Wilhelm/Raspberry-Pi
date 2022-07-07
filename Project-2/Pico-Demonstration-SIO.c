@@ -43,12 +43,15 @@ int main()
        gpio_init(5);
        gpio_set_dir(5, GPIO_OUT);
        
-       uint32_t *SIO = (uint32_t *)0xd0000000;
+       uint32_t *SIO = (uint32_t *)0xd0000000; // on address 0xd0000000 (that equals the SIO_BASE in the SDK) there is a uint32_t variable
        while(true)
        {
-           *(SIO + 0x014 / 4) = 0ul << 2; // GPIO_OUT_SET
+           // note: for we work with a uint32_t (4 byte) we have to divide by 4 (pointer arithmetic)
+           // explicit calculation of pointer values is not conform to MISRA-C
+              
+           *(SIO + 0x014 / 4) = 0ul << 2; // 0x014 is GPIO_OUT_SET
            sleep_ms(displayTime);
-           *(SIO + 0x018 / 4) = 0ul << 2; // GPIO_OUT_CLEAR          
+           *(SIO + 0x018 / 4) = 0ul << 2; // 0x018 is GPIO_OUT_CLEAR          
            
            *(SIO + 0x014 / 4) = 8ul << 2;
            sleep_ms(displayTime);
