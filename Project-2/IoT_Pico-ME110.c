@@ -2,7 +2,7 @@
  * Created 28/06/2022 by Florian Wilhelm Dirnberger
  *
  * code is for the most part copied from Harry Fairheads book, page 347 
- * it's sort of a IoT demo code and doesn't do very much except reading a sensor (and send the value thru the internet)
+ * it's sort of a IoT demo code and doesn't do very much except reading a sensor (and sending a raw value thru the internet)
  * 
  * note: WLAN-parameters have to be modified here (name, password)
  *
