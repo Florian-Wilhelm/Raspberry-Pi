@@ -1,6 +1,8 @@
 /**
- * Demonstration how to write several Raspberry Pi Pico GPIO ports at once by using the Single-cycle IO block (SIO);
- * See figure 2 and chapter 2.3.1 in the RP2040 datasheet;
+ * Created 06/07/2022 by Florian Wilhelm Dirnberger
+ *
+ * Demonstration how to write several Raspberry Pi Pico GPIO ports at once by using the Single-cycle IO block (SIO)
+ * See figure 2 and chapter 2.3.1 in the RP2040 datasheet
  * "The SIO is connected to the single-cycle IOPORT bus of each processor, and provides GPIO access, two-way communications, and other core-local peripherals".
  *
  *  1267   Pins of CD4511BE
@@ -25,7 +27,7 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
-// # Time for displaying one digit before switching to the next
+// # Time in ms for displaying one digit before switching to the next
 uint32_t displayTime = 1000;
 
 int main()
