@@ -141,8 +141,6 @@ int getWebPageWiFi(uint8_t buf[], int len, char URL[], char page[])
 int startServerWiFi(uint8_t buf[], int len)
 {
     
-    //char snum[5];    
-    
     gpio_put(25, 1);
     sleep_ms(1000);
     
@@ -172,14 +170,11 @@ int startServerWiFi(uint8_t buf[], int len)
         memset(id, '\0', sizeof(id));
         strncpy(id, temp, d);
         
-        uint16_t result = adc_read();        
-        //itoa(result, snum, 10);
+        uint16_t result = adc_read(); // conveniently, the ME110 sensor has an output of ca. 0.0V - 3.3V when you supply it with 5V
 
-        char data[2048]; // define type and size of the actual data array
+        char data[2048]; // defining type and size of the actual data array
         
         sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p>Measurement value: %u</p></body></html>\r\n", result);
-        
-        //char data[] = "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p>{\"Measurement value\":}</p></body></html>\r\n";
         
         uint8_t command[128];
         int count = snprintf(command, 128, "AT+CIPSEND=%s,%d\r\n", id, strlen(data));
@@ -210,6 +205,12 @@ int main()
     
     gpio_init(25);
     gpio_set_dir(25, GPIO_OUT);
+    
+    //there is "some" start-up time needed for the ESP8266
+    gpio_put(25, 1);
+    sleep_ms(4000);
+    gpio_put(25, 0);
+    sleep_ms(1000);
     
     stdio_init_all();
     uint8_t buf[512];
