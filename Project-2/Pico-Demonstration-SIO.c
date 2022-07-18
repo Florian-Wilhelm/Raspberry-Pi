@@ -48,8 +48,8 @@ int main()
        uint32_t *SIO = (uint32_t *)0xd0000000; // on address 0xd0000000 (that equals the SIO_BASE in the SDK) there is a uint32_t variable
        while(true)
        {
-           // note: for we work with a uint32_t (4 byte) we have to divide by 4 (pointer arithmetic)
-           // explicit calculation of pointer values is not conform to MISRA-C
+           // note 1: for we work with an integer value uint32_t (4 byte) we have to divide by 4 (pointer arithmetic)
+           // note 2: explicit calculation of pointer values is not compliant with MISRA-C
               
            *(SIO + 0x014 / 4) = 0ul << 2; // 0x014 is GPIO_OUT_SET
            sleep_ms(displayTime);
