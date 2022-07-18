@@ -7,9 +7,7 @@ import board
 import busio
 import adafruit_ads1x15.ads1115 as ADS
 from adafruit_ads1x15.analog_in import AnalogIn
-# Create the I2C bus
 i2c = busio.I2C(board.SCL, board.SDA)
-# Create the ADC object using the I2C bus
 ads = ADS.ADS1115(i2c)
 GPIO.setmode(GPIO.BCM)
 tempSensor = BMP280.BMP280()
@@ -26,7 +24,7 @@ moistureLevel_1 = 0.0
 moistureLevel_2 = 0.0 
 opVoltage = 0.0
 pumpenMessSpannung = 0.0
-# sleep Werte können an sich problemlos angepasst werden, 1s default
+# 1s default für sleep-Werte
 sleepSensor1 = 1 # Vor Analog-Spannung 1 einlesen
 sleepSensor2 = 1 # Vor Sensor-Versorgung 1 auf 0.0V
 sleepSensor3 = 1 # Vor Sensor-Versorgung 2 auf 3.3V
