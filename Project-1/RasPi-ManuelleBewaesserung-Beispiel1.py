@@ -10,7 +10,6 @@ ads = ADS.ADS1115(i2c)
 GPIO.setmode(GPIO.BCM)
 # Variables
 s=0.0
-# i=1
 moistureLevel1 = 0.0
 moistureLevel2 = 0.0
 SensorVoltage1 = 0.0
