@@ -1,4 +1,4 @@
-# das Debug-Programm zu "IoT_Pico-ME110.c"
+# das Debug-Programm zu "IoT_Pico-ME110.c"; extra Pico notwendig (Massen verbinden nicht vergessen)
 import os
 import utime
 import machine
