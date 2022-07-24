@@ -16,17 +16,15 @@ led_onboard.value(0)
 utime.sleep(0.5)
 led_onboard.value(1)
 
-uart0 = machine.UART(0) # UART0: GP0 und GP1 (hier nur RX, also GP1 notwendig)
+uart0 = machine.UART(0)  # UART0: GP0 und GP1 (hier nur RX, also GP1 notwendig)
 print(uart0)
 
 utime.sleep(0.1)
 
 while True:
-  if trigger.value() == 0:
-    print("- hello -")  
-    while uart0.any(): # zählt herunter bis keine Zeichen mehr zur Ausgabe vorhanden sind    
-      print(uart0.read(1)) # # lies 1 character
+  if trigger.value() == 0:     
+    while uart0.any():  # zählt herunter bis keine Zeichen mehr zur Ausgabe vorhanden sind    
+      print(uart0.read(1))  # # lies 1 character
     
-    print()
-    print("- bye -")
-    print("")
+    print()    
+    
