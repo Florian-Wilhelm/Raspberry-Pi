@@ -33,7 +33,7 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 
 https://youtu.be/pk4ioUDHFbQ
 
-**Project 4 - DC motor control**
+**Project 4 - DC motor control (demo)**
 
 https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4
 
