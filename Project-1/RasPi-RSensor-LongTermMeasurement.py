@@ -15,8 +15,8 @@ GPIO.setmode(GPIO.BCM)
 moistureLevel1_percent = 0.0
 moistureLevel2_percent = 0.0
 sleepZeitSekunden = 3600 # 1h = 3600s
-LaufzeitWert = 24 
-gesamtZeitSekunden = LaufzeitWert*sleepZeitSekunden 
+Multiplikator = 24 
+gesamtZeitSekunden = Multiplikator*sleepZeitSekunden 
 i=0
 n=0
 tempSensor = BMP280.BMP280()
