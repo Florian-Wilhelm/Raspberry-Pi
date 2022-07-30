@@ -35,9 +35,7 @@ https://youtu.be/pk4ioUDHFbQ
 
 **Project 4 - DC motor control**
 
-https://ome-eng.net/raspi-pico-motorsteuerung/
-
-https://hackaday.io/project/183897-simple-motor-control
+https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4
 
 **Project 5 - Air humidity measurement**
 
