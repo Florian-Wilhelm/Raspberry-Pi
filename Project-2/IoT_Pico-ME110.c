@@ -146,17 +146,17 @@ int startServerWiFi(uint8_t buf[], int len)
     
     char temp[256];
     char id[10];
-    uart_write_blocking(uart1, "AT+CIPMUX=1\r\n", 13); // multiple connection mode ("0" is default single connection mode)
+    uart_write_blocking(uart1, "AT+CIPMUX=1\r\n", 13); // multiple connection mode ("0" would be default single connection mode)
     if (getBlocks(buf, len, 10, "OK") < 0)
         return -1;
-    uart_write_blocking(uart1, "AT+CIPSERVER=1,80\r\n", 19); // port 80 (standard http)
+    uart_write_blocking(uart1, "AT+CIPSERVER=1,80\r\n", 19); // port 80 (standard http); you can change it to a different port and it also works fine
     if (getBlocks(buf, len, 10, "OK") < 0)
         return -1;   
         
     gpio_put(25, 0);
     sleep_ms(1000);
 
-    for (;;) // infinite polling loop (the typical construct for an IoT application)   
+    for (;;) // infinite polling loop (typical construct for an IoT application)   
     {   
         if (getBlocks(buf, len, 1, "+IPD") < 0)
             continue;
