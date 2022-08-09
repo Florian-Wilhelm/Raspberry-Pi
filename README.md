@@ -31,7 +31,7 @@ https://ome-eng.net/raspi-pico-bodenfeuchte/
 
 https://hackaday.io/project/178522-soil-moisture-measurement-device
 
-https://youtu.be/pk4ioUDHFbQ
+https://youtu.be/C4uuUMjFevM
 
 **Project 4 - DC motor control (demo)**
 
