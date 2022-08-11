@@ -11,9 +11,9 @@ A0 = Pin(13, Pin.OUT) # A: Pin 7
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-# A2/B2 used for switching between the two 7-Segment-Displays (necessary additional electronic: 2x BD243C transistor (or similar), 2x 1k base electrode resistor)
-A2 = Pin(2, Pin.OUT) 
-B2 = Pin(5, Pin.OUT)
+# A2/B2 used for switching between the two 7-Segment-Displays (necessary additional electronic: 2x BC337 transistor (or similar), 2x 1k base electrode resistor)
+A2 = Pin(5, Pin.OUT) 
+B2 = Pin(2, Pin.OUT)
 def switchA2():
    A2.high()
    B2.low()
@@ -38,7 +38,7 @@ while True:
     else: # old value is maintained
        sample_hold = sample_hold+2*mx_time
     # Driving 7-Segment-Displays, ranges equidistant;
-    # there exist more elegant algorithms to set the pins high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy.
+    # there exist far more elegant algorithms to set the GPIOs high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy.
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):
       switchA2()
