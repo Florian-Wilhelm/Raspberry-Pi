@@ -205,7 +205,7 @@ int main()
     gpio_init(25);
     gpio_set_dir(25, GPIO_OUT);
     
-    //there is "some" start-up time needed for the ESP8266
+    // there is "some" start-up time needed for the ESP8266
     gpio_put(25, 1);
     sleep_ms(4000);
     gpio_put(25, 0);
