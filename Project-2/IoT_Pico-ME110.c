@@ -170,7 +170,7 @@ int startServerWiFi(uint8_t buf[], int len)
         memset(id, '\0', sizeof(id));
         strncpy(id, temp, d);
         
-        uint16_t result = adc_read(); // conveniently, the ME110 sensor has an output of ca. 0.0V - 3.3V when you supply it with 5V
+        uint16_t result = adc_read(); // conveniently, the ME110 sensor has an output of approximately 0.0V - 3.3V when you supply it with 5V
 
         char data[2048]; // defining type and size of the actual data array
         
@@ -195,8 +195,7 @@ int startServerWiFi(uint8_t buf[], int len)
 }
 
 int main()
-{
-    
+{    
     adc_init();
 
     adc_gpio_init(26);
