@@ -37,7 +37,7 @@ def gpio_clr():
 
 while True:    
    # 0xd0000014 is GPIO_OUT_SET register
-   # counting from 0 to 9 on a 7-Segment-Display and start all over again 
+   # counting from 0 to 9 on a 7-Segment-Display and start over again 
    mem8[0xd0000014] = 0x00
    gpio_clr()
    mem8[0xd0000014] = 0x20
