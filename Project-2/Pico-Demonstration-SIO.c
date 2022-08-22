@@ -6,11 +6,11 @@
  * "The SIO is connected to the single-cycle IOPORT bus of each processor, and provides GPIO access, two-way communications, and other core-local peripherals".
  *
  * Program counts from 0 to 9 and starts over again, digits are displayed on a 7-Segment-Display (e.g. SC56-11GWA)
- * necessary additional electronic components to see something happen are a CD4511BE BCD-to-7-Segment Latch Decoder and seven resistors.
+ * necessary additional electronic components to see something happen are one CD4511BE BCD-to-7-Segment Latch Decoder Integrated Circuit and seven resistors.
  *
- *  1267   Pins of CD4511BE (you can google the datasheet)
+ *  1267   Pins of CD4511BE (you can easily google the datasheet)
  *  BCDA   BCD (Binary Coded Decimal) input for CD4511BE
- *  2345   GPIO Number
+ *  2345   used GPIO Pins of the Pico
  * 
  *  0000   0ul  ->0
  *  0001   8ul  ->1
@@ -37,14 +37,11 @@ int main()
 {
        // setting GPIOs as output
        gpio_init(2);
-       gpio_set_dir(2, GPIO_OUT);
-       
+       gpio_set_dir(2, GPIO_OUT);       
        gpio_init(3);
-       gpio_set_dir(3, GPIO_OUT);
-       
+       gpio_set_dir(3, GPIO_OUT);       
        gpio_init(4);
-       gpio_set_dir(4, GPIO_OUT);
-       
+       gpio_set_dir(4, GPIO_OUT);       
        gpio_init(5);
        gpio_set_dir(5, GPIO_OUT);
        
@@ -53,7 +50,7 @@ int main()
        {
            // note 1: for we work with an integer value uint32_t (4 byte) we have to divide by 4 (pointer arithmetic)
            // note 2: left shifting "<< 2" because we start on GPIO 2
-           // note 3: explicit calculation of pointer values is not compliant with MISRA-C
+           // additional note: explicit calculation of pointer values is not compliant with MISRA-C
               
            *(SIO + 0x014 / 4) = 0ul << 2; // 0x014 is GPIO_OUT_SET
            sleep_ms(displayTime);
