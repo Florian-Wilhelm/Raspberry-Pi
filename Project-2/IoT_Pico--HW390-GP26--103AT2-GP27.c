@@ -4,7 +4,9 @@
  * code is in large parts copied from Harry Fairheads book, page 347
  *   
  * it's still sort of an IoT demo code; it doesn't do very much except sending some sensor measurement data thru the internet
- * for a HW-390 capacitive soil moisture sensor connected to ADC0, and a 103AT2 temperature sensor (plus resistors) connected to ADC1
+ * 
+ * HW-390 capacitive soil moisture sensor - ADC0 (GP26)
+ * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
  * 
  * note: WLAN-parameters have to be modified here (name, password)
  * 
@@ -180,7 +182,7 @@ int startServerWiFi(uint8_t buf[], int len)
         
         uint16_t vorErg = adc_read(); // raw value (max 4095)
         float zwErg = (3.3/4096)*vorErg; // representing voltage U
-        float readTempSensor = 0.6956*pow(zwErg,4)-7.798*pow(zwErg,3)+32.35*pow(zwErg,2)-76.66*zwErg+70.6; // maths for the temperature sensor 103AT2 T=f(U); formula conceived by virtue of an interpolation (see xls file in this repo)     
+        float readTempSensor = 0.6956*pow(zwErg,4)-7.798*pow(zwErg,3)+32.35*pow(zwErg,2)-76.66*zwErg+70.6; // maths for the NTC temperature sensor 103AT2 T=f(U); formula conceived by virtue of an interpolation     
 
         char data[2048];
         
@@ -235,6 +237,5 @@ int main()
     
     // getIPWiFi(buf, 512);    
     
-    startServerWiFi(buf, 512);    
-    
+    startServerWiFi(buf, 512);       
 }
