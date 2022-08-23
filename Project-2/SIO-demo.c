@@ -6,7 +6,7 @@
  * "The SIO is connected to the single-cycle IOPORT bus of each processor, and provides GPIO access, two-way communications, and other core-local peripherals".
  *
  * Program counts from 0 to 9 and starts over again, digits are displayed on a 7-Segment-Display (e.g. SC56-11GWA)
- * necessary additional electronic components to see something happen are one CD4511BE BCD-to-7-Segment Latch Decoder Integrated Circuit and seven resistors.
+ * necessary additional electronic components to see something happen are one CD4511BE BCD-to-7-Segment Latch Decoder IC and seven resistors.
  *
  *  1267   Pins of CD4511BE (you can easily google the datasheet)
  *  BCDA   BCD (Binary Coded Decimal) input for CD4511BE
@@ -38,7 +38,7 @@ int n;
 int ZeroToNineBCD [10] = {0ul, 8ul, 1ul, 9ul, 2ul, 10ul, 3ul, 11ul, 4ul, 12ul};
 uint32_t *SIO = (uint32_t *)0xd0000000; // on address 0xd0000000 (that equals the SIO_BASE in the SDK) there is a uint32_t variable
 
-void produceOutput(int BCD)
+void setOutput(int BCD)
 {    
     *(SIO + 0x014 / 4) = BCD << 2; // 0x014 is GPIO_OUT_SET        
 }
@@ -54,7 +54,7 @@ void clearOutput(int BCD)
 
 int main()
 {
-       // setting GPIOs as output
+       // set the GPIOs as output
        gpio_init(2);
        gpio_set_dir(2, GPIO_OUT);       
        gpio_init(3);
@@ -64,11 +64,11 @@ int main()
        gpio_init(5);
        gpio_set_dir(5, GPIO_OUT);       
        
-       while(true)
+       while(true) // count to 9 indefinitely
        {               
            for (n = 0; n<10; n++)
            {
-             produceOutput(ZeroToNineBCD[n]);
+             setOutput(ZeroToNineBCD[n]);
              sleep_ms(displayTime);
              clearOutput(ZeroToNineBCD[n]); 
            }         
