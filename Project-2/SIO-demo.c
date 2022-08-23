@@ -31,7 +31,7 @@
 #include "hardware/gpio.h"
 
 // # Time in ms for displaying one digit before switching to the next
-uint32_t displayTime = 1000;
+uint16_t displayTime = 1000;
 
 int n;
 
