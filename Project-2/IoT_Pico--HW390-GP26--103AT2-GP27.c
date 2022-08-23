@@ -180,7 +180,7 @@ int startServerWiFi(uint8_t buf[], int len)
         
         uint16_t vorErg = adc_read(); // raw value (max 4095)
         float zwErg = (3.3/4096)*vorErg; // representing voltage U
-        float readTempSensor = 0.6956*pow(zwErg,4)-7.798*pow(zwErg,3)+32.35*pow(zwErg,2)-76.66*zwErg+70.6; // maths for the temperature sensor 103AT2 T=f(U); formula produced by virtue of an interpolation, parameters determined by the voltage divider resistor and the actual values from the data sheet     
+        float readTempSensor = 0.6956*pow(zwErg,4)-7.798*pow(zwErg,3)+32.35*pow(zwErg,2)-76.66*zwErg+70.6; // maths for the temperature sensor 103AT2 T=f(U); formula conceived by virtue of an interpolation (see xls file in this repo)     
 
         char data[2048];
         
