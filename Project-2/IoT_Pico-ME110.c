@@ -4,7 +4,7 @@
  * code is for the most part copied from Harry Fairheads book, page 347 
  * it's sort of an IoT demo code; it doesn't do very much except reading a ME110 moisture sensor and sending a raw value thru the internet
  * 
- * note: WLAN-parameters have to be modified here (name, password)
+ * note: WiFi-credentials have to be modified (name, password)
  *
  */
 
@@ -219,7 +219,7 @@ int main()
     gpio_put(25, 1);
     sleep_ms(1000);
     
-    connectWiFi(buf, 512, "WLAN-ABC", "12345"); // modify WLAN settings here
+    connectWiFi(buf, 512, "WLAN-ABC", "12345"); // modify WiFi-credentials here
     
     gpio_put(25, 0);
     sleep_ms(1000);
