@@ -8,7 +8,7 @@
  * HW-390 capacitive soil moisture sensor - ADC0 (GP26)
  * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
  * 
- * note: WLAN-parameters have to be modified here (name, password)
+ * note: WiFi-credentials have to be modified (name, password)
  * 
  */
 
@@ -230,7 +230,7 @@ int main()
     gpio_put(25, 1);
     sleep_ms(1000);
     
-    connectWiFi(buf, 512, "WLAN-ABC", "12345"); // modify WLAN settings here
+    connectWiFi(buf, 512, "WLAN-ABC", "12345"); // modify WiFi-credentials here
     
     gpio_put(25, 0);
     sleep_ms(1000);
