@@ -20,8 +20,6 @@ https://hackaday.io/project/177954-remotely-controlled-plant-watering
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
-https://youtu.be/zaLC5N0qXek
-
 
 ### Raspberry Pi Pico
 
