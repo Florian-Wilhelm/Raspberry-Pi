@@ -1,7 +1,7 @@
 /**
  * Created 20/08/2022 by Florian Wilhelm Dirnberger
  *
- * code is in large parts copied from Harry Fairheads book, page 347
+ * code is in large parts copied from Harry Fairheads book, page 347 (not every single line of code will be necessary here)
  *   
  * it's still sort of an IoT demo code; it doesn't do very much except sending some sensor measurement data thru the internet
  * 
@@ -182,11 +182,12 @@ int startServerWiFi(uint8_t buf[], int len)
         
         uint16_t vorErg = adc_read(); // raw value (max 4095)
         float zwErg = (3.3/4096)*vorErg; // representing voltage U
-        float readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6; // maths for the NTC temperature sensor 103AT2 T=f(U); formula conceived by virtue of an interpolation    
+        // maths for the NTC temperature sensor 103AT2; formula conceived by virtue of an interpolation for there are only a few supporting points in the data sheet given    
+        float readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6; // T=f(U)
 
         char data[2048];
         
-        sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p>Soil moisture raw value (0-4095): %u; Temperature: %2.1f oC; (c)ome-eng.net</p></body></html>\r\n", outputCapSensor, readTempSensor);
+        sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p><font color=blue>Soil moisture raw value (0-4095): %u</font>; <font color=red>Temperature: %2.1f oC</font></p></body></html>\r\n", outputCapSensor, readTempSensor);
         
         uint8_t command[128];
         int count = snprintf(command, 128, "AT+CIPSEND=%s,%d\r\n", id, strlen(data));
