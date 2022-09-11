@@ -2,6 +2,8 @@
 # See figure 2 and chapter 2.3.1 in the RP2040 datasheet;
 # "The SIO is connected to the single-cycle IOPORT bus of each processor, and provides GPIO access, two-way communications, and other core-local peripherals".
 
+# Note: this file is kind of obsolete since using C for the given purpose struck me as more elegant
+
 from machine import Pin, mem8 # mem8 = 8bit; mem16, mem32 also possible (RP2040 "fills" missing digits with zeros then) 
 import utime
 
