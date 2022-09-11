@@ -5,7 +5,7 @@ This repo contains (Micro)Python code examples and usable programs for Raspberry
 
 ## Projects
 
-Project numbers are in chronological order.
+Note: project numbers are in chronological order.
 
 
 ### Raspberry Pi
@@ -47,4 +47,4 @@ https://youtu.be/8chdKO5AX0I
 
 **Project 7 - PIR sensor**
 
-Triggering the Pico user LED (Pin 25) with a PIR sensor via interrupt.
+Small project for educational purposes: triggering the Pico user LED (Pin 25) with a PIR sensor via interrupt.
