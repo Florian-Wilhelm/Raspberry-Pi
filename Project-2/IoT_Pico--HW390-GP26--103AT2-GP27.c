@@ -1,7 +1,7 @@
 /**
  * Created 20/08/2022 by Florian Wilhelm Dirnberger
  *
- * code is in large parts copied from Harry Fairheads book, page 347 (not every single line of code will be necessary here)
+ * code is in large parts copied from Harry Fairheads book, page 347 (not every single line of code will be necessary for the given purpose)
  *   
  * it's still sort of an IoT demo code; it doesn't do very much except sending some sensor measurement data thru the internet
  * 
