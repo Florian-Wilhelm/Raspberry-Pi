@@ -1,3 +1,4 @@
+# "quick&dirty" Code für ein automatisches Bewässerungsprogramm ¯\_(ツ)_/¯
 import schattenspeicher
 import Adafruit_BMP.BMP280 as BMP280
 import RPi.GPIO as GPIO
