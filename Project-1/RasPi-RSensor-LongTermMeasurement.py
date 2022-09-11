@@ -1,5 +1,5 @@
 # This (quick&dirty) code was used on my Raspberry Pi for a 24h measurement of two ME110 resistive type sensors;
-# acquired data will be written in a spreadsheet (xlsxwriter module).
+# acquired data will be written into a spreadsheet (xlsxwriter module).
 import xlsxwriter
 import Adafruit_BMP.BMP280 as BMP280
 import RPi.GPIO as GPIO
