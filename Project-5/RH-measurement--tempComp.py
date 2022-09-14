@@ -1,6 +1,6 @@
 # RASPERRY PI PICO PROJECT https://ome-eng.net/raspi-pico-luftfeuchte
 # AIR MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS (BY USING A MULTIPLEXING LOGIC)
-# Additional feature: temperature compensation
+# Additional feature: temperature compensation with temperature sensor 103AT2
 # ###
 # Note: I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
 # ###
@@ -27,16 +27,17 @@ def switchB2():
 sample_hold = 0 # initial value 
 mx_time = 0.004 # multiplexing time; must be low enough to deceive a human eye
 ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience her, there is nothing expanded of course
-# ExpandedSensorValueT = ADC_A2.read_u16()
 while True:
-    # Temperature-Sensor 103AT2
+    # Temperature sensor 103AT2
     SensorValueT = ADC_A2.read_u16()
     zwErg = (3.3/65536)*SensorValueT
-    readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6
+    readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6 # interpolation with values from the datasheet
     # print("ADC: ",  readTempSensor)
+    #
+    # Moisture sensor HIH 4020-001
     # ADC Reading plus "Sample&Hold"; that is supposed to suppress flickering and unsteady effects on the displays        
     if sample_hold>0.20: # new read
-       # see datasheet HIH 4020-001 sensor: Vout=(5V*(0.0062*RH(%) + 0.16); Vout_max = 3.9V (100% RH); Vout_min = 0.8V (0% RH)
+       # see datasheet sensor: Vout=(5V*(0.0062*RH(%) + 0.16); Vout_max = 3.9V (100% RH); Vout_min = 0.8V (0% RH)
        # voltage divider 20k, 100k in order to generate Vout_max = 3.26V and Vout_min = 0.66V
        # without temperature compensation
        if (tempCompPin.value() == 1): # so when you connect GP22 with 3.3V, you'll have no temperature compensation
