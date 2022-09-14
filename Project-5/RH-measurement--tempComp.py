@@ -42,9 +42,9 @@ while True:
        if (tempCompPin() == 1): # so when you connect GP22 with 3.3V thru a resistor, you'll have no temperature compensation
           ExpandedSensorValueS = int(((ADC_A0.read_u16()-13000)/2.6)*3.3) # offset "-13000" (=0.66V) to get 0 for 0% RH; then expansion of the measurement range  
        # with temperature compensation
-       if (tempCompPin() == 0):
+       if (tempCompPin() == 0): # default
           ExpandedSensorValueS = ((ADC_A0.read_u16()-13000)/2.6)*3.3 # calculation for 25°C
-          ExpandedSensorValueS = int(ExpandedSensorValueS/(1.0546-0.00216*readTempSensor))# compensate the whole construct (linear formula)
+          ExpandedSensorValueS = int(ExpandedSensorValueS/(1.0546-0.00216*readTempSensor)) # compensate the whole construct (linear formula)
        # Suppressing values outside the allowed measurement range (voltage peaks etc.)
        if ExpandedSensorValueS < 0:
           ExpandedSensorValueS = 0
