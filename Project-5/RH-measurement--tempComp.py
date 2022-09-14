@@ -13,8 +13,8 @@ A0 = Pin(13, Pin.OUT) # A: Pin 7
 B0 = Pin(10, Pin.OUT) # B: Pin 1    
 C0 = Pin(11, Pin.OUT) # C: Pin 2    
 D0 = Pin(12, Pin.OUT) # D: Pin 6
-userLED = Pin(25, Pin.OUT) # LED should signal if we are below threshold 1, or above threshold 2
-tempCompPin = Pin(22, Pin.IN, Pin.PULL_DOWN) # HW switch whether there should be a temperature compensation; default: yes
+userLED = Pin(25, Pin.OUT) # LED should signal if we are below temperature threshold 1, or above temperature threshold 2
+tempCompPin = Pin(22, Pin.IN, Pin.PULL_DOWN) # HW switch temperature compensation in effect yes/no
 # A2/B2 used for switching between the two 7-Segment-Displays (necessary additional electronic: 2x BC337 transistor (or similar), 2x 1k base electrode resistor)
 A2 = Pin(5, Pin.OUT) 
 B2 = Pin(2, Pin.OUT)
@@ -52,7 +52,8 @@ while True:
           ExpandedSensorValueS = 65535 
        sample_hold = 0       
     else: # old value is maintained
-       sample_hold = sample_hold+2*mx_time    
+       sample_hold = sample_hold+2*mx_time   
+    # userLED as rough indicator for the temperature
     if ((readTempSensor>30.0) or (readTempSensor<0.0)):
           userLED.on()
     else:
