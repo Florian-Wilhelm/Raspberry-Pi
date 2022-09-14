@@ -39,7 +39,7 @@ while True:
        # see datasheet HIH 4020-001 sensor: Vout=(5V*(0.0062*RH(%) + 0.16); Vout_max = 3.9V (100% RH); Vout_min = 0.8V (0% RH)
        # voltage divider 20k, 100k in order to generate Vout_max = 3.26V and Vout_min = 0.66V
        # without temperature compensation
-       if (tempCompPin.value() == 1): # so when you connect GP22 with 3.3V thru a resistor, you'll have no temperature compensation
+       if (tempCompPin.value() == 1): # so when you connect GP22 with 3.3V, you'll have no temperature compensation
           ExpandedSensorValueS = int(((ADC_A0.read_u16()-13000)/2.6)*3.3) # offset "-13000" (=0.66V) to get 0 for 0% RH; then expansion of the measurement range  
        # with temperature compensation
        if (tempCompPin.value() == 0): # default
