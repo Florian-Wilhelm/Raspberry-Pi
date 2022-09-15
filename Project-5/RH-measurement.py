@@ -38,7 +38,7 @@ while True:
     else: # old value is maintained
        sample_hold = sample_hold+2*mx_time
     # Driving 7-Segment-Displays, ranges equidistant;
-    # there exist far more elegant algorithms to set the GPIOs high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy.
+    # there exist far more elegant algorithms to set the GPIOs high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy (and not scalable to further digits anyway).
     # 0-9
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=655)):
       switchA2()
