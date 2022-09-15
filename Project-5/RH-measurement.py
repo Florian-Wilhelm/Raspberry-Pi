@@ -1,7 +1,7 @@
 # RASPERRY PI PICO PROJECT https://ome-eng.net/raspi-pico-luftfeuchte
 # AIR MOISTURE/HUMIDITY MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS (BY USING A MULTIPLEXING LOGIC)
 # ###
-# Note: I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
+# Notes: ---
 # ###
 from machine import Pin
 import utime
