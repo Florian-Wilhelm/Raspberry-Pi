@@ -32,8 +32,8 @@ while True:
     SensorValueT = ADC_A2.read_u16()
     zwErg = (3.3/65536)*SensorValueT
     readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6 # interpolation with values from the datasheet
-    # print("ADC: ",  readTempSensor)
-    #
+    # print("Temperature: ",  readTempSensor)
+    # ###
     # Moisture sensor HIH 4020-001
     # ADC Reading plus "Sample&Hold"; that is supposed to suppress flickering and unsteady effects on the displays        
     if sample_hold>0.20: # new read
@@ -54,11 +54,11 @@ while True:
        sample_hold = 0       
     else: # old value is maintained
        sample_hold = sample_hold+2*mx_time   
-    # userLED as rough indicator for the temperature
+    # userLED as rough indicator for the temperature exceeding a certain threshold
     if ((readTempSensor>30.0) or (readTempSensor<0.0)):
-          userLED.on()
+       userLED.on()
     else:
-          userLED.off()
+       userLED.off()
     # Driving 7-Segment-Displays, ranges equidistant;
     # there exist far more elegant algorithms to set the GPIOs high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy.
     # 0-9
@@ -1371,7 +1371,5 @@ while True:
       A0.high()      
       B0.low()      
       C0.low()      
-      D0.high()
-    # print("ADC: ",  ADC_A0.read_u16())
-    # print("Expanded ADC: ", ExpandedSensorValueS)     
+      D0.high()         
     utime.sleep(mx_time)
