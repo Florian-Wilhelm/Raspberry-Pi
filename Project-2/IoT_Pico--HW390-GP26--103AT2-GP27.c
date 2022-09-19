@@ -173,6 +173,8 @@ int startServerWiFi(uint8_t buf[], int len)
         memset(id, '\0', sizeof(id));
         strncpy(id, temp, d);
         
+        uint absoluteTime = (to_us_since_boot(get_absolute_time())/1000000)/60;
+        
         adc_select_input(0);
         
         float readCapSensor = 6125-(4.95*(adc_read()/3.0)); // maths for the capacitive soil moisture sensor HW-390       
@@ -187,7 +189,7 @@ int startServerWiFi(uint8_t buf[], int len)
 
         char data[2048];
         
-        sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p><font color=blue>Soil moisture raw value (0-4095): %u</font>; <font color=red>Temperature: %2.1f oC</font></p></body></html>\r\n", outputCapSensor, readTempSensor);
+        sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p><font color=blue>Soil moisture raw value (0-4095): %u</font>; <font color=red>Temperature: %2.1f oC</font></p><p><font color=purple>Time since StartUp: %u minutes</font></p><p>SW V1.0; (c) ome-eng.net 2022</p></body></html>\r\n", outputCapSensor, readTempSensor, absoluteTime);
         
         uint8_t command[128];
         int count = snprintf(command, 128, "AT+CIPSEND=%s,%d\r\n", id, strlen(data));
