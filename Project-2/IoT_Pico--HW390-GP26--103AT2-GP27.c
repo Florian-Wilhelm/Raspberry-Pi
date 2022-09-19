@@ -1,5 +1,5 @@
 /**
- * Created 20/08/2022 by Florian Wilhelm Dirnberger
+ * Created 19/09/2022 by Florian Wilhelm Dirnberger
  *
  * code is in large parts copied from Harry Fairheads book, page 347 (not every single line of code will be necessary for the given purpose)
  *   
@@ -233,7 +233,7 @@ int main()
     gpio_put(25, 1);
     sleep_ms(1000);
     
-    connectWiFi(buf, 512, "WLAN-ABC", "12345"); // modify WiFi-credentials here
+    connectWiFi(buf, 512, "WLAN-ABC", "12345");
     
     gpio_put(25, 0);
     sleep_ms(1000);
