@@ -1,12 +1,12 @@
 /**
  * Created 01/10/2022 by Florian Wilhelm Dirnberger
  *
- * Possible Geiger counter program running on a Raspberry Pi Pico
+ * V1.0 Geiger counter program running on a Raspberry Pi Pico
  *   
- * Outputs a PWM signal for HV-generation, can switch on LEDs in case of an interrupt (counting event)
+ * Outputs a PWM signal for HV-generation, able to trigger one or several simple output devices (LEDs, buzzer etc.) in case of an interrupt (counting event)
  * In addition, an LCD will show some activity (counts, elapsed time)
  * 
- * Pull-down/up resistors are disabled in this variant (push-pull mode); depends on the connected HW revision whether that makes sense
+ * Pull-down/up resistors are disabled in this variant (push-pull mode) for the IRQ GP; depends on the connected HW revision whether that makes sense
  * 
  */
 
@@ -133,7 +133,7 @@ uint zaehlung = 0;
 char snum[5];
 
 // Output GP
-const uint32_t mask=(1<<8) | (1<<9) | (1<<25); // Pin 25: the green user LED
+const uint32_t mask=(1<<8) | (1<<9) | (1<<25); // Pin 25: the green user LED; other GPs can be used for additional LEDs or a buzzer module
 
 uint32_t pwm_set_freq_duty(uint slice_num, uint chan,uint32_t f, int d) {
     uint32_t clock = 125000000;
@@ -186,9 +186,7 @@ int main() {
     lcd_set_cursor(1,8);
     lcd_string("-");               
     
-    sleep_ms(2000);
-    
-    //lcd_clear();
+    sleep_ms(2000);    
     
     pwm_set_freq_duty(slice_num, chan, usedPWMfreq, 60);
     pwm_set_enabled(slice_num, true);
@@ -203,18 +201,18 @@ int main() {
                
     while (1) {             
           
-            uint AbsolutZeit = (to_us_since_boot(get_absolute_time())/1000000);            
+       uint AbsolutZeit = (to_us_since_boot(get_absolute_time())/1000000);            
                       
-            itoa(zaehlung, snum, 10); 
-            lcd_set_cursor(1,0);
-            lcd_string(snum); 
+       itoa(zaehlung, snum, 10); 
+       lcd_set_cursor(1,0);
+       lcd_string(snum); 
             
-            itoa(AbsolutZeit, snum, 10); 
-            lcd_set_cursor(1,8);
-            lcd_string(snum); 
+       itoa(AbsolutZeit, snum, 10); 
+       lcd_set_cursor(1,8);
+       lcd_string(snum); 
                   
-            //lcd_clear();             
-            //sleep_ms(100);      
+       //lcd_clear();             
+       //sleep_ms(100);      
     }           
       
     return 0;
