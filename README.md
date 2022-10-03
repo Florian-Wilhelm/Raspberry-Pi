@@ -41,7 +41,7 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 
 **Project 6 - Geiger counter**
 
-https://hackaday.io/project/184266-geiger-counter-w-raspberry-pi-pico
+https://hackaday.io/project/184266-geiger-counter
 
 https://youtu.be/8chdKO5AX0I
 
