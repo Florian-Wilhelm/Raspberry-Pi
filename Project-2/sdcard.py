@@ -1,6 +1,6 @@
-# This module is from an original MicroPython source that is not longer available
+# This module is from an original MicroPython source that is not longer available:
 #
-# Origial: https://github.com/micropython/micropython/tree/master/drivers/sdcard
+# https://github.com/micropython/micropython/tree/master/drivers/sdcard
 #
 #
 # In a "main.py" code should be something like (see also official Raspberry Pi Pico documentation):
