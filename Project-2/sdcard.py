@@ -3,7 +3,8 @@
 # https://github.com/micropython/micropython/tree/master/drivers/sdcard
 #
 #
-# In a "main.py" code should be something like (see also official Raspberry Pi Pico documentation):
+# In a "main.py", code should look something like:
+# ###
 #
 # import sdcard
 # import uos
@@ -29,6 +30,7 @@
 # with open("/sd/measurement.txt", "w") as file:
 #   file.write("Moisture: 56%\r\n")
 #
+# ###
 
 from micropython import const
 import time
