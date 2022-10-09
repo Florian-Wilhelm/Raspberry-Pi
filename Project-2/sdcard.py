@@ -1,10 +1,37 @@
 # This module is from an original MicroPython source that is not longer available
 #
 # Origial: https://github.com/micropython/micropython/tree/master/drivers/sdcard
+#
+#
+# In a "main.py" code should be something like (see also official Raspberry Pi Pico documentation):
+#
+# import sdcard
+# import uos
+#
+# # SPI parameters
+# cs = machine.Pin(17, machine.Pin.OUT)
+# spi = machine.SPI(0,
+#                   baudrate=1000000,
+#                   polarity=0,
+#                   phase=0, 
+#                   bits=8,
+#                   firstbit=machine.SPI.MSB,
+#                   sck=machine.Pin(18),
+#                   mosi=machine.Pin(19),
+#                   miso=machine.Pin(16))
+# try:
+#   sd = sdcard.SDCard(spi, cs)
+#   vfs = uos.VfsFat(sd)
+#   uos.mount(vfs, "/sd")
+# except OSError:
+#   print("SD-Karte fehlt")
+#
+# with open("/sd/measurement.txt", "w") as file:
+#   file.write("Moisture: 56%\r\n")
+#
 
 from micropython import const
 import time
-
 
 _CMD_TIMEOUT = const(100)
 
