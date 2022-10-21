@@ -47,4 +47,8 @@ https://youtu.be/8chdKO5AX0I
 
 **Project 7 - PIR sensor**
 
-Small project for educational purposes: triggering the Pico user LED (Pin 25) with a PIR sensor via interrupt.
+Training project: triggering the Pico user LED (Pin 25) with a PIR sensor via interrupt.
+
+**Project 8 - PIO blinky**
+
+Training project: Using the PIO for flashing the onboard LED.
