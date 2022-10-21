@@ -51,4 +51,4 @@ Training project: triggering the Pico user LED (Pin 25) with a PIR sensor via in
 
 **Project 8 - PIO blinky**
 
-Training project: Using the PIO for flashing the onboard LED.
+Training project: using the PIO for flashing the onboard LED.
