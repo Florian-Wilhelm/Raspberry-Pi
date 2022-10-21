@@ -14,8 +14,8 @@ int main()
 {
     uint offset = pio_add_program(pio0, &squarewave_program);
     
-    uint sm = pio_claim_unused_sm(pio0, true); // the SDK chooses the state machine
-    pio_sm_config c = squarewave_program_get_default_config(offset);
+    uint sm = pio_claim_unused_sm(pio0, true); // the SDK can choose the state machine
+    pio_sm_config c = squarewave_program_get_default_config(offset); // creating the struct
     
     sm_config_set_clkdiv_int_frac(&c,255,0);
     
