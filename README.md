@@ -47,8 +47,8 @@ https://youtu.be/8chdKO5AX0I
 
 **Project 7 - PIR sensor**
 
-Training project: triggering the Pico user LED (Pin 25) with a PIR sensor via interrupt.
+Training project: flashing the onboard LED thru a PIR sensor.
 
 **Project 8 - PIO blinky**
 
-Training project: using the PIO for flashing the onboard LED.
+Training project: flashing the onboard LED by using the PIO.
