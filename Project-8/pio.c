@@ -14,12 +14,12 @@ int main()
 {
     uint offset = pio_add_program(pio0, &squarewave_program);
     
-    uint sm = pio_claim_unused_sm(pio0, true); // the SDK can choose the state machine
+    uint sm = pio_claim_unused_sm(pio0, true); // the SDK can choose the state machine (there are four in each PIO)
     pio_sm_config c = squarewave_program_get_default_config(offset); // creating the struct
     
     sm_config_set_clkdiv_int_frac(&c,255,0);
     
-    sm_config_set_set_pins(&c, 25, 1);
+    sm_config_set_set_pins(&c, 25, 1); // Set the 'set' pins (here: 25, one pin to set) in a state machine configuration
     pio_gpio_init(pio0, 25);
     
     pio_sm_init(pio0, sm, offset, &c);
