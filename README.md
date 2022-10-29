@@ -47,8 +47,8 @@ https://youtu.be/8chdKO5AX0I
 
 **Project 7 - PIR sensor**
 
-Training project: triggering the onboard LED thru a PIR sensor.
+Simple training project: triggering the onboard LED thru a PIR sensor.
 
 **Project 8 - PIO blinky**
 
-Training project: flashing the onboard LED cyclically by using the PIO.
+Simple training project: flashing the onboard LED cyclically by using the PIO (Programmable IO).
