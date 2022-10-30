@@ -141,10 +141,10 @@ const uint usedPWMgpio = 16;
 // empirical PWM value
 const uint usedPWMfreq = 1250;
 
-// flexible output GPIOs of prototype Rev 2.0
+// output GPIOs
 const uint32_t mask=MASK; 
 
-uint32_t pwm_set_freq_duty(uint slice_num, uint chan,uint32_t f, int d) {
+uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d) {
     uint32_t clock = 125000000;
     uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0);
     if (divider16 / 16 == 0)
@@ -176,7 +176,7 @@ int main() {
     uint slice_num = pwm_gpio_to_slice_num(usedPWMgpio);
     uint chan = pwm_gpio_to_channel(usedPWMgpio);
     
-    pwm_set_freq_duty(slice_num, chan, usedPWMfreq, 45);
+    pwm_set_freq_duty(slice_num, chan, usedPWMfreq, 45); // a little play-around with the duty-cycle
     pwm_set_enabled(slice_num, true);
     
     // This example will use I2C0 on the default SDA and SCL pins (4, 5 on a Pico)
