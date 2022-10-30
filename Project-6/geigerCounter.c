@@ -11,7 +11,7 @@
  * HV-generation by virtue of a PWM (for the boost-converter); triggers simple output devices (LEDs, buzzer etc.) in case of an interrupt (counting event)
  * In addition, an LCD will show counting events and the elapsed time (in lieu of CPM)
  * 
- * note: Pull-down/up resistors are disabled in this variant (push-pull mode) for the IRQ GP
+ * note: Pull-down/up resistors are disabled (push-pull mode) for the IRQ GP
  * 
  */
 
