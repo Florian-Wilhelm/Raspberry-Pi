@@ -1,22 +1,13 @@
 .program squarewave
-   set pindirs, 1 
-again:
-   set pins, 1    
-   set x, 31    
- loop1:
-    set y,31
-   loop2:
-      nop [31]
-      jmp y--,loop2
-   jmp x--,loop1
-   
-   set pins, 0
-   set x, 31
-loop3:
-   set y, 31
-  loop4:
-     nop [31]
-     jmp y--,loop4
-   jmp x--,loop3
-jmp again
-   
+   set pindirs,1
+   pull block 
+nochmal:
+   set pins,1    
+   mov y,osr    
+ schleife1:
+    jmp y--,schleife1
+    set pins,0
+    mov y,osr
+  schleife2:
+    jmp y--,schleife2
+jmp nochmal
