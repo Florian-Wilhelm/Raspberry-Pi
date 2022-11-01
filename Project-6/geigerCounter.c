@@ -24,7 +24,7 @@
 #include "pico/binary_info.h"
 #include "pico/time.h"
 
-#define MASK (1<<8) | (1<<9) | (1<<25) // flexible output GPIOs (only for prototype stage); available: GP0-GP15 and user LED Pin 25
+#define MASK (1<<8) | (1<<9) | (1<<25) // flexible output GPIOs (only for prototype stage); GPs not soldered to PCB, therefore available: GP0-GP15; user LED Pin 25
 
 // instructions for the LCD (generic)
 
