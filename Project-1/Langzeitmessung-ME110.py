@@ -1,4 +1,4 @@
-# This (quick&dirty) code was used on my Raspberry Pi for a 24h measurement of two ME110 resistive type sensors;
+# "quick&dirty" code for a 24h measurement of two ME110 resistive type soil moisture sensors;
 # acquired data will be written into a spreadsheet (xlsxwriter module).
 import xlsxwriter
 import Adafruit_BMP.BMP280 as BMP280
