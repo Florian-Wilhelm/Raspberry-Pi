@@ -1,4 +1,4 @@
-# quick&dirty MicroPython program for testing a Geiger counter prototype
+# "quick&dirty" PWM program for testing the boost converter
 from machine import Pin, PWM
 import utime
 anschluss = 16
