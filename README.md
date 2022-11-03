@@ -44,9 +44,9 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://youtu.be/8chdKO5AX0I
 
-**Project 7 - tbd**
+**Project 7 - deleted**
 
-tbd
+deleted
 
 **Project 8 - PIO blinky**
 
