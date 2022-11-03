@@ -1,4 +1,4 @@
-# "quick&dirty" Code für ein manuelles Bewässerungsprogramm ¯\_(ツ)_/¯
+# "quick&dirty" Code für ein teilautomatisches Bewässerungsprogramm ¯\_(ツ)_/¯
 import umrechnung
 import RPi.GPIO as GPIO
 import time
