@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/pi/mein_pfad
-python3 Mein_Programm.py 
+cd /home/pi/mein_pfad # customize here
+python3 Mein_Programm.py # customize here
 python3 GPIO5__init.py  # for safety reasons, the pump control GPIO (here: GPIO5) is always set to HIGH after executing the first script
 echo "Execution time: $SECONDS sec"
