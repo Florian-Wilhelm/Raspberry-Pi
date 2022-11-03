@@ -44,10 +44,6 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://youtu.be/8chdKO5AX0I
 
-**Project 7 - PIR sensor**
-
-Simple training project: triggering the onboard LED thru a PIR sensor.
-
-**Project 8 - PIO blinky**
+**Project 7 - PIO blinky**
 
 Simple training project: flashing the onboard LED cyclically by using the PIO (Programmable IO).
