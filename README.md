@@ -44,6 +44,10 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://youtu.be/8chdKO5AX0I
 
-**Project 7 - PIO blinky**
+**Project 7 - tbd**
+
+tbd
+
+**Project 8 - PIO blinky**
 
 Simple training project: flashing the onboard LED cyclically by using the PIO (Programmable IO).
