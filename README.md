@@ -42,7 +42,7 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 
 https://hackaday.io/project/184266-geiger-counter
 
-https://youtu.be/8chdKO5AX0I
+https://youtu.be/WlbOmteQPEc
 
 **Project 7 - deleted**
 
