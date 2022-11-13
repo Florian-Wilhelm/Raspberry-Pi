@@ -1,10 +1,10 @@
 /**
- * Created 05/11/2022 by Florian Wilhelm Dirnberger
+ * Created 13/11/2022 by Florian Wilhelm Dirnberger
  *
  * Geiger counter program for running on a Raspberry Pi Pico with attached prototype PCB
  * 
  * this SW-version:
- * V1.21
+ * V1.22
  * to be used with HW revision:
  * HW2.0 and below
  *   
@@ -133,9 +133,9 @@ void lcd_init() {
 
 // now the actual Geiger counter program
 
-const uint userIRQgpio = IRQGP;
-const uint usedPWMgpio = PWMGP;
-const uint usedPWMfreq = PWMFQ;
+const uint userIRQgpio = IRQ_GP;
+const uint usedPWMgpio = PWM_GP;
+const uint usedPWMfreq = PWM_FQ;
 const uint32_t deviceGP=DEVICEMASK; 
 
 uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d) {
@@ -181,14 +181,14 @@ int main() {
     
     sleep_ms(500);
     
-    // This example will use I2C0 on the default SDA and SCL pins (4, 5 on the Pico)
-    i2c_init(i2c_default, 100 * 1000);
-    gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
-    gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
-    gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
-    gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
+    // Using the I2C for the LCD
+    i2c_init(I2C_ID, 100 * 1000);
+    gpio_set_function(DISPLAY_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(DISPLAY_SCL_PIN, GPIO_FUNC_I2C);
+    gpio_pull_up(DISPLAY_SDA_PIN);
+    gpio_pull_up(DISPLAY_SCL_PIN);
     // Make the I2C pins available to picotool
-    bi_decl(bi_2pins_with_func(PICO_DEFAULT_I2C_SDA_PIN, PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C));
+    bi_decl(bi_2pins_with_func(DISPLAY_SDA_PIN, DISPLAY_SCL_PIN, GPIO_FUNC_I2C));
     
     lcd_init();   
     
@@ -198,7 +198,7 @@ int main() {
     lcd_set_cursor(0,8);  
     lcd_string("PWM (Hz)");
     lcd_set_cursor(1,0);
-    lcd_string("V1.21"); 
+    lcd_string("V1.22"); 
     itoa(usedPWMfreq, snum, 10);
     lcd_set_cursor(1,8);
     lcd_string(snum);               
