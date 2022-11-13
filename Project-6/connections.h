@@ -5,12 +5,17 @@
 #define DEVICEMASK (1<<8) | (1<<9) | (1<<25) 
 
 // PWM frequency
-#define PWMFQ 1250
+#define PWM_FQ 1250
 
 // PWM out GP
-#define PWMGP 16
+#define PWM_GP 16
 
 // IRQ GP
-#define IRQGP 17
+#define IRQ_GP 17
+
+// I2C Pins for the LCD
+#define DISPLAY_SDA_PIN 4
+#define DISPLAY_SCL_PIN 5
+#define I2C_ID i2c0 // this is not an independent parameter, change it according to chosen SDA an SCL pin (see datasheet)
 
 #endif
