@@ -16,6 +16,6 @@
 // I2C Pins for the LCD
 #define DISPLAY_SDA_PIN 4
 #define DISPLAY_SCL_PIN 5
-#define I2C_ID i2c0 // this is not an independent parameter, change it according to chosen SDA an SCL pin (see datasheet)
+#define I2C_ID i2c0 // this is not an independent parameter, change it according to chosen SDA and SCL pins (see Pico datasheet)
 
 #endif
