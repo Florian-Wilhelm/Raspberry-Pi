@@ -6,7 +6,7 @@
  * this SW-version:
  * V2.02
  * to be used with HW revision:
- * HW3.1 (not designed yet)
+ * HW3.1
  *   
  * HV-generation by virtue of a PWM (for the boost-converter); triggers simple output devices (LEDs, buzzer etc.) in case of an interrupt (counting event)
  * In addition, an LCD will show counting events, elapsed time and CPM
