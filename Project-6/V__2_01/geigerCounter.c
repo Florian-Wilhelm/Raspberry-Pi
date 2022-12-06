@@ -6,14 +6,14 @@
  * this SW-version:
  * V2.01
  * to be used with HW revision:
- * HW3.0 (not designed yet)
+ * HW3.0 (discarded)
  *   
  * HV-generation by virtue of a PWM (for the boost-converter); triggers simple output devices (LEDs, buzzer etc.) in case of an interrupt (counting event)
  * In addition, an LCD will show counting events, elapsed time and CPM
  * 
  * Difference versions 1.x -> 2.x is a control loop for the HV
  * 
- * note: Pull-down/up resistors are disabled (push-pull mode) for the IRQ GP
+ * note: Pull-down/up resistors are DISabled (push-pull mode) for the IRQ GP
  * 
  */
 
