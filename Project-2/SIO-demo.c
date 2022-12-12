@@ -30,7 +30,7 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
-// # Time in ms for displaying one digit before switching to the next
+// # Time for displaying one digit before switching to the next (using the command "sleep_ms()" it is milliseconds)
 uint16_t displayTime = 1000;
 
 int n;
