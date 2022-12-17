@@ -12,7 +12,6 @@ add_executable(geigerCounter
         )
 
 # pull in common dependencies
-# target_link_libraries(geigerCounter pico_stdlib hardware_adc hardware_i2c hardware_pwm)
 target_link_libraries(geigerCounter pico_stdlib hardware_i2c hardware_pwm)
 
 # create map/bin/hex file etc.
