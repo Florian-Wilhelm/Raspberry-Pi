@@ -17,6 +17,7 @@
 
 int main()
 {       
+  
   stdio_init_all();
   
   sleep_ms(1000);
@@ -54,8 +55,6 @@ int main()
   
     sleep_us(100); // will manipulate the frequency, together with the baud rate
     
-   }
-  
-  }
-         
+    }  
+  }         
 }
