@@ -5,7 +5,7 @@
  * realized here is a simple saw tooth generator
  *  
  * In the data sheet for the MCP23016 IC, all relevant information regarding the registers can be found  
- * the IC is hadwired to I2C address 0x20
+ * IC is hardwired to I2C address 0x20
  * 
  */
 
