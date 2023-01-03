@@ -4,9 +4,6 @@ This repo contains experimental code, usable code examples and programs (either 
 
 ## Projects
 
-Note: project numbers are in chronological order.
-
-
 ### Raspberry Pi
 
 **Project 1 - Plant irrigation system**
@@ -44,9 +41,9 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://youtu.be/WlbOmteQPEc
 
-**Project 7 - deleted**
+**Project 7 - 6bit DAC connected to MCP23016 I/O expansion for I2C bus**
 
-deleted
+https://hackaday.io/project/188593-6bit-digital-analog-converter
 
 **Project 8 - PIO blinky**
 
