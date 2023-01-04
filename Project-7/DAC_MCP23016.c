@@ -5,7 +5,7 @@
  * realized here is a simple saw tooth generator
  *  
  * In the data sheet for the MCP23016 IC, all relevant information regarding the registers can be found  
- * IC is hardwired to I2C address 0x20
+ * IC is hardwired to I2C address 0x20 (A0, A1, A2 to GND)
  * 
  */
 
@@ -27,7 +27,7 @@ int main()
   gpio_set_function(2, GPIO_FUNC_I2C);
   gpio_set_function(3, GPIO_FUNC_I2C);
 
-  // using two external 3.9kOhm resistors
+  // using two external 3.9kOhm resistors, so those two lines are obsolete
   /* gpio_pull_up(2);
      gpio_pull_up(3); */
   
@@ -50,10 +50,11 @@ int main()
     {
   
     buf[0] = 0x00; // data port register
-    buf[1] = sawtooth;
+    buf[1] = sawtooth; // modified data output
+     
     i2c_write_blocking(i2c1, 0x20, buf, 2, false);  
   
-    sleep_us(100); // will manipulate the frequency, together with the baud rate
+    sleep_us(100); // will manipulate the sawtooth frequency, together with the baud rate
     
     }  
   }         
