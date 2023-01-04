@@ -27,7 +27,7 @@ int main()
   gpio_set_function(2, GPIO_FUNC_I2C);
   gpio_set_function(3, GPIO_FUNC_I2C);
 
-  // using two external 3.9kOhm resistors, so those two lines are obsolete
+  // using two external 3.9kOhm resistors, so the following two lines are obsolete
   /* gpio_pull_up(2);
      gpio_pull_up(3); */
   
