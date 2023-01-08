@@ -1,6 +1,6 @@
 ## About
 
-This repo contains experimental code, usable code examples and programs (either (Micro)Python or compiled C source code) for Raspberry Pi and Raspberry Pi Pico projects. 
+This repo contains experimental code, generic code examples and programs (i. e. either (Micro)Python or compiled C source code) for Raspberry Pi and Raspberry Pi Pico projects. 
 
 ## Projects
 
