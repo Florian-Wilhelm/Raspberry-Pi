@@ -182,10 +182,9 @@ int main() {
     i2c_init(I2C_ID, 100 * 1000);
     gpio_set_function(DISPLAY_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(DISPLAY_SCL_PIN, GPIO_FUNC_I2C);
+    // my LCD doesn't have pull-ups on its board; may be different for other display types
     gpio_pull_up(DISPLAY_SDA_PIN);
     gpio_pull_up(DISPLAY_SCL_PIN);
-    // Make the I2C pins available to picotool
-    //bi_decl(bi_2pins_with_func(DISPLAY_SDA_PIN, DISPLAY_SCL_PIN, GPIO_FUNC_I2C));
     
     lcd_init();      
     lcd_clear();  
