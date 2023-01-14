@@ -6,8 +6,8 @@
  * HV-generation by virtue of a PWM (for the boost-converter); triggers simple output devices (LEDs, buzzer etc.) in case of an interrupt (counting event)
  * In addition, an OLED will show basic data
  * 
- * Difference versions 1.x -> 2.x/3.x is a control loop for the HV
- * Difference versions 2.x -> 3.x is OLED instead of LCD
+ * Difference SW-versions 1.x -> 2.x/3.x is a control loop for the HV
+ * Difference SW-versions 2.x -> 3.x is OLED display instead of an LCD
  * 
  * Important note: pull-up resistors are ENabled for the IRQ GP and for the I2C (although the used 0.96'' SSD1306 OLED has its own pull-ups)
  * 
