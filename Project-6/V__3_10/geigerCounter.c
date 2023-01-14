@@ -30,6 +30,8 @@
 #include "connections.h"
 #include "lookupTable.h"
 
+// OLED commands and instructions (partially generic)
+
 // commands (see datasheet)
 #define OLED_SET_CONTRAST _u(0x81)
 #define OLED_SET_ENTIRE_ON _u(0xA4)
