@@ -200,6 +200,7 @@ void geiger_irq_handler(uint gpio, uint32_t events) {
         gpio_clr_mask(deviceGP);    
 }
 
+// update the display
 static uint8_t null[] = {0x00,0x3e,0x7f,0x49,0x45,0x7f,0x3e,0x00}; // 48=0
 static uint8_t one[] = {0x00,0x40,0x44,0x7f,0x7f,0x40,0x40,0x00}; // 49=1
 static uint8_t two[] = {0x00,0x62,0x73,0x51,0x49,0x4f,0x46,0x00}; // 50=2
@@ -258,7 +259,6 @@ int main() {
     gpio_pull_up(DISPLAY_SDA_PIN);
     gpio_pull_up(DISPLAY_SCL_PIN);    
     
-    // run through the complete initialization process
     oled_init();
     
     struct render_area area = {0, IMG_WIDTH - 1, 0, OLED_NUM_PAGES - 1};    
@@ -291,7 +291,7 @@ int main() {
                
     while (1) {
         
-        // control loop
+        // HV control loop
         if (!gpio_get(X_GP)) {
            pwm_set_freq_duty(slice_num, chan, PWM_FQ, 0); 
            pwm_set_enabled(slice_num, true);}     
@@ -307,7 +307,7 @@ int main() {
          n+=1; 
          
          // this is just a weird hack, but it works sufficiently for the moment
-         // uses properties of the int datatype
+         // exploits properties of the int datatype
          uint firstDigit = CPM/100;
          uint secondDigit = (CPM - (100*firstDigit))/10;  
          uint interimValue = CPM/10;
@@ -315,8 +315,7 @@ int main() {
                   
          show_digits(firstDigit, 40, 47, 3, 3);         
          show_digits(secondDigit, 48, 55, 3, 3);        
-         show_digits(thirdDigit, 56, 63, 3, 3);         
-         
+         show_digits(thirdDigit, 56, 63, 3, 3);  
        }   
        
     }                 
