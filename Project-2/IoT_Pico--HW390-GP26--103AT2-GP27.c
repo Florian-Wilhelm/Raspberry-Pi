@@ -8,8 +8,8 @@
  * HW-390 capacitive soil moisture sensor - ADC0 (GP26)
  * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
  * 
- * note 1: WiFi-credentials have to be modified (name, password); without that it would make no sense to compile this source code
- * note 2: this is NOT a Pico W project; used is a normal Pico and an Espressif ESP8266 µC
+ * note 1: WiFi-credentials have to be modified (name, password); without that there is no point compiling this source code
+ * note 2: this is NOT a Pico W project; used is the "classical" Pico and an Espressif ESP8266 µC
  *
  */
 
