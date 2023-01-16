@@ -215,6 +215,7 @@ int main() {
     lcd_init();      
     lcd_clear();  
     
+    // To-Do: shorten this
     lcd_set_cursor(0,6);  
     lcd_string("PWM (Hz)");    
     lcd_set_cursor(1,6);
@@ -260,6 +261,7 @@ int main() {
                
     while (1) {
         
+        // HV control loop
         if (!gpio_get(X_GP)) {
            pwm_set_freq_duty(slice_num, chan, PWM_FQ, 0); 
            pwm_set_enabled(slice_num, true);}     
