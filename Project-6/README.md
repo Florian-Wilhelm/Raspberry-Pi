@@ -1,7 +1,7 @@
 **Release Notes** (details see comments in "geigerCounter.c"):
 
 
-SW V1.23 -> w/o HV control loop, display type LCD, for PCB revision HW2.0
+SW V1.23 -> w/o HV control loop, display type LCD, for PCB revision HW2.0 (obsolete)
 
 SW V2.08 -> w/ HV control loop, display type LCD, PWM 1 kHz, for PCB revision HW3.1
 
