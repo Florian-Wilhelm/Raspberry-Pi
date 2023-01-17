@@ -178,7 +178,7 @@ const uint32_t deviceGP=DEVICEMASK;
 uint32_t countingEvent = 0;
 uint32_t pulsesTimeframe = 0;
 
-
+// this is not necessarily the best algorithm for generating a 10kHz PWM, but it works sufficiently for the given purpose
 uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d) {
     uint32_t clock = 125000000;
     uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0);
