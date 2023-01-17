@@ -140,6 +140,7 @@ void lcd_init() {
 
 // now the actual Geiger counter program
 
+// this is not necessarily an optimized calculation for generating one particular frequency and duty cycle, but it works sufficiently for the given purpose
 uint32_t pwm_set_freq_duty(uint32_t f_clk_sys, uint slice_num, uint chan, uint32_t f, int d) {
     uint32_t clock = f_clk_sys;
     uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0);
