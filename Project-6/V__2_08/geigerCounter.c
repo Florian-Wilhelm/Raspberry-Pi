@@ -252,6 +252,7 @@ int main() {
                
     while (1) {
         
+        // HV control loop
         if (!gpio_get(X_GP)) {
            pwm_set_freq_duty(f_clk_sys, slice_num, chan, PWM_FQ, 0); 
            pwm_set_enabled(slice_num, true);}     
