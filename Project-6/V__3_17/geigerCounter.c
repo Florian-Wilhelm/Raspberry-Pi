@@ -264,10 +264,8 @@ int main() {
                     48 * MHZ,
                     48 * MHZ);
 
-    // Turn off PLL sys for good measure
-    pll_deinit(pll_sys);
-
-    // CLK peri is clocked from clk_sys so need to change clk_peri's freq
+    // not necessary for the function itself, but saves a further few mA
+    pll_deinit(pll_sys);    
     clock_configure(clk_peri,
                     0,
                     CLOCKS_CLK_PERI_CTRL_AUXSRC_VALUE_CLK_SYS,
