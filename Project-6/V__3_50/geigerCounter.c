@@ -1,5 +1,5 @@
 /**
- * Created 07/02/2023 by Florian Wilhelm Dirnberger
+ * Created 10/02/2023 by Florian Wilhelm Dirnberger
  *
  * Geiger counter program for running on a Raspberry Pi Pico with attached prototype PCB 
  *   
@@ -9,7 +9,7 @@
  * Difference SW-versions 1.x -> 2.x/3.x is a control loop for the HV
  * Difference SW-versions 2.x -> 3.x is OLED display instead of an LCD
  *
- * The system clock is diminished to 6 MHz thru this SW in order to reduce the power consumption
+ * The system clock is diminished to 3 MHz thru this SW in order to reduce the power consumption
  * 
  * Important note: pull-up resistors are ENabled for the IRQ GP and for the I2C (although the used 0.96'' SSD1306 OLED has its own pull-ups)
  * 
