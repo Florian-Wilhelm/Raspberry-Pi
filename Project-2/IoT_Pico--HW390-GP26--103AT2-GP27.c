@@ -9,7 +9,7 @@
  * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
  * 
  * note 1: WiFi-credentials have to be modified (name, password); without that there is no point compiling this source code
- * note 2: this is NOT a Pico W project; used is the "classical" Pico and an Espressif ESP8266 µC
+ * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the "classical" Pico and an Espressif ESP8266 MCU
  *
  */
 
