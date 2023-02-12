@@ -9,7 +9,7 @@
  * Difference SW-versions 1.x -> 2.x/3.x is a control loop for the HV
  * Difference SW-versions 2.x -> 3.x is OLED display instead of an LCD
  * 
- * The system clock is diminished to 48 MHz thru this SW in order to reduce the power consumption
+ * The system clock is diminished to 48 MHz thru this SW in order to have a reference SW for current measurement
  *
  * Important note: pull-up resistors are ENabled for the IRQ GP and for the I2C (although the used 0.96'' SSD1306 OLED has its own pull-ups)
  * 
@@ -256,8 +256,6 @@ int main() {
     
     stdio_init_all();      
     
-    // Change clk_sys to be 48MHz. The simplest way is to take this from PLL_USB
-    // which has a source frequency of 48MHz
     clock_configure(clk_sys,
                     CLOCKS_CLK_SYS_CTRL_SRC_VALUE_CLKSRC_CLK_SYS_AUX,
                     CLOCKS_CLK_SYS_CTRL_AUXSRC_VALUE_CLKSRC_PLL_USB,
