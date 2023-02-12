@@ -8,7 +8,7 @@
  * 
  * Difference versions 1.x -> 2.x is a control loop for the HV
  * 
- * note: pull-up resistors are ENabled (push-pull mode) for the IRQ GP and for the I2C (external may be better for a robust design)
+ * note: internal pull-up resistors are ENabled (push-pull mode) for the IRQ GP and for the I2C (external, e.g. 4.7k, to be preferred for a robust design)
  * 
  */
  
