@@ -1,4 +1,4 @@
-# This module is from an original MicroPython source that is not longer available:
+# This module is copied from an original MicroPython source that is not longer available:
 #
 # https://github.com/micropython/micropython/tree/master/drivers/sdcard
 #
