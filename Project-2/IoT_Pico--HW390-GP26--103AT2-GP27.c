@@ -1,9 +1,9 @@
 /**
  * Created 19/09/2022 by Florian Wilhelm Dirnberger
  *
- * code is in large parts copied from Harry Fairheads book, page 347 (not every single line of code will be necessary for the given purpose)
+ * code is in large parts copied from Harry Fairheads book, page 347 (but not every single line of code will be needed in this project)
  *   
- * it's still sort of an IoT demo code; it doesn't do very much except sending some sensor measurement data thru the internet
+ * it is sort of an IoT demo code; it doesn't do very much except sending some sensor data thru the internet
  * 
  * HW-390 capacitive soil moisture sensor - ADC0 (GP26)
  * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
