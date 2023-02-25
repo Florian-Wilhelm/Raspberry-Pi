@@ -1,11 +1,14 @@
 **Release Notes** (details see comments in "geigerCounter.c"):
 
+Obsolete (kept for measurement purposes):
 
-SW V2.08 -> display type LCD, PWM 1 kHz, System clock 125 MHz (obsolete SW)
+SW V2.08 -> display type LCD, PWM 1 kHz, System clock 125 MHz
 
 SW V3.17 -> display type OLED, PWM 10 kHz, System clock 48 MHz
 
-SW V3.50 -> display type OLED, PWM 10 kHz,System clock 3 MHz?
+Most current:
+
+SW V3.50 -> display type OLED, PWM 10 kHz, System clock 3 MHz?
 
 SW V4.02 -> display type OLED, PWM 10 kHz, System clock 48 MHz, BLE functionality with RN4870 IC
 
