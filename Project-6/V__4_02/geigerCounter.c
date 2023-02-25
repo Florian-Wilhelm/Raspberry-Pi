@@ -8,7 +8,7 @@
  * 
  * Difference SW-versions 1.x -> 2.x/3.x is a control loop for the HV
  * Difference SW-versions 2.x -> 3.x is OLED display instead of an LCD
- * Difference SW-versions 3.x -> 4.x is is additional BLE functionality
+ * Difference SW-versions 3.x -> 4.x is additional BLE functionality with RN4870 IC from Microchip
  * 
  * Important note: pull-up resistors are ENabled for the IRQ GP and for the I2C (although the used 0.96'' SSD1306 OLED has its own pull-ups)
  * 
