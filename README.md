@@ -39,7 +39,7 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 
 https://hackaday.io/project/184266-geiger-counter
 
-https://youtu.be/WlbOmteQPEc
+https://youtu.be/pMx6CFsCxYo
 
 **Project 7 - 6bit DAC connected to MCP23016 I/O expansion for I2C bus**
 
