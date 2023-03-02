@@ -1,4 +1,5 @@
-# das Debug-Programm zu "IoT_Pico--HW390-GP26--103AT2-GP27.c"; extra Pico notwendig (Massen verbinden nicht vergessen)
+# Ein Debug-Programm zu "IoT_Pico--HW390-GP26--103AT2-GP27.c"; extra Pico notwendig (Massen verbinden nicht vergessen);
+# nur ein workaround, geht auch anders.
 import os
 import utime
 import machine
@@ -26,5 +27,4 @@ while True:
     while uart0.any():  # zählt herunter bis keine Zeichen (character) mehr zur Ausgabe vorhanden sind    
       print(uart0.read(1))  # lies ein Zeichen
     
-    print()    
-    
+    print()       
