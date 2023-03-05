@@ -35,8 +35,8 @@ int main()
   
   uint8_t buf[2];
   
-  buf[0] = 0x06; // I/O direction register
-  buf[1] = 0x00; // GP0 is output
+  buf[0] = 0x06; // I/O direction register IODIR0
+  buf[1] = 0x00; // GP0 is entirely output
   
   i2c_write_blocking(i2c1, 0x20, buf, 2, false);   
     
@@ -49,7 +49,7 @@ int main()
    for (sawtooth = 0x3F; sawtooth>=0x00; sawtooth--) // only a 6bit DAC, so we count down from 0011111 which is 0x3F (inverted input for the DAC)
     {
   
-    buf[0] = 0x00; // data port register
+    buf[0] = 0x00; // data port register GP0
     buf[1] = sawtooth; // modified data output
      
     i2c_write_blocking(i2c1, 0x20, buf, 2, false);  
