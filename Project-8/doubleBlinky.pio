@@ -1,0 +1,13 @@
+.program doubleBlinky
+   set pindirs,3 ;bitmap! 0011 = 3d both pins of the set group are output
+   pull block    ;wait until there is data in the TX FIFO
+again:
+   set pins,1    ;bitmap! 0011 = 3d "enable" both pins
+   mov x,osr
+ loop1:
+    jmp x--,loop1
+   set pins,2
+   mov x,osr
+ loop2:
+   jmp x--,loop2
+jmp again
