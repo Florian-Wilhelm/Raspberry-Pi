@@ -275,7 +275,7 @@ int main() {
     
     // saving a further few mA
     pll_deinit(pll_sys);       
-    // peripheral clock not needed
+    // setting peripheral clock not necessary here
     /*clock_configure(clk_peri,
                     0,
                     CLOCKS_CLK_PERI_CTRL_AUXSRC_VALUE_CLK_SYS,
