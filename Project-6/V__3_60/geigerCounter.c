@@ -151,7 +151,7 @@ void oled_init() {
 
     /* display */    
     oled_send_cmd(OLED_SET_CONTRAST); // set contrast control
-    if (!gpio_get(OLED_CONTRASTCONTROL_GP)) // no jumper set
+    if (!gpio_get(OLED_CONTRASTCONTROL_GP)) // no jumper plugged in
         oled_send_cmd(0xFF);  // high brightness (= higher current) 
     else 
         oled_send_cmd(0x0A);  // low brightness (= lower current)
