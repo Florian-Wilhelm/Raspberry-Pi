@@ -4,19 +4,19 @@
 // Flexible output GPIOs (can be changed)
 #define DEVICEMASK (1<<8) | (1<<9) | (1<<25) 
 
-// PWM frequency (do not change!)
+// PWM frequency
 #define PWM_FQ 10000
 
-// PWM out GP (do not change!)
+// PWM out GP
 #define PWM_GP 3
 
-// IRQ GP (do not change!)
+// IRQ GP
 #define IRQ_GP 2
 
-// X GP (do not change!)
+// X GP
 #define X_GP 22
 
-// low-power-operation pin P3_3 (UART_RX_IND) RN4870 GP (do not change!)
+// low-power-operation pin P3_3 (UART_RX_IND) RN4870 GP
 #define Y_GP 17
 
 // I2C Pins for the OLED (can be changed)
