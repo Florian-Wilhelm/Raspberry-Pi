@@ -13,7 +13,7 @@
 // IRQ GP
 #define IRQ_GP 2
 
-// X GP
+// X GP (control loop)
 #define X_GP 22
 
 // low-power-operation pin P3_3 (UART_RX_IND) RN4870 GP
