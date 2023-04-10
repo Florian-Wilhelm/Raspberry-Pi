@@ -10,7 +10,7 @@ V3.17 -> display type OLED, PWM 10 kHz, System clock 48 MHz
 
 **Most current SW:**
 
-V3.70 -> display type OLED, PWM 10 kHz, System clock 3 MHz (?)
+V3.80 -> display type OLED, PWM 10 kHz, System clock 3 MHz (?)
 
 V4.05 -> display type OLED, PWM 10 kHz, System clock 48 MHz, added BLE feature with RN4870 IC
 
