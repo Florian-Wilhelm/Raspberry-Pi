@@ -409,7 +409,7 @@ int main() {
          writeLocalCharacteristicBLE(CPM);         
          gpio_put(Y_GP,1);
          
-         // indication if there is a radiation source nearby
+         // if there is a radiation source nearby, the display will throw an indication
          if (CPM > 75)
             s = 1;
          else
