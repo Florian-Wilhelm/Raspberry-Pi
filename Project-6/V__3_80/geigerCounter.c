@@ -405,14 +405,14 @@ int main() {
        
        if (((absolutZeit)/(timeFrame*n)) == 1) { 
          if (n==1)  {
-           battery_indication_clear(); // not neccessary to show that information permanently
+           battery_indication_clear(); // not neccessary to show battery information permanently
           }
                    
          CPM = (pulsesTimeframe/timeFrame)*60.0;  
          pulsesTimeframe = 0;
          n+=1; 
          
-         // visual indication if there is a radiation source nearby
+         // if there is a radiation source nearby, the display will throw an indication
          if (CPM > 75)
             s = 1;
          else
