@@ -35,7 +35,7 @@ https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4
 
 https://ome-eng.net/raspi-pico-luftfeuchte
 
-**Project 6 - IoT Geiger counter**
+**Project 6 - (IoT) Geiger counter**
 
 https://hackaday.io/project/184266-geiger-counter
 
