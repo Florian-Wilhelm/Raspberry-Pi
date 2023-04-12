@@ -10,7 +10,7 @@
  * Difference SW-versions 2.x -> 3.x        OLED display instead of an LCD
  * Difference SW-versions 3.x -> 4.x        additional BLE functionality with RN4870 IC from Microchip
  * 
- * SW-version 4.06 includes a simple battery indicator (additional external resistors needed, not compatible with HW revision 3.x)
+ * SW-version 4.07 includes a simple battery indicator (additional external resistors needed, not compatible with HW revision 3.x)
  * 
  * Important note: pull-up resistors are ENabled for the IRQ GP and for the I2C (although the used 0.96'' SSD1306 OLED has its own pull-ups)
  * 
