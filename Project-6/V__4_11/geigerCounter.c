@@ -497,7 +497,7 @@ int main() {
     float cpm = 0;    
     float timeFrame = 4.0;  
     
-    // sleepModeBLE();  // has only to be carried out once, the BLE module stores it; saves a few mA
+    // sleepModeBLE();  
     sleep_ms(50);
                
     for (;;) {
