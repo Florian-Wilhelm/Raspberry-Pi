@@ -315,7 +315,7 @@ void show_BatteryIndication(uint16_t batteryRawValue)
 
 void startScreen_clear()
 {    
-    // clearing portions of the start screen after a few seconds in order to save power
+    // clearing data on the display after a few seconds in order to diminish power consumption (every pixel needs some current)
     
     /*struct render_area area = {0, 127, 0, 4};    
     uint8_t buf[OLED_BUF_LEN];    
@@ -446,7 +446,7 @@ int main() {
        
        if ((absolutZeit/(timeFrame*n)) == 1) { 
          if (n==1)  {
-           startScreen_clear(); // not neccessary to show start screen information permanently
+           startScreen_clear();
           }
                    
          cpm = (pulsesTimeframe/timeFrame)*60.0;  // Extrapolation
