@@ -393,7 +393,7 @@ void show_BatteryIndication(uint16_t batteryRawValue)
 
 void clear_BatteryIndication()
 {    
-    // clearing the battery information after a few seconds in order to save power
+    // clearing data on the display after a few seconds in order to diminish power consumption (every pixel needs some current)
     
     int m = 8;
     
@@ -515,7 +515,7 @@ int main() {
        
        if (((absolutZeit)/(timeFrame*n)) == 1) { 
          if (n==1)  {
-           clear_BatteryIndication(); // not neccessary to show that information permanently
+           clear_BatteryIndication(); 
           }
           
          cpm = (pulsesTimeframe/timeFrame)*60.0;  // Extrapolation
