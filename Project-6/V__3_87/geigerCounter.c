@@ -485,7 +485,7 @@ int main() {
        
        else if (!gpio_get(CALC_METHODCONTROL_GP)) {        
            
-         if (pulsesTimeframe == pulsesFixed) { 
+         if (pulsesTimeframe == pulsesFixed) { // bad coding: comparing an uint with a float; curiously it works
              
            int DeltaTime =  absoluteTime - absoluteTimeLastcpmCalculation;
              
