@@ -443,11 +443,11 @@ int main() {
        
        // the calculation methods in the following are sort of preliminary (there exist different methods to deal with purely statistical data such as radioactivity)        
        
-       if (gpio_get(CALC_METHODCONTROL_GP)){         
+       if (gpio_get(CALC_METHODCONTROL_GP)){   // active by default      
        
          if ((absoluteTime/(timeFrame*n)) == 1) { 
              
-           if (absoluteTime<=(ringbuffer_elements*timeFrame)){              
+           if (absoluteTime<=(ringbuffer_elements*timeFrame)){  // first few seconds when nothing is in the ringbuffer            
                    
              cpm = (pulsesTimeframe/timeFrame)*60.0;  
              pulsesTimeframe = 0;
@@ -483,9 +483,9 @@ int main() {
          }           
        } 
        
-       else if (!gpio_get(CALC_METHODCONTROL_GP)) {        
+       else if (!gpio_get(CALC_METHODCONTROL_GP)) { // not active by default        
            
-         if (pulsesTimeframe == pulsesFixed) { // bad coding: comparing an uint with a float; curiously it works
+         if (pulsesTimeframe == pulsesFixed) { // bad coding: comparing an uint with a float; curiously it works (calculation in this block is garbage anyway)
              
            int DeltaTime =  absoluteTime - absoluteTimeLastcpmCalculation;
              
