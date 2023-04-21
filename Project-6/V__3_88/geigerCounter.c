@@ -395,7 +395,7 @@ int main() {
     gpio_set_dir(CALC_METHODCONTROL_GP, GPIO_IN);
     gpio_pull_up(CALC_METHODCONTROL_GP);
     
-    gpio_set_pulls(IRQ_GP, 1, 0);
+    gpio_set_pulls(IRQ_GP, 1, 0); // set a pull up on the GPIO
     gpio_set_irq_enabled_with_callback(IRQ_GP, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &geiger_irq_handler);     
     
     uint n = 1;
