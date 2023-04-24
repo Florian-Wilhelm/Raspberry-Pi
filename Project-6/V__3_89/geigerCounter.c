@@ -4,7 +4,7 @@
  * Geiger counter program for running on a Raspberry Pi Pico with attached prototype PCB 
  *   
  * HV-generation by virtue of a PWM (for the boost-converter); triggers simple output devices (LEDs, buzzer etc.) in case of an interrupt (counting event)
- * In addition, an OLED will show basic data (in order to save power for every activated pixel consumes current, only a bare minimum of data will be displayed)
+ * In addition, an OLED will show basic data (in order to save power since every activated pixel consumes current, only a bare minimum of data will be displayed)
  * 
  * Difference SW-versions 1.x -> 2.x/3.x is a control loop for the HV
  * Difference SW-versions 2.x -> 3.x is OLED display instead of an LCD
