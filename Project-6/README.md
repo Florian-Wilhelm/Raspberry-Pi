@@ -10,6 +10,6 @@ V2.08 -> display type LCD, PWM 1 kHz, System clock 125 MHz
 
 V3.90 -> display type OLED, PWM 10 kHz, System clock 3 MHz (?)
 
-V4.13 -> display type OLED, PWM 10 kHz, System clock 48 MHz, added BLE feature with RN4870 IC
+V4.14 -> display type OLED, PWM 10 kHz, System clock 48 MHz, added BLE feature with RN4870 IC
 
 Fore more information see comments in "geigerCounter.c".
