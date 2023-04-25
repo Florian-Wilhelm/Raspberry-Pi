@@ -10,7 +10,7 @@
  * Difference SW-versions 2.x -> 3.x is OLED display instead of an LCD
  *
  * The system clock is diminished to 3 MHz thru this SW in order to reduce the power consumption
- * SW-version 3.8x includes a simple battery indicator (additional external resistors needed, not compatible with HW revision 3.x)
+ * SW-version 3.9x includes a simple battery indicator (additional external resistors needed, not compatible with HW revision 3.x)
  * 
  * Important note: pull-up resistors are ENabled for the IRQ GP and for the I2C (although the used 0.96'' SSD1306 OLED has its own pull-ups)
  * 
