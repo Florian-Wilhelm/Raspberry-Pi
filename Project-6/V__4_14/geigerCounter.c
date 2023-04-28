@@ -305,7 +305,7 @@ void writeLocalCharacteristicBLE(uint32_t cpm)
     
     sleep_ms(150); 
     
-    uint8_t SendData1[] = "SO,1\r";
+    uint8_t SendData1[] = "SO,1\r"; // "O,0" -> Dormant Power-Saving mode
     uart_write_blocking(UART_ID, SendData1, strlen(SendData1));
     
     sleep_ms(50);
