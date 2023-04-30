@@ -2,12 +2,12 @@
  * Created 03/01/2023 by Florian Wilhelm Dirnberger
  *
  * 6bit DAC hardwired to MCP23016 digital input/output Pins GP0.x (IC is a I/O expansion for I2C bus) 
- * the MCP23016 is connected to one of the Pico I2C controllers (i.e. I2C master) for receiving data on the bus
+ * MCP23016 in turn is connected to one of the Pico I2C controllers (i.e. I2C master) for receiving bus data
  * 
  * Realized with this program is a simple saw tooth generator
  *  
  * In the data sheet for the MCP23016 IC, all relevant information regarding the registers can be found  
- * IC is hardwired to I2C address 0x20 (A0, A1, A2 to GND)
+ * Hardwired is I2C address 0x20 (A0, A1, A2 to GND)
  * 
  */
 
