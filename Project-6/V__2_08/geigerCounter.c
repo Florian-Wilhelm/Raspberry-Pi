@@ -4,11 +4,11 @@
  * Geiger counter program for running on a Raspberry Pi Pico with attached prototype PCB 
  *   
  * HV-generation by virtue of a PWM (for the boost-converter); triggers simple output devices (LEDs, buzzer etc.) in case of an interrupt (counting event)
- * In addition, an LCD will show counting events, elapsed time and CPM
+ * In addition, an LCD will show counting events, elapsed time and CPM (note: for my current prototypes, I use an OLED because of lesser consumption)
  * 
  * Difference versions 1.x -> 2.x is a control loop for the HV
  * 
- * note: internal pull-up resistors are ENabled (push-pull mode) for the IRQ GP and for the I2C (external, e.g. 4.7k, to be preferred for a robust design)
+ * note: internal pull-up resistors (which are FETs actually which behave like resistors) are ENabled for the IRQ GP and for the I2C (external, e.g. 4.7k, to be preferred for a robust design)
  * 
  */
  
