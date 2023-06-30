@@ -1,15 +1,11 @@
 /**
  * Created 19/09/2022 by Florian Wilhelm Dirnberger
  *
- * code is in large parts copied from Harry Fairheads book, page 347 (but not every single line of code will be needed in this project)
- *   
- * it is sort of an IoT demo code; it doesn't do very much except sending some sensor data thru the internet
- * 
  * HW-390 capacitive soil moisture sensor - ADC0 (GP26)
  * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
  * 
  * note 1: WiFi-credentials have to be modified (name, password); without that there is no point compiling this source code
- * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the "classical" Pico and an Espressif ESP8266 MCU
+ * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU
  *
  */
 
@@ -174,7 +170,7 @@ int startServerWiFi(uint8_t buf[], int len)
         memset(id, '\0', sizeof(id));
         strncpy(id, temp, d);
         
-        uint absoluteTime = (to_us_since_boot(get_absolute_time())/1000000)/60;
+        uint absoluteTime = (to_ms_since_boot(get_absolute_time())/1000)/60;
         
         adc_select_input(0);
         
