@@ -170,7 +170,8 @@ int startServerWiFi(uint8_t buf[], int len, int wd_indicator)
         memset(id, '\0', sizeof(id));
         strncpy(id, temp, d);
         
-        uint absoluteTime = (to_ms_since_boot(get_absolute_time())/1000)/60;
+        uint absoluteTimeMinutes = (to_ms_since_boot(get_absolute_time())/1000)/60;
+        float absoluteTimeHours = absoluteTimeMinutes/60;
         
         adc_select_input(0);
         
@@ -184,9 +185,9 @@ int startServerWiFi(uint8_t buf[], int len, int wd_indicator)
         float readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6; // maths for the temperature sensor 103AT2 T=f(U); formula produced by virtue of an interpolation, parameters determined by the voltage divider resistor and the actual values from the data sheet
 
         char data[2048];
-        
-        sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Weather</title></head><body><p><font color=blue>Relative Humidity (0-100): %u percent</font>; <font color=red>Temperature: %2.1f degrees Celsius</font></p><p><font color=brown>WD indicator %u</font></p><p><font color=brown>Time since StartUp: %u minutes</font></p><p>SW V1.1; (c) ome-eng.net 2023</p></body></html>\r\n", outputRHSensor, readTempSensor, wd_indicator, absoluteTime);
-        
+    
+        sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Weather</title></head><body><p><font color=blue>Relative Humidity (0-100): %u percent</font>; <font color=red>Ambient Temperature: %2.1f degrees Celsius</font></p><p><font color=brown>Time since StartUp: %u minutes (%2.1f hours)</p><p>WD indicator %u</font></p><p>SW V1.2; (c) ome-eng.net 2023</p></body></html>\r\n", outputRHSensor, readTempSensor, absoluteTimeMinutes, absoluteTimeHours, wd_indicator);
+          
         uint8_t command[128];
         int count = snprintf(command, 128, "AT+CIPSEND=%s,%d\r\n", id, strlen(data));
         uart_write_blocking(uart1, command, count);
