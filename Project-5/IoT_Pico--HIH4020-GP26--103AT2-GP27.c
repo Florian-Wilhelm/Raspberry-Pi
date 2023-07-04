@@ -1,7 +1,7 @@
 /**
  * Created 19/09/2022 by Florian Wilhelm Dirnberger; modified 30/06/2023 (watchdog implementation)
  *
- * Sensor connections (including additional electronics):
+ * Sensor to ADC connections (including additional resistors to create voltage dividers):
  * RH sensor HIH4020 - ADC0 (GP26)
  * NTC temperature sensor 103AT2 - ADC1 (GP27)
  * 
