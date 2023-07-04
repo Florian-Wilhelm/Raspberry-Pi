@@ -1,8 +1,9 @@
 /**
  * Created 19/09/2022 by Florian Wilhelm Dirnberger; modified 30/06/2023 (watchdog implementation)
  *
+ * Sensor connections (including additional electronics):
  * RH sensor HIH4020 - ADC0 (GP26)
- * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
+ * NTC temperature sensor 103AT2 - ADC1 (GP27)
  * 
  * note 1: WiFi-credentials have to be modified (name, password); without that there is no point compiling this source code
  * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU
