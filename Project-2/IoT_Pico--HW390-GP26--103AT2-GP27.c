@@ -1,8 +1,9 @@
 /**
  * Created 19/09/2022 by Florian Wilhelm Dirnberger
  *
+ * Sensor to ADC connections:
  * HW-390 capacitive soil moisture sensor - ADC0 (GP26)
- * NTC temperature sensor 103AT2 (as part of a voltage divider) - ADC1 (GP27)
+ * NTC temperature sensor 103AT2 - ADC1 (GP27)
  * 
  * note 1: WiFi-credentials have to be modified (name, password); without that there is no point compiling this source code
  * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU
@@ -181,7 +182,7 @@ int startServerWiFi(uint8_t buf[], int len)
         
         uint16_t vorErg = adc_read(); // raw value (max 4095)
         float zwErg = (3.3/4096)*vorErg; // representing voltage U
-        // maths for the NTC temperature sensor 103AT2; formula conceived by virtue of an interpolation for there are only a few supporting points in the data sheet given    
+        // maths for the NTC temperature sensor 103AT2; formula conceived by virtue of an interpolation    
         float readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6; // T=f(U)
 
         char data[2048];
