@@ -5,7 +5,7 @@
  * HW-390 capacitive soil moisture sensor - ADC0 (GP26)
  * NTC temperature sensor 103AT2 - ADC1 (GP27)
  * 
- * note 1: WiFi-credentials have to be modified (name, password); without that there is no point compiling this source code
+ * note 1: WiFi-credentials have to be modified (name and password, command "connectWiFi"); without that there is no point compiling this source code
  * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU
  *
  */
@@ -231,7 +231,7 @@ int main()
     gpio_put(25, 1);
     sleep_ms(1000);
     
-    connectWiFi(buf, 512, "WLAN-ABC", "12345");
+    connectWiFi(buf, 512, "WiFi-ABC", "12345");
     
     gpio_put(25, 0);
     sleep_ms(1000);
