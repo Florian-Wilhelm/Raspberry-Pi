@@ -1,10 +1,10 @@
 /**
  * Created 19/09/2022 by Florian Wilhelm Dirnberger; modified 30/06 and 17/07/2023 (watchdog implementation, modified system clock and light sensor on ADC2)
  *
- * Sensor to ADC connections (including additional resistors to create voltage dividers, see comments further below):
+ * Sensor to ADC connections (configurations include additional resistors to create voltage dividers, see comments further below):
  * HIH4020 (relative humidity) - ADC0 (GP26)
- * NTC 103AT2 (ambient temperature)- ADC1 (GP27)
- * Phototransistor SFH 300 (ambient light)- ADC2 (GP28)
+ * NTC 103AT2 (ambient temperature) - ADC1 (GP27)
+ * Phototransistor SFH 300 (ambient light) - ADC2 (GP28)
  * 
  * note 1: WiFi-credentials have to be modified (name and password, command "connectWiFi"); without that there is no point compiling this source code
  * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU
@@ -272,7 +272,7 @@ int main()
     gpio_put(25, 1);
     sleep_ms(1000);
     
-    connectWiFi(buf, 512, "WiFi-ABC", "12345");
+    connectWiFi(buf, 512, "WiFi-ABC", "12345"); // to be modified
     
     gpio_put(25, 0);
     sleep_ms(1000);
