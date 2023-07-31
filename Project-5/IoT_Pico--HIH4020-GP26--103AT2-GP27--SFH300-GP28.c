@@ -6,7 +6,7 @@
  * NTC 103AT2 (ambient temperature) - ADC1 (GP27)
  * Phototransistor SFH 300 (ambient light) - ADC2 (GP28)
  * 
- * note 1: WiFi-credentials have to be modified (name and password, command "connectWiFi"); without that there is no point compiling this source code
+ * note 1: WiFi-credentials have to be modified (name/ssid and password, command "connectWiFi"); without that there is no point compiling this source code
  * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU
  * 
  */
