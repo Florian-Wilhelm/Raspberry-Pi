@@ -51,4 +51,4 @@ Simple training project: flashing two LEDs cyclically by using the PIO (Programm
 
 **Project 9 - RP2040 clocks**
 
-Experimenting with the RP2040 clocks.
+Exploring the RP2040 clocks.
