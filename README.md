@@ -21,11 +21,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 **Project 2 - Soil moisture measurement device**
 
-https://ome-eng.net/raspi-pico-bodenfeuchte/
-
 https://hackaday.io/project/178522-soil-moisture-measurement-device
-
-https://youtu.be/C4uuUMjFevM
 
 **Project 4 - DC motor control (demo)**
 
@@ -39,7 +35,7 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 
 https://hackaday.io/project/184266-geiger-counter
 
-https://youtu.be/pMx6CFsCxYo
+https://hackaday.io/project/189235-iot-geiger-counter-w-rn4870-ble-module
 
 **Project 7 - 6bit DAC connected to MCP23016 I/O expansion for I2C bus**
 
