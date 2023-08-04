@@ -1,10 +1,12 @@
-### Current measurement (example)
+## Current measurement 
 
-clk_sys is 12 MHz. Current of the LCD (which is about 20 mA) goes into the measurement as well.
+### clk_sys 12 MHz
+
+Current of the LCD (which is about 20 mA) goes into the measurement as well.
 
 ![CurrentMeasurement-Pico](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/6b3b72e1-c765-49df-a89c-3788803f1686)
 
-### Current measurement with varying clk_sys
+### Varying clk_sys
 
 As you can see, there is a linear dependency between the MCU current and clk_sys ("dynamic power consumption"). About 6 mA is the "static power consumption".
 
