@@ -4,3 +4,9 @@ Current of the LCD (which is about 20 mA) goes into the measurement. clk_sys is 
 
 ![CurrentMeasurement-Pico](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/6b3b72e1-c765-49df-a89c-3788803f1686)
 
+### Current measurement with varying clk_sys
+
+As you can see, there is a linear dependency between the MCU current and clk_sys.
+
+![Current--CLK_SYS](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/ec2af30f-42b6-4dd7-bc87-e586dad7b960)
+
