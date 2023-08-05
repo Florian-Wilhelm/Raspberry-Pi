@@ -7,6 +7,7 @@
  * 
  * note 1: WiFi-credentials have to be modified (name and password, command "connectWiFi"); without that there is no point compiling this source code
  * note 2: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU
+ *        Wiring ESP8266 - Pico: https://hackaday.io/project/178522-soil-moisture-measurement-device/log/207966-iot-capabilities
  *
  */
 
