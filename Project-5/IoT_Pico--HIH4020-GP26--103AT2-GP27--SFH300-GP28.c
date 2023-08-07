@@ -1,5 +1,5 @@
 /**
- * Created 19/09/2022 by Florian Wilhelm Dirnberger; modified 30/06 and 06/08/2023 (watchdog implementation, modified system clock and light sensor on ADC2)
+ * Created 19/09/2022 by Florian Wilhelm Dirnberger; modified 30/06 and 07/08/2023 (watchdog implementation, modified system clock and light sensor on ADC2)
  *
  * Sensor to ADC connections (configurations include additional resistors to create voltage dividers, see comments further below):
  * HIH4020 (relative humidity) - ADC0 (GP26)
