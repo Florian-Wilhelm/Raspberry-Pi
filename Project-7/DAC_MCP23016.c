@@ -40,7 +40,7 @@ int main()
   buf[0] = 0x06; // I/O direction register
   buf[1] = 0x00; // GP0 is output
   
-  i2c_write_blocking(i2c1, 0x20, buf, 2, false);   
+  i2c_write_blocking(i2c1, 0x20, buf, 2, false);   // last two parameters: buffer length = 2 bytes; nostop = false, that means final stop bit is sent
     
   sleep_ms(200);
   
