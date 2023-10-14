@@ -48,7 +48,7 @@ int main()
   
   while(true){
          
-   for (sawtooth = 0x3F; sawtooth>=0x00; sawtooth--) // only a 6bit DAC, so we count down from 0011111 which is 0x3F (inverted input for the DAC)
+   for (sawtooth = 0x3F; sawtooth>=0x00; sawtooth--) // only a 6bit DAC, so we count down from 00111111 which is 0x3F (inverted input for the DAC)
     {
   
     buf[0] = 0x00; // data port register
