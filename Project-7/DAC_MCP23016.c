@@ -56,7 +56,7 @@ int main()
      
     i2c_write_blocking(i2c1, 0x20, buf, 2, false);  
   
-    //sleep_us(1000); // a value here would manipulate the sawtooth frequency, along with the determined I2C frequency
+    //sleep_us(1000); // a value here would manipulate the sawtooth frequency, along with the fixed I2C frequency
     
     }  
   }         
