@@ -29,7 +29,7 @@ int main()
   gpio_set_function(2, GPIO_FUNC_I2C); // SDA
   gpio_set_function(3, GPIO_FUNC_I2C); // SCL
 
-  // using two external 3.9kOhm resistors, so the following two lines are obsolete
+  // using two external 3.9kOhm resistors, so the following two lines are obsolete; with the RP2040 internal ones, it probably won't work at all
   /* gpio_pull_up(2);
      gpio_pull_up(3); */
   
