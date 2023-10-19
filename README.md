@@ -37,7 +37,7 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://hackaday.io/project/189235-iot-geiger-counter-w-rn4870-ble-module
 
-**Project 7 - 6bit DAC connected to MCP23016 I/O expansion for I2C bus**
+**Project 7 - 6bit R-2R ladder DAC connected to MCP23016 I/O expansion for I2C bus**
 
 https://hackaday.io/project/188593-6bit-digital-analog-converter
 
