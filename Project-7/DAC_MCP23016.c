@@ -1,8 +1,8 @@
 /**
  * Created 03/01/2023 by Florian Wilhelm Dirnberger
  *
- * 6bit DAC hardwired to MCP23016 digital input/output Pins GP0.x (IC is a I/O expansion for I2C bus) 
- * MCP23016 in turn is connected to one of the two RP2040 I2C controllers (i.e. I2C master) for receiving bus data
+ * 6bit R-2R ladder DAC hardwired to the MCP23016 digital output Pins GP0.x (this IC is a I/O expansion for I2C bus) 
+ * MCP23016 is in turn connected to one of the two RP2040 I2C controllers (i.e. I2C master) for receiving bus data
  * 
  * Realized with this program is a simple saw tooth generator
  *  
@@ -56,7 +56,7 @@ int main()
      
     i2c_write_blocking(i2c1, 0x20, buf, 2, false);  
   
-    //sleep_us(1000); // a value here would manipulate the sawtooth frequency, along with the fixed I2C frequency
+    //sleep_us(1000); // a value here would manipulate the sawtooth frequency, along with the I2C frequency
     
     }  
   }         
