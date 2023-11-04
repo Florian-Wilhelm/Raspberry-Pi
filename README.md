@@ -23,7 +23,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 https://hackaday.io/project/178522-soil-moisture-measurement-device
 
-**Project 4 - PWM demo scripts**
+**Project 4 - Exploring PWM (a few demo scripts)**
 
 https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4
 
