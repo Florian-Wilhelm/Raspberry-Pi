@@ -1,4 +1,4 @@
-# RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
+# RASPBERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
 # code sequence below for early prototype with resistive ME110-sensor, RGB-LED and one single 7-Segment-Display
 from machine import Pin, PWM
 #import utime
