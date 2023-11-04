@@ -1,4 +1,4 @@
-# RASPERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
+# RASPBERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
 # SOIL MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS WITH SENSOR TYPE DETECTION
 # USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS 
 # ###
