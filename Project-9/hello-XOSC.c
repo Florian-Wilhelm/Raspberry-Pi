@@ -3,6 +3,8 @@
  *
  * Playing around with the RP2040 Clocks (especially the Crystal Oscillator), so this code is mostly a quick&dirty construct
  * Connected to the Pico is a 16x2 LCD for convenience to display the most relevant of the generated frequencies
+ *
+ * see also: https://forums.raspberrypi.com/viewtopic.php?p=2104693#p2104693
  * 
  */
 
