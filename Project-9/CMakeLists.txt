@@ -12,7 +12,7 @@ add_executable(hello-XOSC
         )
 
 # pull in common dependencies
-target_link_libraries(hello-XOSC pico_stdlib hardware_i2c hardware_clocks)
+target_link_libraries(hello-XOSC pico_stdlib hardware_i2c hardware_pwm hardware_clocks)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(hello-XOSC)
