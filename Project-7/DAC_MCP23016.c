@@ -24,7 +24,7 @@ int main()
   
   sleep_ms(100);
 
-  i2c_init(i2c1, 50*1000); // second parameter: I2C frequency
+  i2c_init(i2c1, 50*1000); // second parameter: I2C frequency; for example, if it's 1000kHz the duration for one SCL cycle is 1ms
 
   gpio_set_function(2, GPIO_FUNC_I2C); // SDA
   gpio_set_function(3, GPIO_FUNC_I2C); // SCL
