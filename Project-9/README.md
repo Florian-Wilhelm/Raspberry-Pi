@@ -4,7 +4,7 @@
 
 Supply via Raspberry Pi Pin 2 (+5V). Current of the LCD (which is about 20 mA) goes into the measurement as well here.
 
-![CurrentMeasurement-Pico](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/6b3b72e1-c765-49df-a89c-3788803f1686)
+![Messaufbau](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/cfaaa8ab-902c-4408-befd-30ed284436bb)
 
 ### Varying clk_sys
 
