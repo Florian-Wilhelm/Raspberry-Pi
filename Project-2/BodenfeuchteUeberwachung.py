@@ -1,11 +1,11 @@
-# RASPBERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
-# code sequence below for early prototype with resistive ME110-sensor, RGB-LED and one single 7-Segment-Display
+# RASPBERRY PI PICO PROJEKT https://hackaday.io/project/178522-soil-moisture-measurement-device
+# Untere MicroPython Codesequenz für frühen Prototyp mit resistivem ME110-Sensor, RGB-LED und einer einzelnen 7-Segment-Anzeige
 from machine import Pin, PWM
 #import utime
-ADC_A0 = machine.ADC(26)
-pwm3 = PWM(Pin(3)) # blau
-pwm4 = PWM(Pin(4)) # rot
-pwm5 = PWM(Pin(5)) # grün
+ADC_A0 = machine.ADC(26) # ADC0
+pwm3 = PWM(Pin(3)) # gewählter Anschlusspin (GPIO) für blaue LED
+pwm4 = PWM(Pin(4)) # gewählter Anschlusspin (GPIO) für rote LED
+pwm5 = PWM(Pin(5)) # gewählter Anschlusspin (GPIO) für grüne LED
 pwm3.freq(500) # PWM-Frequenz blaue LED
 pwm4.freq(500) # PWM-Frequenz rote LED
 pwm5.freq(500) # PWM-Frequenz grüne LED
