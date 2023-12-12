@@ -3,7 +3,7 @@
 # https://github.com/micropython/micropython/tree/master/drivers/sdcard
 #
 #
-# In a "main.py", code should look something like:
+# In a "main.py", commands should look something like:
 # ###
 #
 # import sdcard
