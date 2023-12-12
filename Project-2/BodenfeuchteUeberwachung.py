@@ -1,5 +1,6 @@
 # RASPBERRY PI PICO PROJEKT https://hackaday.io/project/178522-soil-moisture-measurement-device
-# Untere MicroPython Codesequenz für frühen Prototyp mit resistivem ME110-Sensor, RGB-LED und einer einzelnen 7-Segment-Anzeige
+# Programm für allererste Bastelboards mit resistivem ME110-Sensor, RGB-LED und einer einzelnen 7-Segment-Anzeige
+# ###
 from machine import Pin, PWM
 #import utime
 ADC_A0 = machine.ADC(26) # ADC0
