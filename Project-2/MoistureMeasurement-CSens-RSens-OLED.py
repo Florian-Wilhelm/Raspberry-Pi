@@ -2,8 +2,6 @@
 # SOIL MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS WITH SENSOR TYPE DETECTION
 # USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS 
 # ###
-# Note: I haven't experimented much with the given values so far (e.g. mx_time), so there might exist more aesthetic parameters
-# ###
 import utime
 from machine import Pin
 from machine import I2C
@@ -45,7 +43,7 @@ ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience
 # Important for this "initialisation" is that the sensor has no contact with the medium (i.e. the probe must be dry);
 # After that the device is ready for use.
 if ExpandedSensorValueS < 4096: 
-# obige Schwelle relativ willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
+# obige Schwelle recht willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
 # threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
     resistivTrue=1
     if OLED_true == 1:
