@@ -2,13 +2,14 @@
 
 ### 1.1 Example: clk_sys 12 MHz
 
-Supply thru Raspberry Pi Pin 2 (+5V). Current of the LCD (which is about 20 mA) goes into the measurement as well here.
+Supply thru Raspberry Pi Pin 2 (+5V). Current of the LCD (which is about 20 mA) goes into the measurement as well.
 
 ![Current](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/4b91a263-de49-49b2-8b87-8083b41b6474)
 
 ### 1.2 Varying clk_sys
 
-There is a linear dependency between the MCU current and clk_sys ("dynamic power consumption"). About 6 mA is the "static power consumption".
+There is a linear dependency between the MCU current and clk_sys ("dynamic power consumption"). 
+About 6 mA is the "static power consumption".
 
 ![Current-over-clk_sys](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1136ca16-1971-4c13-b5f3-f4026da0bb4b)
 
@@ -16,7 +17,7 @@ There is a linear dependency between the MCU current and clk_sys ("dynamic power
 
 ### 2.1 Crystal oscillator module
 
-Desoldering R15, C16 and C17 and soldering external oscillator module OUT to Pico XIN (here used: 14.31 MHz crystal oscillator module)
+Desoldering R15, C16 and C17 and soldering external the oscillator module OUT Pin to Pico XIN (here used: 14.31 MHz crystal oscillator module)
 
 C16 and C17 desoldered, the white dot marks XIN: 
 
