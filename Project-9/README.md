@@ -10,7 +10,7 @@ Supply thru Raspberry Pi Pin 2 (+5V). Current of the LCD (which is about 20 mA) 
 
 As you can see, there is a linear dependency between the MCU current and clk_sys ("dynamic power consumption"). About 6 mA is the "static power consumption".
 
-![Current--CLK_SYS](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/ec2af30f-42b6-4dd7-bc87-e586dad7b960)
+![Current-over-clk_sys](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1136ca16-1971-4c13-b5f3-f4026da0bb4b)
 
 ## 2. Current measurement 
 
