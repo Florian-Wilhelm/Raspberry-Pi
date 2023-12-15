@@ -18,6 +18,8 @@ There is a linear dependency between the MCU current and clk_sys ("dynamic power
 
 Desoldering R15, C16 and C17 and soldering an external oscillator module to XIN (here used: 14.31 MHz crystal oscillator module)
 
-![XOSC-Pico](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/87aefab5-890e-4609-8b18-96dc1de103df)
+C16 and C17 desoldered, the white dot marks XIN: 
+
+![C16-C17-desoldered](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/5ee4b716-3b39-4c45-8445-ca2fb8c15b44)
 
 ![Mesaufbau-external-XOSC--scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/77b2c847-e305-4a9d-9cae-8a96016f7aaf)
