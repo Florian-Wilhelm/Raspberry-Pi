@@ -16,8 +16,12 @@ There is a linear dependency between the MCU current and clk_sys ("dynamic power
 
 ### 2.1 Crystal oscillator module
 
-Desoldering R15, C16 and C17 and soldering an external oscillator module to XIN (here used: 14.31 MHz crystal oscillator module)
+Desoldering R15, C16 and C17 and soldering external oscillator module OUT to Pico XIN (here used: 14.31 MHz crystal oscillator module)
 
 C16 and C17 desoldered, the white dot marks XIN: 
 
 ![C16-C17-desoldered](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/5ee4b716-3b39-4c45-8445-ca2fb8c15b44)
+
+External oscillator module consumes a few mA as well.
+
+![Messaufbau-external-XOSC](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/34edceb0-7f22-4186-aea1-b09cffbaf87f)
