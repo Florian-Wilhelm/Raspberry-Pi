@@ -21,5 +21,3 @@ Desoldering R15, C16 and C17 and soldering an external oscillator module to XIN 
 C16 and C17 desoldered, the white dot marks XIN: 
 
 ![C16-C17-desoldered](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/5ee4b716-3b39-4c45-8445-ca2fb8c15b44)
-
-![Mesaufbau-external-XOSC--scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/77b2c847-e305-4a9d-9cae-8a96016f7aaf)
