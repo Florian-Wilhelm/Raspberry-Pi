@@ -1,6 +1,6 @@
 ## 1. Current measurement 
 
-### 1.1 Example: clk_sys 12 MHz
+### 1.1 Example: System Clock (clk_sys) 12 MHz
 
 Supply thru Raspberry Pi Pin 2 (+5V). Current of the LCD (which is about 20 mA) goes into the measurement as well.
 
