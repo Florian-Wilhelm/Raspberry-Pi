@@ -1,4 +1,4 @@
-## 1. Current measurement 
+## 1. Measuring the current 
 
 ### 1.1 Example: System Clock (clk_sys) 12 MHz
 
@@ -10,7 +10,7 @@ Supply thru Raspberry Pi Pin 2 (+5V). Current of the LCD (which is about 20 mA) 
 
 There is a linear dependency between the MCU current and clk_sys ("dynamic power consumption"). 
 
-About 6 mA is the "static power consumption".
+About 6 mA is the "static power consumption", which is always present and due to FET leakage currents.
 
 ![Current-over-clk_sys](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1136ca16-1971-4c13-b5f3-f4026da0bb4b)
 
