@@ -25,6 +25,6 @@ C16 and C17 desoldered, the white dot on the PCB marks XIN:
 ![C16-C17-desoldered](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/5ee4b716-3b39-4c45-8445-ca2fb8c15b44)
 
 External oscillator module consumes a few mA, so we end up also with about 30 mA though clk_sys is much lower now. 
-Time bases are off now (i. e. 14.31/12.00 off), so the SW ought to be modified.
+Time bases are off now (i. e. 14.31/12.00 off), so the SW ought to be modified. Values on the LCD are not correct.
 
 ![Messaufbau-external-XOSC](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/34edceb0-7f22-4186-aea1-b09cffbaf87f)
