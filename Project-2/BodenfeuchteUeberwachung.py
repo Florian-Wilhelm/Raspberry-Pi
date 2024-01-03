@@ -1,15 +1,15 @@
 # RASPBERRY PI PICO PROJEKT https://hackaday.io/project/178522-soil-moisture-measurement-device
-# Programm für allererste Bastelboards mit resistivem ME110-Sensor, RGB-LED und einer einzelnen 7-Segment-Anzeige
+# Skript für allererste Bastelboards mit resistivem ME110-Sensor, RGB-LED und einer einzelnen 7-Segment-Anzeige
 # ###
 from machine import Pin, PWM
 #import utime
 ADC_A0 = machine.ADC(26) # ADC0
 pwm3 = PWM(Pin(3)) # gewählter Anschlusspin (GPIO) für blaue LED
-pwm4 = PWM(Pin(4)) # gewählter Anschlusspin (GPIO) für rote LED
-pwm5 = PWM(Pin(5)) # gewählter Anschlusspin (GPIO) für grüne LED
-pwm3.freq(500) # PWM-Frequenz blaue LED
-pwm4.freq(500) # PWM-Frequenz rote LED
-pwm5.freq(500) # PWM-Frequenz grüne LED
+pwm4 = PWM(Pin(4)) # s.o., rote LED
+pwm5 = PWM(Pin(5)) # s.o., grüne LED
+pwm3.freq(500) # PWM-Frequenz blaue LED, Wert nicht so wichtig (darf bur nicht flackern)
+pwm4.freq(500) # s.o., rote LED
+pwm5.freq(500) # s.o., grüne LED
 A = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE IC BCD-to-7-Segment Latch Decoder
 B = Pin(10, Pin.OUT) # B: Pin 1    
 C = Pin(11, Pin.OUT) # C: Pin 2    
