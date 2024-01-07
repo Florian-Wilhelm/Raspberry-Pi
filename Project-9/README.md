@@ -10,7 +10,7 @@ Supply thru Raspberry Pi Pin 2 (+5V). Current of the LCD (which is about 20 mA) 
 
 There is a linear dependency between the MCU current and clk_sys ("dynamic power consumption"). 
 
-About 5 mA is the "static power consumption", which is always present and to a great deal due to FET leakage currents within the MCU.
+About 5 mA is the "static power consumption", which is always present and according to theory to a great deal due to FET leakage currents within the MCU.
 
 ![Current-over-clk_sys](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1136ca16-1971-4c13-b5f3-f4026da0bb4b)
 
@@ -24,7 +24,8 @@ C16 and C17 desoldered, the white dot on the PCB marks XIN:
 
 ![C16-C17-desoldered](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/5ee4b716-3b39-4c45-8445-ca2fb8c15b44)
 
-External oscillator module consumes a few mA, so we end up also with about 30 mA though clk_sys is much lower now. 
-Time bases are off now (i. e. 14.31/12.00 off), so the SW ought to be modified. Hence values on the LCD are not correct.
+External oscillator module consumes a few mA (measured: 1.8 mA). 
+Time bases are off now, so the SW ought to be modified. Hence values on the LCD are not correct, the second counter counts too fast (i. e. 14.31/12.00 too fast).
 
-![Messaufbau-external-XOSC](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/34edceb0-7f22-4186-aea1-b09cffbaf87f)
+![Current-external-XOSC-14-31MHz](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/988c4feb-8c54-445c-bd63-ad66318ac39c)
+
