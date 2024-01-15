@@ -7,7 +7,7 @@ ADC_A0 = machine.ADC(26) # ADC0
 pwm3 = PWM(Pin(3)) # gewählter Anschlusspin (GPIO) für blaue LED
 pwm4 = PWM(Pin(4)) # s.o., rote LED
 pwm5 = PWM(Pin(5)) # s.o., grüne LED
-pwm3.freq(500) # PWM-Frequenz blaue LED, Wert nicht so wichtig (darf bur nicht flackern)
+pwm3.freq(500) # PWM-Frequenz blaue LED, Wert nicht so wichtig (sollte nur nicht flackern)
 pwm4.freq(500) # s.o., rote LED
 pwm5.freq(500) # s.o., grüne LED
 A = Pin(13, Pin.OUT) # A: Pin 7 CD4511BE IC BCD-to-7-Segment Latch Decoder
