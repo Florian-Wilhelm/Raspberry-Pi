@@ -1,14 +1,15 @@
 /**
- * Created March 2022 by Florian Wilhelm Dirnberger
+ * Created January 2024 by Florian Wilhelm Dirnberger
  *
- * Intended for learning purposes, code below mostly copied from the official Pico SDK documentation.
+ * Intended for learning purposes, code below mostly copied from the official Pico SDK documentation;
+ * program will flash cyclically two LEDs in alternation; these are connected to GP2 and GP3
  * 
  */
 
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 
-#include "doubleBlinky.pio.h"
+#include "doubleBlinky.pio.h" // located in the build directory after the compiling process
 
 int main()
 {
