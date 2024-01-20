@@ -3,10 +3,10 @@
    pull block    ;wait until there is data in the TX FIFO
 again:
    set pins,1    ;bitmap! 0011 = 3d "enable" both pins
-   mov x,osr
- loop1:
+   mov x,osr     ;mov destination, source
+ loop1:          ;loops to slow things down
     jmp x--,loop1
-   set pins,2
+   set pins,2    ;enable the other GP
    mov x,osr
  loop2:
    jmp x--,loop2
