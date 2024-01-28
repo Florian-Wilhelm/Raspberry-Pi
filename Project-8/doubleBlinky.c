@@ -31,7 +31,7 @@ int main()
     
     pio_sm_put_blocking(pio0, sm, 0x0002FFFF);  // for the delaying loop
     
-    while(true) // switching the LEDs
+    while(true) // one LED on, the other off
     {
         if (n == 0){
           pio_sm_put_blocking(pio0, sm, 0x2); 
