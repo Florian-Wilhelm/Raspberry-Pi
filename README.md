@@ -45,7 +45,7 @@ https://hackaday.io/project/188593-6bit-digital-analog-converter
 
 **Project 8 - PIO blinky**
 
-Simple training project: flashing two LEDs cyclically by using the PIO (Programmable IO).
+Flashing two LEDs cyclically by using the PIO (Programmable IO).
 
 **Project 9 - RP2040 clocks**
 
