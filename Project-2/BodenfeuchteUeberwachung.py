@@ -3,7 +3,7 @@
 # ###
 from machine import Pin, PWM
 #import utime
-ADC_A0 = machine.ADC(26) # ADC0
+ADC_A0 = machine.ADC(26) # ADC0 an Pin 26
 pwm3 = PWM(Pin(3)) # gewählter Anschlusspin (GPIO) für blaue LED
 pwm4 = PWM(Pin(4)) # s.o., rote LED
 pwm5 = PWM(Pin(5)) # s.o., grüne LED
@@ -17,7 +17,7 @@ D = Pin(12, Pin.OUT) # D: Pin 6
 while True:
     # ADC (Skalierung für ME110-Sensor, siehe Datenblatt)
     ExpandedSensorValueS = int((ADC_A0.read_u16()/1.7)*3.3)
-    # Werte ausserhalb des Wertebereiches (Spannungsspitzen etc.) werden ausgeblendet
+    # Werte ausserhalb des erlaubten Wertebereiches (Spannungsspitzen, fehlerhafte ADC-Wandlung etc.) werden ausgeblendet
     if ExpandedSensorValueS < 0:
       ExpandedSensorValueS = 0
     if ExpandedSensorValueS > 65535:
@@ -29,7 +29,7 @@ while True:
     pwm3.duty_u16(duty3)
     pwm4.duty_u16(duty4)
     pwm5.duty_u16(duty5)
-    # 7-Segmentansteuerung        
+    # Ansteuerung der 7-Segmentanzeige; sperriger Code, nur für Präsentationszwecke        
     if ((ExpandedSensorValueS>=0) and (ExpandedSensorValueS<=6553)):      
       A.low()      
       B.low()      
