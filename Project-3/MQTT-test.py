@@ -1,5 +1,5 @@
 # MQTT publishing data (what you see below is merely a rudimentary test script);
-# important note: a broker (mosquitto) has to be installed on your system as well.
+# important note: a broker (mosquitto) has to be installed on your Raspberry Pi as well.
 
 import Adafruit_BMP.BMP280 as BMP280
 import time
