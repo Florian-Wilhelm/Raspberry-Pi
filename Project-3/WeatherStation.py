@@ -15,7 +15,7 @@ lcd.lcd_display_string("Druck: {0:0.0f} Pa ".format(pressure),2)
 
 i = 0
 
-# reading temperature and pressure in an infinite loop
+# reading ambient temperature and atmospheric pressure in an infinite loop
 while True:
   temperature = sensor.read_temperature()
   pressure = sensor.read_pressure()
