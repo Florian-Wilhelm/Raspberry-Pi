@@ -12,7 +12,7 @@ https://ome-eng.net/automatische-bewaesserung-raspberry-pi/
 
 https://hackaday.io/project/177954-remotely-controlled-plant-watering
 
-**Project  3 - Weather station**
+**Project  3 - Simple weather station**
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
