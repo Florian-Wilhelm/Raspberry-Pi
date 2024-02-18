@@ -239,6 +239,7 @@ int main() {
                     0,          // zero because no Auxiliary Clock Source is necessary 
                     12*KHZ,     // "Frequency of the input clock source", supposedly a divider value (actually no idea what this value is about)
                     12*KHZ);    // "Requested frequency", supposedly a divider value (actually no idea what this value is about)
+                    // note: "KHZ" is an apparent bug in the code, but does it matter? No idea
               
     /*uint32_t *RTC = (uint32_t *)0x40008000;
     
