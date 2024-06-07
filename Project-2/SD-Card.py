@@ -1,3 +1,5 @@
+# ad-hoc test script for the connected SD-Card
+
 import machine
 import sdcard
 import uos
