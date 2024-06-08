@@ -1,4 +1,4 @@
-# ad-hoc test script for the connected SD-Card; yet to be married to the actual measurement script
+# ad-hoc test script for the connected SD-Card; yet to be married to the actual soil moisture measurement script
 
 import machine
 import sdcard
