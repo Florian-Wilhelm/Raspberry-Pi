@@ -6,7 +6,7 @@ import utime
 from machine import Pin
 from machine import I2C
 from ssd1306 import SSD1306_I2C
-# OLED connected yes/no
+# SSD1306 OLED connected yes/no
 try:
    i2c = I2C(0,sda=Pin(0),scl=Pin(1),freq=40000)
    oled=SSD1306_I2C(128,64,i2c)
