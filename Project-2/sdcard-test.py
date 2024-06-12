@@ -1,8 +1,11 @@
-# ad-hoc test script for the connected SD-Card; yet to be married to the actual soil moisture measurement script
+# ad-hoc test script a SD-Card connected to the SPI bus
 
 import machine
-import sdcard
 import uos
+import utime
+
+import sdcard # note: the "sdcard.py" lib has to be uploaded into the Pico file system
+from machine import Pin
 
 cs = machine.Pin(17, machine.Pin.OUT)
 
@@ -21,6 +24,25 @@ sd = sdcard.SDCard(spi, cs)
 vfs = uos.VfsFat(sd)
 uos.mount(vfs, "/sd")
 
-with open("/sd/test01.txt", "w") as file:
-   file.write("RH test\r\n")
-                  
+button = Pin(10, Pin.IN) # button and 10k pull-down resistor soldered to pin 10 (input GP)
+
+n = 0
+fileName = "file"
+
+while True:
+    # if button pushed, then pin 10 on 3.3V (i.e. high)
+    # i.e. pushing the button will create a new file on the SD-Card
+    if button.value()==1:         
+     
+     fileNumber = n
+     
+     buf1 = "/sd/%s%s.txt" % (fileName, fileNumber)
+     
+     buf2 = "Measurement %d\r\n" % (n)
+     
+     with open(buf1, "w") as file:
+       print("writing...")
+       file.write(buf2)
+       
+     n = n+1
+     utime.sleep(0.5) # very simple debouncing
