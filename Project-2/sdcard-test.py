@@ -31,7 +31,7 @@ fileName = "file"
 
 while True:
     # if button pushed, then pin 10 on 3.3V (i.e. high)
-    # i.e. pushing the button will create a new file on the SD-Card
+    # i.e. pushing the button will create a new .txt file on the SD-Card
     if button.value()==1:         
      
      fileNumber = n
