@@ -1,4 +1,4 @@
-## SD-Card Configuration
+## Micro SD-Card Configuration
 
 With push button for demonstration and testing (see "sdcard-test.py" in this repo):
 
