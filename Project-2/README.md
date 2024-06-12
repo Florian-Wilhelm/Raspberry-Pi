@@ -1,5 +1,6 @@
 ## Micro SD-Card Configuration
 
+Schematic Micro SD-Card board:
 https://files2.elv.com/public/13/1315/131591/Internet/131591_msda1_schaltplan.pdf
 
 With push button for demonstration and testing (see "sdcard-test.py" in this repo):
