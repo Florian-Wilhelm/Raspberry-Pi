@@ -1,9 +1,9 @@
 ## SD-Card Configuration
 
-### with push button for demonstration (see code in this repo)
+With push button for demonstration (see code in this repo):
 
 ![SD-Card--config](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/fd9b3a92-c7f7-429d-b104-d4e8e23d5139)
 
-### Connection to the soil measurement device (no code available yet)
+Connected to the soil measurement device (no code available):
 
 ![Pico--SD-Card](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/10ef905c-a06a-4749-8ee7-7e512b166b9d)
