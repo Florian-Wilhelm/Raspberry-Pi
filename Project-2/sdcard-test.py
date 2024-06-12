@@ -1,10 +1,10 @@
-# ad-hoc test script a SD-Card connected to the SPI bus
+# ad-hoc test script: connecting a SD-Card to the SPI bus and storing data on it
 
 import machine
 import uos
 import utime
 
-import sdcard # note: the "sdcard.py" lib has to be uploaded into the Pico file system
+import sdcard # note: the "sdcard.py" lib has to be uploaded to the Pico file system; this can be done via thonny
 from machine import Pin
 
 cs = machine.Pin(17, machine.Pin.OUT)
@@ -45,4 +45,4 @@ while True:
        file.write(buf2)
        
      n = n+1
-     utime.sleep(0.5) # very simple debouncing
+     utime.sleep(0.5) # very simple debouncing routine
