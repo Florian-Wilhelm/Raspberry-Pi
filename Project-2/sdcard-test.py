@@ -1,4 +1,4 @@
-# ad-hoc test script: connecting a SD-Card to the SPI bus and storing data on it
+# ad-hoc test script: connecting a SD-Card to the SPI bus and storing data on it by pushing a button
 
 import machine
 import uos
