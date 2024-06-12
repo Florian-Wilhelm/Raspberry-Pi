@@ -1,6 +1,6 @@
 ## SD-Card Configuration
 
-With push button for demonstration (see "sdcard-test.py" in this repo):
+With push button for demonstration and test (see "sdcard-test.py" in this repo):
 
 ![SD-Card--config](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/fd9b3a92-c7f7-429d-b104-d4e8e23d5139)
 
