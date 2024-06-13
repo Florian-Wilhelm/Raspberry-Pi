@@ -47,8 +47,8 @@ parser = MicropyGPS(location_formatting='dd')
 
 sentence = ''
 
+# SD-Card on SPI bus
 cs = machine.Pin(17, machine.Pin.OUT)
-
 spi = machine.SPI(0,
                   baudrate=1000000,
                   polarity=0,
@@ -60,7 +60,6 @@ spi = machine.SPI(0,
                   miso=machine.Pin(16))
 
 sd = sdcard.SDCard(spi, cs)
-
 vfs = uos.VfsFat(sd)
 uos.mount(vfs, "/sd")
 
