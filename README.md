@@ -53,4 +53,4 @@ Exploring the RP2040 clocks and experimenting with external oscillators.
 
 **Project 10 - GPS**
 
-Connecting a Pico-GPS-L76B GNSS module to the Pico
+Connecting a Pico-GPS-L76B GNSS module to the Pico.
