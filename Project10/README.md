@@ -1,4 +1,4 @@
-The file "Pico-GPS-L76B_Code2.zip" is copied from the waveshare wiki:
+File "Pico-GPS-L76B_Code2.zip" has been copied from the waveshare wiki:
 
 https://www.waveshare.com/wiki/Pico-GPS-L76B
 
