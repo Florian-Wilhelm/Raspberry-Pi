@@ -1,16 +1,14 @@
-# -*- coding:utf-8 -*-
-
 import time
+import utime
 from L76 import l76x
 import math
-import utime
 import hashlib
 from L76.micropyGPS.micropyGPS import MicropyGPS
 from machine import Pin
 
 import machine
 import uos
-import sdcard # note: the "sdcard.py" lib has to be uploaded into the Pico file system
+import sdcard # note: the "sdcard.py"-lib has to be uploaded into the Pico file system
 
 # define the UART number and its baudrate , when UARTx is 1 please solder the UART1 0R resistor on Pico-GPS-L76B board
 # UARTx = 1
@@ -47,7 +45,7 @@ parser = MicropyGPS(location_formatting='dd')
 
 sentence = ''
 
-# SD-Card on SPI bus
+# SD-Card connected to SPI bus
 cs = machine.Pin(17, machine.Pin.OUT)
 spi = machine.SPI(0,
                   baudrate=1000000,
@@ -63,7 +61,7 @@ sd = sdcard.SDCard(spi, cs)
 vfs = uos.VfsFat(sd)
 uos.mount(vfs, "/sd")
 
-button = Pin(10, Pin.IN) # button and 10k pull-down resistor soldered to pin 10 (input GP)
+button = Pin(10, Pin.IN) # push button and 10k pull-down resistor soldered to pin 10 (input GP)
 
 n = 1
 fileName = "GPS file"
