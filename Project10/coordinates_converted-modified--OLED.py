@@ -8,7 +8,7 @@ import machine
 import utime
 from machine import Pin
 from machine import I2C
-from ssd1306 import SSD1306_I2C
+from ssd1306 import SSD1306_I2C # note: might not work with all MicroPython firmwares
 
 try:
    i2c = I2C(0,sda=Pin(4),scl=Pin(5),freq=40000)
