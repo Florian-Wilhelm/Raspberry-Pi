@@ -1,4 +1,4 @@
-## Micro SD-Card Configuration
+## Configuration with Micro SD-Card and two 7-Segment-Display
 
 See project 10 for more information (code example, schematic) as to the SD-Card.
 
