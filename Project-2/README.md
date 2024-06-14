@@ -1,4 +1,4 @@
-### Configuration with two 7-Segment-Display on custom made PCB and Micro SD-Card
+## Configuration with two 7-Segment-Display on custom made PCB and Micro SD-Card
 
 See project 10 for more information (code example, schematic) as to the SD-Card.
 
