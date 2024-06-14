@@ -5,7 +5,7 @@
 import utime
 from machine import Pin
 from machine import I2C
-from ssd1306 import SSD1306_I2C
+from ssd1306 import SSD1306_I2C # note: SSD1306 packages have to be installed (via thonny: "Tools-->Manage packages..."); might not work with every MicroPython firmware
 # SSD1306 OLED connected yes/no
 try:
    i2c = I2C(0,sda=Pin(0),scl=Pin(1),freq=40000)
