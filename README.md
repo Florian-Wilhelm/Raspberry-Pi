@@ -27,8 +27,6 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 
 https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4
 
-https://ome-eng.net/wp-content/uploads/2023/11/PWM-LED-Steuerung.mp4
-
 **Project 5 - Air humidity measurement**
 
 https://ome-eng.net/raspi-pico-luftfeuchte
