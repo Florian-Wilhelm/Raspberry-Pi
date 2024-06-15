@@ -17,7 +17,7 @@ https://hackaday.io/project/177954-remotely-controlled-plant-watering
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 
-### Raspberry Pi Pico
+### Raspberry Pi Pico (and ESP8266)
 
 **Project 2 - Soil moisture measurement device**
 
