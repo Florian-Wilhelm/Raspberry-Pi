@@ -4,7 +4,7 @@ https://www.waveshare.com/wiki/Pico-GPS-L76B
 
 ## Example Configuration
 
-Possible configuration with push button, Micro SD-Card and OLED SSD1306 for demonstration and testing.
+Configuration with push button, Micro SD-Card and OLED SSD1306 for demonstration and testing.
 
 Schematic Micro SD-Card board:
 
