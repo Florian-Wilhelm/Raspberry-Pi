@@ -23,9 +23,9 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 https://hackaday.io/project/178522-soil-moisture-measurement-device
 
-**Project 4 - Exploring PWM (some demo scripts)**
+**Project 4 - Exploring PWM **
 
-https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4
+Just some demo scripts.
 
 **Project 5 - Air humidity measurement**
 
@@ -45,10 +45,10 @@ https://hackaday.io/project/188593-6bit-digital-analog-converter
 
 Flashing two LEDs cyclically by using the PIO (Programmable IO).
 
-**Project 9 - RP2040 clocks**
+**Project 9 - Exploring the RP2040 clocks**
 
-Exploring the RP2040 clocks and experimenting with external oscillators.
+[Exploring the RP2040 clocks and experimenting with external oscillators.](https://youtu.be/lahF1O3cauM)
 
-**Project 10 - GPS**
+**Project 10 - Pico and Pico-GPS-L76B GNSS module**
 
-Connecting a Pico-GPS-L76B GNSS module to the Pico.
+[Connecting a Pico-GPS-L76B GNSS module to the Pico.](https://youtu.be/zbmgVNmPB1s)
