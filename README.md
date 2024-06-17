@@ -10,8 +10,6 @@ This repo contains experimental code, generic code examples and programs (i. e. 
 
 https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
 
-https://hackaday.io/project/177954-remotely-controlled-plant-watering
-
 **Project  3 - Simple weather station**
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
@@ -34,8 +32,6 @@ https://ome-eng.net/raspi-pico-luftfeuchte
 **Project 6 - (IoT) Geiger counter**
 
 https://hackaday.io/project/184266-geiger-counter
-
-https://hackaday.io/project/189235-iot-geiger-counter-w-rn4870-ble-module
 
 **Project 7 - 6bit R-2R ladder DAC connected to MCP23016 I/O expansion for I2C bus**
 
