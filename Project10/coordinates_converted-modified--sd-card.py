@@ -67,7 +67,7 @@ n = 1
 fileName = "GPS file"
 
 while True:
-  if button.value()==1: 
+  if button.value()==1: # if button is pushed
      if gnss_l76b.uart_any():
         sentence = parser.update(chr(gnss_l76b.uart_receive_byte()[0]))
         if sentence:
