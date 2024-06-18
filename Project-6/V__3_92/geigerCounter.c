@@ -458,7 +458,7 @@ int main() {
            else{            
              
              if (k == ringbuffer_elements)
-               k=0;
+               k=0; // starting over in the ringbuffer
                
              sum = 0;
            
