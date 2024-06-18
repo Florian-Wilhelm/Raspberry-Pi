@@ -69,6 +69,7 @@
 #define OLED_NUM_PAGES OLED_HEIGHT / OLED_PAGE_HEIGHT
 #define OLED_BUF_LEN (OLED_NUM_PAGES * OLED_WIDTH)
 
+// the following bit masks are not really necessary here
 #define OLED_WRITE_MODE _u(0xFE)
 #define OLED_READ_MODE _u(0xFF)
 
