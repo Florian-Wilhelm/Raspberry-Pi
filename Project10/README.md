@@ -4,7 +4,7 @@ https://www.waveshare.com/wiki/Pico-GPS-L76B
 
 ## Example Configuration
 
-Configuration with push button, Micro SD-Card and OLED SSD1306 for demonstration and testing.
+Configuration with push button, Micro SD-Card and OLED SSD1306 for demonstration and testing. There is no trouble putting the module onto the standard Raspberry Pi Pico header. 
 
 Schematic Micro SD-Card board:
 
