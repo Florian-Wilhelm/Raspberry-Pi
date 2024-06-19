@@ -2,15 +2,21 @@ File "Pico-GPS-L76B_Code2.zip" has been copied from the waveshare wiki:
 
 https://www.waveshare.com/wiki/Pico-GPS-L76B
 
+There is no trouble putting the module onto the standard Raspberry Pi Pico header.
+
 ## Example Configuration
 
-Configuration with push button, Micro SD-Card and OLED SSD1306 for demonstration and testing. There is no trouble putting the module onto the standard Raspberry Pi Pico header. 
+### Push button, Micro SD-Card and OLED SSD1306
+
+Demonstration and testing via thonny. GPS Data is stored on the SD-Card, and available as text output in thonny. 
 
 Schematic Micro SD-Card board:
 
 https://files2.elv.com/public/13/1315/131591/Internet/131591_msda1_schaltplan.pdf
 
 ![IMG_4986](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/f40bfd9d-99ee-4b4c-9674-78b2b9508283)
+
+### Push button and OLED SSD1306
 
 GPS data on a mountain in Bavaria, Pico and GPS module get supplied by a power bank.
 
