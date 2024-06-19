@@ -2,7 +2,7 @@ File "Pico-GPS-L76B_Code2.zip" has been copied from the waveshare wiki:
 
 https://www.waveshare.com/wiki/Pico-GPS-L76B
 
-There is no trouble putting the module onto the standard Raspberry Pi Pico header.
+There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header.
 
 ## Example Configuration
 
@@ -18,7 +18,7 @@ https://files2.elv.com/public/13/1315/131591/Internet/131591_msda1_schaltplan.pd
 
 ### Push button and OLED SSD1306
 
-GPS data on a mountain in Bavaria, Pico and GPS module get supplied by a power bank.
+GPS data generated on a mountain in Bavaria, Pico and GPS module get supplied by a power bank.
 
 Note 1: script is saved as "main.py", so it starts automatically.
 
