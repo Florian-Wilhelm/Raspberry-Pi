@@ -83,6 +83,7 @@ while True:
             print('Fix Status:', parser.fix_stat)
             
             print('Altitude:%d m'%(parser.altitude))
+            buf5 = 'Altitude:%d m'%(parser.altitude)
             print('Height Above Geoid:', parser.geoid_height)
             print('Horizontal Dilution of Precision:', parser.hdop)
             print('Satellites in Use by Receiver:', parser.satellites_in_use)
@@ -92,10 +93,11 @@ while True:
             oled.show()            
                         
             if OLED_true == 1:
-              oled.text("Latitude",0,0)
-              oled.text(buf1,0,10)
-              oled.text("Longitude",0,30)              
-              oled.text(buf2,0,40)      
-              oled.show()            
+              oled.text(buf5,0,10)
+              oled.text("Latitude",0,20)
+              oled.text(buf1,0,30)
+              oled.text("Longitude",0,40)              
+              oled.text(buf2,0,50)      
+              oled.show()           
             
             utime.sleep(0.5) # very simple debouncing
