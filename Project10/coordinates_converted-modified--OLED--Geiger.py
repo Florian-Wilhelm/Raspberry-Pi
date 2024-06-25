@@ -9,7 +9,7 @@ import utime
 from machine import Pin
 from machine import UART
 from machine import I2C
-from ssd1306 import SSD1306_I2C # note: might not work with all MicroPython firmwares
+from ssd1306 import SSD1306_I2C # note: SSD1306 packages have to be installed (via thonny: "Tools-->Manage packages..."); might not work with every MicroPython firmware
 
 try:
    i2c = I2C(0,sda=Pin(4),scl=Pin(5),freq=40000)
