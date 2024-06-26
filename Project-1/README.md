@@ -1,4 +1,4 @@
-### Description
+## Description
 
 With this plant irrigation system, I am able to take care of my plants via Smartphone even when I am far away from home.
 
@@ -8,6 +8,6 @@ Moisture sensors and the Pi camera provide information about the condition of th
 
 ![9826061614501733165](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/9fc486ba-80b6-4a63-8276-26562bfb4b24)
 
-### Functional architecture
+## Functional architecture
 
 ![9059651630735533451](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/c0e020b6-c075-4e66-93db-f6b007bd9ef9)
