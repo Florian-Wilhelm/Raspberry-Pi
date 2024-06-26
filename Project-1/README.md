@@ -9,7 +9,3 @@ Moisture sensors and the Pi camera provide information about the condition of th
 ![9826061614501733165](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/322fb2e7-6f49-4acf-b82c-f94dcbb98e05)
 
 ![621501629377912380](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1d596144-0e1f-40a7-9450-8e9f04e3fa9d)
-
-## Functional architecture
-
-![9059651630735533451](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/25c5cf43-2b22-4bc0-b635-0477830b394c)
