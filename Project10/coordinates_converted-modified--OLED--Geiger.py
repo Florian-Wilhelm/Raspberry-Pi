@@ -62,11 +62,11 @@ trigger = Pin(16, Pin.IN)
 uart1 = UART(1, baudrate=115200, bits=8, parity = 0, stop=1, tx=Pin(8), rx=Pin(9))  # parity = 0 for EVEN parity
 
 while True:
-  if trigger.value() == 0:
+  if trigger.value() == 0: # it is assumed that a Geiger counter is connected, providing data via UART interface
     print('CPM:')  
     while uart1.any():  # counts down until there are no characters anymore    
       print(uart1.read(1))  # read one character
-    
+      # TBD - OLED display
     print()
   elif button.value()==1:
      
