@@ -1,6 +1,6 @@
 ## About
 
-This repo contains experimental code, generic code examples and programs (i. e. either (Micro)Python or compiled C source code) for Raspberry Pi and Raspberry Pi Pico projects (beginner to advanced level). 
+This repo contains experimental code, generic code examples and programs (I use (Micro)Python and C) for Raspberry Pi and Raspberry Pi Pico projects (beginner to advanced level). 
 See project folders for further descriptions.
 
 ## Projects
