@@ -62,7 +62,7 @@ trigger = Pin(16, Pin.IN)
 uart1 = UART(1, baudrate=115200, bits=8, parity = 0, stop=1, tx=Pin(8), rx=Pin(9))  # parity = 0 for EVEN parity
 
 while True:
-  if trigger.value() == 0:
+  if trigger.value() == 0: # ad-hoc solution, not really good
     #print('CPM:')
     oled.fill_rect(0, 0, 110, 10, 0)  
     oled.text("CPM:",0,0)
