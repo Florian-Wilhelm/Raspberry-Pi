@@ -62,13 +62,27 @@ trigger = Pin(16, Pin.IN)
 uart1 = UART(1, baudrate=115200, bits=8, parity = 0, stop=1, tx=Pin(8), rx=Pin(9))  # parity = 0 for EVEN parity
 
 while True:
-  if trigger.value() == 0: # it is assumed that a Geiger counter is connected, providing data via UART interface
-    print('CPM:')  
-    while uart1.any():  # counts down until there are no characters anymore    
-      print(uart1.read(1))  # read one character
-      # TBD - OLED display
-    print()
-  elif button.value()==1:
+  if trigger.value() == 0:
+    #print('CPM:')
+    oled.fill_rect(0, 0, 110, 10, 0)  
+    oled.text("CPM:",0,0)
+    oled.show()
+    
+    i = 0
+    count = uart1.any() # returns an integer counting the number of characters that can be read without blocking
+    offset = 40
+    
+    while (i < count):     
+     
+      digitCPM = uart1.read(1)      
+      oled.text(digitCPM,offset,0)
+      oled.show()
+      i+=1
+      offset+=10
+      
+    utime.sleep(0.1)
+      
+  if button.value()==1:
      
      if gnss_l76b.uart_any():
         sentence = parser.update(chr(gnss_l76b.uart_receive_byte()[0]))
@@ -85,7 +99,7 @@ while True:
             
             print('UTC Timestamp:%d:%d:%d'%(parser.timestamp[0],parser.timestamp[1],parser.timestamp[2]))
             
-#           print fix status
+            # print fix status
             '''
             1 : NO FIX
             2 : FIX 2D
