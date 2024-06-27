@@ -22,6 +22,6 @@ GPS data generated on a mountain in Bavaria, Pico and GPS module get supplied by
 
 Note 1: script is saved as "main.py", so it starts automatically.
 
-Note 2: black bars only appear on the photos, not on the OLED itself; DSLR and mobile phone cam have both CMOS sensors which have a problem with the OLED resfresh rates obviously.
+Note 2: black bars only appear on the photos, not on the OLED itself; DSLR and mobile phone cam have both CMOS sensors which have a problem with the OLED resfresh rates obviously (especially in bright daylight).
 
 ![Grosser-Traithen](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/f256f205-5bc0-4af6-86fe-91baabe664ff)
