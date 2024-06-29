@@ -1,4 +1,4 @@
-Exploring the RP2040 clocks.
+###Exploring the RP2040 clocks.
 
 ## 1. Measuring the current 
 
