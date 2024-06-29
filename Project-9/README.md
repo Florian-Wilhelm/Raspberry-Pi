@@ -1,3 +1,5 @@
+Exploring the RP2040 clocks.
+
 ## 1. Measuring the current 
 
 ### 1.1 Example: System Clock (clk_sys) 12 MHz
