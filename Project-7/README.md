@@ -24,4 +24,4 @@ Examples with 3.3V (CD4007UBE specified for 3V-18V):
 The better the tolerances of the resistors (you need a lot :-D), the better the results. 
 Input can be provided by e.g. a MCP23016 or MCP23017 I/O expansion. Scaling the device to 9bit, 12bit, and so forth would not be a big deal.
 
-![DAC-MCP23016](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/25328ac9-d363-49ba-abef-9791dcfebde6)
+![DAC-MCP23016-scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/6f1d253e-f2fb-4dfa-b4f5-a6c4f033b74f)
