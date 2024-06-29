@@ -2,7 +2,7 @@
 
 With this plant irrigation system, I am able to take care of my plants via Smartphone even when I am far away from home.
 
-The heart of the configuration is a Raspberry Pi with implemented VPN-Server, so access to the GPIO ports is easy. By means of the SSH-Shell I can run a Python script and activate a 12V water pump thru additional DIY electronics. Fully automation is possible and would be the 2nd option.
+The heart of the configuration is a Raspberry Pi with implemented VPN-Server, so access to the GPIO ports is easy. By means of the SSH-Shell I run Python scripts and activate a 12V water pump thru additional DIY electronics. Fully automation is possible and would be the 2nd option.
 
 Moisture sensors and the Pi camera provide information about the condition of the plants.
 
