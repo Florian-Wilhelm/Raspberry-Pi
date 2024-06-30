@@ -21,8 +21,6 @@ except OSError:
    print("OLED not connected")
    OLED_true = 0
 
-# define the UART number and its baudrate , when UARTx is 1 please solder the UART1 0R resistor on Pico-GPS-L76B board
-# UARTx = 1
 UARTx = 0
 
 # define the rp2040 uart baudrate , the default baudrate is 9600 of L76B 
@@ -59,7 +57,7 @@ sentence = ''
 button = Pin(10, Pin.IN) # push button and 10k pull-down resistor soldered to pin 10 (input GP)
 
 trigger = Pin(16, Pin.IN)
-uart1 = UART(1, baudrate=115200, bits=8, parity = 0, stop=1, tx=Pin(8), rx=Pin(9))  # parity = 0 for EVEN parity
+uart1 = UART(1, baudrate=115200, bits=8, parity = 0, stop=1, tx=Pin(8), rx=Pin(9))  # parity = 0 for EVEN parity; UART1 can be used completely independently from UART0
 
 while True:
   if trigger.value() == 0: # ad-hoc solution, not really good
