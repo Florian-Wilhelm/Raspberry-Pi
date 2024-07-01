@@ -15,6 +15,7 @@ try:
    i2c = I2C(0,sda=Pin(4),scl=Pin(5),freq=40000)
    oled=SSD1306_I2C(128,64,i2c)
    oled.fill(0)
+   oled.contrast(10)
    oled.show()
    OLED_true = 1
 except OSError:
@@ -72,13 +73,13 @@ while True:
     
     while (i < count):     
      
-      digitCPM = uart1.read(1)      
+      digitCPM = uart1.read(1)   
       oled.text(digitCPM,offset,0)
       oled.show()
       i+=1
       offset+=10
       
-    utime.sleep(0.1)
+    utime.sleep(0.01)
       
   if button.value()==1:
      
@@ -106,7 +107,7 @@ while True:
             print('Fix Status:', parser.fix_stat)
             
             print('Altitude:%d m'%(parser.altitude))
-            buf5 = 'Altitude:%d m'%(parser.altitude)
+            buf3 = 'Altitude:%d m'%(parser.altitude)
             print('Height Above Geoid:', parser.geoid_height)
             print('Horizontal Dilution of Precision:', parser.hdop)
             print('Satellites in Use by Receiver:', parser.satellites_in_use)
@@ -116,7 +117,7 @@ while True:
             oled.show()            
                         
             if OLED_true == 1:
-              oled.text(buf5,0,10)              
+              oled.text(buf3,0,10)              
               oled.text("Latitude",0,20)
               oled.text(buf1,0,30)
               oled.text("Longitude",0,40)              
