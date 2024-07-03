@@ -23,9 +23,9 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 https://hackaday.io/project/178522-soil-moisture-measurement-device
 
-**Project 4 - Exploring PWM**
+**Project 4 - Christmas light (exploring PWM)**
 
-Just some demo scripts.
+Exploring PWM and building a simple Christmas light.
 
 **Project 5 - Air humidity measurement**
 
