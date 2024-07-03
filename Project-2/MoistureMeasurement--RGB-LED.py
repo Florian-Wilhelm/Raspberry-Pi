@@ -1,5 +1,5 @@
 # RASPBERRY PI PICO PROJEKT https://hackaday.io/project/178522-soil-moisture-measurement-device
-# Skript für allererste Bastelboards mit resistivem ME110-Sensor, RGB-LED und einer einzelnen 7-Segment-Anzeige
+# Skript für allererste Bastelboards mit resistivem ME110-Sensor, RGB-LED (plus Vorwiderstände) und einer einzelnen 7-Segment-Anzeige
 # ###
 from machine import Pin, PWM
 #import utime
