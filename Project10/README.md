@@ -1,8 +1,12 @@
+#### Software:
+
 File "Pico-GPS-L76B_Code2.zip" is copied from the waveshare wiki:
 
 https://www.waveshare.com/wiki/Pico-GPS-L76B
 
-There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header.
+#### Hardware:
+
+There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header. SD-Card and OLED are off-the-shelf components.
 
 ## Example Configuration
 
