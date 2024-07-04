@@ -1,6 +1,4 @@
-## **Release Notes** 
-
-
+## Release Notes 
 
 **Obsolete SW** (kept for measurement purposes and presentation):
 
@@ -13,3 +11,10 @@ V3.92 -> display type OLED, PWM 10 kHz, System clock <3 MHz
 V4.17 -> display type OLED, PWM 10 kHz, System clock 12 MHz, added BLE feature with RN4870 IC
 
 Fore more information see comments in the source code file "geigerCounter.c".
+
+## Example Output
+
+With GPS module (see also project 10).
+
+![OLED-scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/4041ded5-5f8f-4de6-808a-c2b74051ebaa)
+
