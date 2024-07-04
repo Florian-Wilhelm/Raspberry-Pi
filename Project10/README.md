@@ -6,7 +6,7 @@ https://www.waveshare.com/wiki/Pico-GPS-L76B
 
 #### Hardware:
 
-There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header. SD-Card and OLED are off-the-shelf components.
+There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header. Button, SD-Card board and OLED are off-the-shelf components.
 
 ## Example Configuration
 
