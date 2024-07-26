@@ -61,7 +61,8 @@ sd = sdcard.SDCard(spi, cs)
 vfs = uos.VfsFat(sd)
 uos.mount(vfs, "/sd")
 
-button = Pin(10, Pin.IN) # push button and 10k pull-down resistor soldered to pin 10 (input GP)
+# pin 10 (input GP) is connected to GND via 10k pull-down resistor, to 3.3V via push button
+button = Pin(10, Pin.IN)
 
 n = 1
 fileName = "GPS file"
