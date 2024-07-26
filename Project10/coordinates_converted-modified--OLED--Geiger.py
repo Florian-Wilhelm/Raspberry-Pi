@@ -54,8 +54,9 @@ location_formatting (str): Style For Presenting Longitude/Latitude:
 parser = MicropyGPS(location_formatting='dd')
 
 sentence = ''
-   
-button = Pin(10, Pin.IN) # push button and 10k pull-down resistor soldered to pin 10 (input GP)
+
+# pin 10 (input GP) is connected to GND via 10k pull-down resistor, to 3.3V via push button
+button = Pin(10, Pin.IN)
 
 trigger = Pin(16, Pin.IN)
 uart1 = UART(1, baudrate=115200, bits=8, parity = 0, stop=1, tx=Pin(8), rx=Pin(9))  # parity = 0 for EVEN parity; UART1 can be used completely independently from UART0
