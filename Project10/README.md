@@ -4,7 +4,7 @@ File "Pico-GPS-L76B_Code2.zip" is copied from the waveshare wiki:
 
 https://www.waveshare.com/wiki/Pico-GPS-L76B
 
-Python scripts in this repo are slightly modified versions of scripts in that .zip.  
+Python scripts in this repo are slightly modified script-versions of that .zip.  
 
 #### Hardware:
 
@@ -14,7 +14,7 @@ There is no trouble putting the GPS module onto the standard Raspberry Pi Pico h
 
 ### Push button, Micro SD-Card and OLED SSD1306
 
-Demonstration and testing via thonny. GPS Data is stored permanently on the SD-Card, and is also available as text output in the Thonny shell. 
+Demonstration and testing via thonny. GPS Data will be stored permanently on the SD-Card, and is also available as text output in the Thonny shell. 
 
 Schematic Micro SD-Card board:
 
