@@ -58,11 +58,13 @@ sentence = ''
 # pin 10 (input GP) is connected to GND via 10k pull-down resistor, to 3.3V via push button
 button = Pin(10, Pin.IN)
 
-trigger = Pin(16, Pin.IN)
+trigger = Pin(16, Pin.IN) # extra wire from RX connected to that pin
 uart1 = UART(1, baudrate=115200, bits=8, parity = 0, stop=1, tx=Pin(8), rx=Pin(9))  # parity = 0 for EVEN parity; UART1 can be used completely independently from UART0
 
 while True:
-  if trigger.value() == 0: # ad-hoc solution using polling and an extra wire: when the device starts to transmit it pulls the line low to generate an UART start bit 
+  # ad-hoc solution using polling and an extra wire: when a device (here: the Geiger counter) starts to transmit on its TX pin, it pulls the line low to generate an UART start bit
+  # if that extra wire is disconnected, the FIFO buffer fills up
+  if trigger.value() == 0: 
     #print('CPM:')
     oled.fill_rect(0, 0, 110, 10, 0)  
     oled.text("CPM:",0,0)
