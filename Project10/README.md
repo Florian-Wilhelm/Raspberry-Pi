@@ -30,4 +30,4 @@ Note 1: script is saved as "main.py", so it starts automatically.
 
 Note 2: black bars only appear on the photos, not on the OLED itself; DSLR and mobile phone cam have both CMOS sensors which have a problem with the OLED resfresh rates obviously (especially in bright daylight).
 
-![Grosser-Traithen](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/63c44ae1-4846-423e-bff4-a84508238fd0)
+![Grosser-Traithen](https://github.com/user-attachments/assets/3602c53a-52ee-4d6e-8dd3-2c80f50a1b9f)
