@@ -14,7 +14,7 @@ See comments in the source code file "geigerCounter.c" for further information.
 
 ## Example Output
 
-With GPS module (see also project 10).
+With GPS module (see also project 10). GPS-SW V5.x not yet released. 
 
 ![OLED-scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/4041ded5-5f8f-4de6-808a-c2b74051ebaa)
 
