@@ -5,7 +5,7 @@
  * See figure 2 and chapter 2.3.1 in the RP2040 datasheet
  * "The SIO is connected to the single-cycle IOPORT bus of each processor, and provides GPIO access, two-way communications, and other core-local peripherals".
  *
- * Program counts from 0 to 9 and starts over again, digits are displayed on a 7-Segment-Display (e.g. SC56-11GWA)
+ * Program counts from 0 to 9 and starts over, digits are displayed on a 7-Segment-Display (e.g. SC56-11GWA)
  * necessary additional electronic components to see something happen are one CD4511BE BCD-to-7-Segment Latch Decoder IC and seven resistors.
  *
  *  1267   Pins of CD4511BE (you can easily google the datasheet)
