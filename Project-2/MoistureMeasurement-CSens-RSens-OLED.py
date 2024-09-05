@@ -1,6 +1,5 @@
-# RASPBERRY PI PICO PROJECT https://hackaday.io/project/178522-soil-moisture-measurement-device
-# SOIL MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS WITH SENSOR TYPE DETECTION
-# USING a MULTIPLEXING LOGIC TO DRIVE THE TWO 7-SEGMENT-DISPLAYS 
+# Raspberry Pi Pico project: https://hackaday.io/project/178522-soil-moisture-measurement-device
+# Soil moisture measurement and display on two "multiplexed" 7-Segment-Displays, sensor type detection and according display on OLED (if connected)
 # ###
 import utime
 from machine import Pin
@@ -44,7 +43,7 @@ ExpandedSensorValueS = ADC_A0.read_u16() # the variable name is just convenience
 # After that the device is ready for use.
 if ExpandedSensorValueS < 4096: 
 # obige Schwelle recht willkürlich; resistiver Sensor liefert OHNE Medium-Kontakt jedoch sicher 0V als Ausgangsgröße (HW-390 >2.0V) 
-# threshold above quite arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
+# threshold above arbitrary; resistive type sensor delivers reliably 0V as output when the probe is dry (HW-390 >2.0V)
     resistivTrue=1
     if OLED_true == 1:
       oled.text("Detected sensor",0,30)
