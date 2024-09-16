@@ -1,8 +1,6 @@
-# RASPERRY PI PICO PROJECT https://ome-eng.net/raspi-pico-luftfeuchte
-# AIR MOISTURE MEASUREMENT AND DISPLAY ON TWO 7-SEGMENT-DISPLAYS (BY USING A MULTIPLEXING LOGIC)
+# Raspberry Pi Pico project: https://ome-eng.net/raspi-pico-luftfeuchte
+# Air moisture measurement and display on two "multiplexed" 7-Segment-Displays
 # Additional feature: temperature compensation with temperature sensor 103AT2 (10k NTC resistor)
-# ###
-# Notes: ---
 # ###
 from machine import Pin
 import utime
