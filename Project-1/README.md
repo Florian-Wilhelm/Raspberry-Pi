@@ -1,6 +1,6 @@
 ## Description
 
-I am able to take care of my plants via Smartphone with this irrigation system.
+I am able to take care of my plants via Smartphone with this simple irrigation system.
 
 Access to the GPIO ports is easy thru an implemented VPN-Server on the Raspberry Pi. By means of the SSH-Shell I'll run Python scripts (to be found in this repo) and activate a 12V water pump. Full automation (no manual intervention) would be possible as well.
 
