@@ -18,7 +18,7 @@ Demonstration and testing via thonny. GPS Data will be stored permanently on the
 
 Schematic Micro SD-Card board:
 
-https://files2.elv.com/public/13/1315/131591/Internet/131591_msda1_schaltplan.pdf
+[https://files2.elv.com/public/13/1315/131591/Internet/131591_msda1_schaltplan.pdf](https://media.elv.com/file/131591_msda1.pdf)
 
 ![Pico-GPS-L76B--config](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/2cae6269-d276-4e12-a081-d1e77e937b67)
 
