@@ -1,3 +1,5 @@
+# 6bit R-2R ladder DAC connected to MCP23016 I/O expansion for I2C bus
+
 ## Description
 
 A fifty-year old Digital-Analog-Converter (DAC) design with two CD4007 CMOS ICs, but still good enough to get a grasp how these devices work.
