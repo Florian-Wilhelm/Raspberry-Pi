@@ -1,4 +1,6 @@
-## Configuration with two 7-Segment-Displays and Micro SD-Card
+# Soil moisture measurement device
+
+### Configuration with two 7-Segment-Displays and Micro SD-Card
 
 Custom made PCB (Code: "MoistureMeasurement-CSens-RSens-OLED.py", saved as "main.py"). 
 
