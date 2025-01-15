@@ -1,3 +1,5 @@
+# Simple weather station
+
 ## Description
 
 This is just a simple weather station with off-the-shelf components, consisting essentially of a BMP280 temperature-and-pressure-sensor and an LCD (Liquid Crystal Display).
