@@ -427,8 +427,8 @@ int main() {
        uint32_t absoluteTime = (to_ms_since_boot(get_absolute_time())/1000); 
        uint32_t absoluteTime_ms = to_ms_since_boot(get_absolute_time());
        
-       if (absoluteTime_ms - setMask_TimeStamp_ms == 200){ // adding some robustness, 200 is kind of arbitrary threshold to be exceeded
-            gpio_clr_mask(deviceGP); 
+       if (absoluteTime_ms - setMask_TimeStamp_ms == 200){ 
+            gpio_clr_mask(deviceGP); // adding some robustness (?), 200 is kind of arbitrary threshold to be exceeded when it is stuck
         }
        
        if (absoluteTime == 5)  {
