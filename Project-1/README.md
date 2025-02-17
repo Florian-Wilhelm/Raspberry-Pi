@@ -9,9 +9,3 @@ Access to the GPIO ports is easy thru an implemented VPN-Server on the Raspberry
 Moisture sensors and the Pi camera provide information about the condition of the plants.
 
 ![9826061614501733165](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/322fb2e7-6f49-4acf-b82c-f94dcbb98e05)
-
-## Experimental configuration
-
-There is plenty of room for experimentation and further improvements, I barely scratched the surface so far.
-
-![621501629377912380](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1d596144-0e1f-40a7-9450-8e9f04e3fa9d)
