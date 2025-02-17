@@ -16,7 +16,7 @@ See comments in the source code file "geigerCounter.c" for further information.
 
 ## Schematic
 
-![Geiger-schematic](https://github.com/user-attachments/assets/95758eed-22ad-4596-ae80-7c7f22285a03)
+![Geiger-schematic](https://github.com/user-attachments/assets/7ada2ed9-12f7-4b9b-9f13-281e9ec55116)
 
 ## Example Output
 
