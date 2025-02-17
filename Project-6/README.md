@@ -22,7 +22,7 @@ See comments in the source code file "geigerCounter.c" for further information.
 
 ![Geiger-schematic](https://github.com/user-attachments/assets/7ada2ed9-12f7-4b9b-9f13-281e9ec55116)
 
-## Example Output
+## Example Visual Output
 
 With GPS module (see also project 10). GPS-SW V5.x not yet released. 
 
