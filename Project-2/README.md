@@ -10,8 +10,6 @@
 
 #### Hardware: 
 
-Custom made PCB. See hackaday.io project page.
+Custom made PCB. See hackaday.io project page. As to the SD-Card, see project 10 for more information (code example, schematic). In the aforementioned code it is not implemented yet.
 
 ![Pico--SD-Card](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/10ef905c-a06a-4749-8ee7-7e512b166b9d)
-
-As to the SD-Card, see project 10 for more information (code example, schematic). In the aforementioned code it is not implemented yet.
