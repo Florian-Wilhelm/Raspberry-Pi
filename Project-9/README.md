@@ -6,7 +6,7 @@ See RP2040 datasheet chapter 2.15., 2.16., 2.17., and the SDK documentation chap
 
 ### 1.1 Example: System Clock (clk_sys) 12 MHz
 
-Supply thru Raspberry Pi Pin 2 (+5V). LCD Current (which is about 20 mA) goes into the measurement too.
+Supply thru Raspberry Pi Pin 2 (+5V). LCD connected for convenience, the LCD current (which is about 20 mA) goes into the measurement too.
 
 ![Current](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/4b91a263-de49-49b2-8b87-8083b41b6474)
 
