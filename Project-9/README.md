@@ -1,4 +1,6 @@
-# Exploring the RP2040 clocks.
+# Exploring the RP2040 clocks
+
+See RP2040 datasheet chapter 2.15., 2.16, 2.17.
 
 ## 1. Measuring the current 
 
