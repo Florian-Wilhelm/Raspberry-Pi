@@ -2,7 +2,7 @@
 
 ## Description
 
-An IoT device with the Raspberry Pi Pico and the ESP8266.
+An IoT device with the Raspberry Pi Pico, three sensors and the ESP8266.
 
 ## Example web browser output
 
