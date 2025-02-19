@@ -6,7 +6,7 @@
 
 #### Software: 
 
-"MoistureMeasurement-CSens-RSens-OLED.py", saved as "main.py" (no other code in this folder is used). 
+"MoistureMeasurement-CSens-RSens-OLED.py", saved as "main.py" (no other code in this folder is used). Sensor type (capacitive or resistive) is detected automatically.
 
 #### Hardware: 
 
