@@ -6,6 +6,6 @@ This is just a simple weather station with off-the-shelf components, consisting 
 
 Either component is connected to the I2C bus, i.e. Pin 2 (SDA) and 3 (SCL) of a Raspberry Pi.
 
-Weather data is published via MQTT, and/or displayed on said Display.
+Weather data is published via MQTT, and/or displayed on the LCD.
 
 ![LCD-assembly--scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/a83b0d83-194f-4272-b989-b6af7ab5d724)
