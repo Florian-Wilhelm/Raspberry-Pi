@@ -203,7 +203,7 @@ int startServerWiFi(uint8_t buf[], int len, int WDindicator)
         
         uint16_t rawTempSensor = adc_read(); // raw value (max 4095)
         float VoltTempSensor = (3.3/4096)*rawTempSensor; // voltage on the ADC input (=voltage across the NTC) 
-        float physicalTempSensor = 0.7*pow(VoltTempSensor,4)-7.8*pow(VoltTempSensor,3)+32.5*pow(VoltTempSensor,2)-76.5*VoltTempSensor+70.6; // maths for the temperature sensor 103AT2 T=f(U); supply voltage 5V; formula conceived by virtue of an interpolation, parameters determined by the chosen voltage divider resistor (here: 50k) and the values from the data sheet
+        float physicalTempSensor = 0.7*pow(VoltTempSensor,4)-7.8*pow(VoltTempSensor,3)+32.5*pow(VoltTempSensor,2)-76.5*VoltTempSensor+70.6; // maths for the temperature sensor 103AT2 T=f(U); supply voltage 5V; formula conceived by virtue of an interpolation, parameters determined by the chosen voltage divider resistor (here: 50k) and the values from the data sheet; note: bridge arrangement might be the better choice
 
         adc_select_input(0); // ADC0 on Pin 31
         
