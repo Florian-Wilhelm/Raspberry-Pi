@@ -28,6 +28,4 @@ Schematic Micro SD-Card board:
 
 GPS data generated on a mountain in Bavaria, Pico and GPS module get supplied by a power bank.
 
-**Note 1:** script is saved as "main.py" in the Pico file system, so it starts automatically.
-
-**Note 2:** black bars only appear on photos, not on the OLED itself; DSLR and mobile phone cam have both CMOS sensors which have a problem with the OLED resfresh rates obviously (especially in bright daylight).
+Script is saved as "main.py" in the Pico file system, so it starts automatically.
