@@ -24,12 +24,10 @@ Schematic Micro SD-Card board:
 
 [https://files2.elv.com/public/13/1315/131591/Internet/131591_msda1_schaltplan.pdf](https://media.elv.com/file/131591_msda1.pdf)
 
-![Pico-GPS-L76B--config](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/2cae6269-d276-4e12-a081-d1e77e937b67)
+![344368826-2cae6269-d276-4e12-a081-d1e77e937b67](https://github.com/user-attachments/assets/c9d366d2-c749-4118-a355-9b1bc5232a29)
 
 GPS data generated on a mountain in Bavaria, Pico and GPS module get supplied by a power bank.
 
 **Note 1:** script is saved as "main.py" in the Pico file system, so it starts automatically.
 
-**Note 2:** black bars only appear on the photos, not on the OLED itself; DSLR and mobile phone cam have both CMOS sensors which have a problem with the OLED resfresh rates obviously (especially in bright daylight).
-
-![Grosser-Traithen](https://github.com/user-attachments/assets/3602c53a-52ee-4d6e-8dd3-2c80f50a1b9f)
+**Note 2:** black bars only appear on photos, not on the OLED itself; DSLR and mobile phone cam have both CMOS sensors which have a problem with the OLED resfresh rates obviously (especially in bright daylight).
