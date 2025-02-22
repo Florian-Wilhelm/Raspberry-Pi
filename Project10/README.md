@@ -16,9 +16,9 @@ There is no trouble putting the GPS module onto the standard Raspberry Pi Pico h
 
 ### Push button, Micro SD-Card and OLED SSD1306
 
-(Note: not necessarily carried out with the scripts in this repo, those are just examples).
-
 Demonstration and testing via thonny. GPS Data will be stored permanently on the SD-Card, and is also available as text output in the Thonny shell. 
+
+(note: tests are not necessarily carried out with the scripts in this repo, those are just examples).
 
 Schematic Micro SD-Card board:
 
