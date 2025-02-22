@@ -1,4 +1,4 @@
-# Pico and Pico-GPS-L76B GNSS module
+# Raspberry Pi Pico and Pico-GPS-L76B GNSS module
 
 #### Software:
 
