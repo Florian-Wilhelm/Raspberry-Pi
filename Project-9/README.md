@@ -8,7 +8,7 @@ See RP2040 datasheet chapter 2.15., 2.16., 2.17., and the SDK documentation chap
 
 Supply thru Raspberry Pi Pin 2 (+5V). LCD connected for convenience, the LCD current (which is about 20 mA) goes into the measurement too.
 
-![Current](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/4b91a263-de49-49b2-8b87-8083b41b6474)
+![Current-12MHz](https://github.com/user-attachments/assets/6466b06a-38e3-4225-95a0-ab3989c07dc2)
 
 ### 1.2 Varying clk_sys
 
