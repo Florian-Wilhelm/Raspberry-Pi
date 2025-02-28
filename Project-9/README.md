@@ -22,11 +22,9 @@ About 5 mA is the "static power consumption", which is always present and to a g
 
 ### 2.1 Crystal oscillator module
 
-Desoldering R15, C16 and C17, and soldering the oscillator module OUT Pin to Pico XIN (here used rather at random a 14.31 MHz crystal oscillator module).
+Desoldering R14, C16 and C17, and soldering the oscillator module OUT Pin to Pico XIN (here used rather at random a 14.31 MHz crystal oscillator module).
 
-C16 and C17 desoldered, the white dot on the PCB indicates XIN: 
-
-![C16-C17-desoldered](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/5ee4b716-3b39-4c45-8445-ca2fb8c15b44)
+![XOSC-Pico-schematic](https://github.com/user-attachments/assets/e26b8412-464c-45ad-a165-2a458a1e6717)
 
 External oscillator module consumes a few mA (about 1.8 mA). 
 Time bases are off now, so the SW ought to be modified. Hence values on the LCD are not correct, the implemented seconds counter (the value on the right) counts too fast (i. e. 14.31/12.00 too fast).
