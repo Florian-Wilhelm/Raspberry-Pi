@@ -22,7 +22,7 @@ About 5 mA is the "static power consumption", which is always present and to a g
 
 ### 2.1 Crystal oscillator module
 
-Desoldering R14, C16 and C17, and soldering the oscillator module OUT Pin to Pico XIN (here used rather at random a 14.31 MHz crystal oscillator module).
+Desoldering R14, C16 and C17, and soldering the oscillator module OUT Pin to Pico XIN (here used rather at random a 14.31 MHz crystal oscillator module). XOUT not needed, but of course you need a common ground.
 
 ![XOSC-Pico-schematic](https://github.com/user-attachments/assets/e26b8412-464c-45ad-a165-2a458a1e6717)
 
