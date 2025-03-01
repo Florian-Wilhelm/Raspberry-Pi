@@ -14,7 +14,7 @@ Supply thru Raspberry Pi Pin 2 (+5V). LCD connected for convenience, the LCD cur
 
 There is a linear dependency between the MCU current and clk_sys ("dynamic power consumption"). 
 
-About 5 mA or less is the "static power consumption", which is always present and to a great deal due to FET leakage currents within the MCU (or so says the theory). There are other causes for offsets, too, so take the graph below with a grain of salt.
+About 5 mA or less is the "static power consumption", which is always present and to a great deal due to FET leakage currents within the MCU (or so says the theory). There are other causes for offsets too, so take the graph below with a grain of salt.
 
 ![Current-over-clk_sys](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1136ca16-1971-4c13-b5f3-f4026da0bb4b)
 
