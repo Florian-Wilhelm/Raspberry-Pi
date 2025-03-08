@@ -218,7 +218,8 @@ int startServerWiFi(uint8_t buf[], int len, int WDindicator)
             rawLightSensor = 4095; 
 
         char data[2048];
-        
+
+        // the HTTP protocol is essentially a set of text headers
         sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Environment data</title><link rel=icon href=data:,></head><body><h2><font color=green>Environment data</font></h2><table><tr><td>Relative Humidity</td> <td> %u percent</th></tr> <tr><td>Ambient Temperature</td> <td> %2.1f degrees Celsius</td></tr> <tr><td>Ambient Light (12-bit raw)</td> <td> %u</td></tr> </table><p><font color=blue>Time since startup: %u minutes (%2.2f hours)</p><p>WD resets %u; Server hits: %u</font></p><p>SW V1.61; (c) ome-eng.net 2023</p></body></html>\r\n", physicalRHSensorT, physicalTempSensor, rawLightSensor, absoluteTimeMinutes, absoluteTimeHours, WDCounter, hitCounter);
         
         uint8_t command[128];
