@@ -187,7 +187,8 @@ int startServerWiFi(uint8_t buf[], int len)
         float readTempSensor = 0.7*pow(zwErg,4)-7.8*pow(zwErg,3)+32.5*pow(zwErg,2)-76.5*zwErg+70.6; // T=f(U)
 
         char data[2048];
-        
+
+        // the HTTP protocol is essentially a set of text headers
         sprintf(data, "HTTP/1.0 200 OK\r\nServer: Pico\r\nContent-type: text/html\r\n\r\n<html><head><title>Moisture</title></head><body><p><font color=blue>Soil moisture raw value (0-4095): %u</font>; <font color=red>Temperature: %2.1f oC</font></p><p><font color=purple>Time since StartUp: %u minutes</font></p><p>SW V1.0; (c) ome-eng.net 2022</p></body></html>\r\n", outputCapSensor, readTempSensor, absoluteTime);
         
         uint8_t command[128];
