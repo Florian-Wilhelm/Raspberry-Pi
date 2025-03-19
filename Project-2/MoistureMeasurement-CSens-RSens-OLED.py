@@ -1,5 +1,5 @@
 # Raspberry Pi Pico project: https://hackaday.io/project/178522-soil-moisture-measurement-device
-# Soil moisture measurement and display on two "multiplexed" 7-Segment-Displays, sensor type detection and according display on OLED (if connected)
+# Soil moisture measurement and display on two "multiplexed" 7-Segment-Displays, sensor type detection and display on OLED (when connected)
 # ###
 import utime
 from machine import Pin
