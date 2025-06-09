@@ -199,7 +199,7 @@ int main() {
     gpio_init(25);
     gpio_set_dir(25, GPIO_OUT);
     
-    uint32_t mask=(1 << 10 | 1 << 13 | 1 << 14 | 1 << 14);
+    uint32_t mask=(1 << 10 | 1 << 13 | 1 << 14 | 1 << 14); //Errata: typo
     
     gpio_init_mask(mask);
     gpio_set_dir_masked(mask, GPIO_IN);
