@@ -2,7 +2,7 @@
 
 ## Description
 
-An IoT device with the Raspberry Pi Pico, three sensors and the ESP8266. No security implementations in the given source code.
+An IoT device with the Raspberry Pi Pico, three sensors and the ESP8266. Note: there are no SSL/TLS implementations (i.e. certificates), so this code is only good enough for experimentation.
 
 ## Example web browser output
 
