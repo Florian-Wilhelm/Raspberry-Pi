@@ -2,7 +2,7 @@
  * Created January 2024 by Florian Wilhelm Dirnberger
  *
  * program will flash cyclically two LEDs in alternation; these are connected to GP2 and GP3
- * not a good code design; solely intended for learning purposes and for getting to grips with the PIO
+ * it isn't a code design worth copying, and solely intended for learning purposes and for getting to grips with the PIO
  * 
  */
 
