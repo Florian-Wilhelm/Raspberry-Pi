@@ -1,8 +1,8 @@
 /**
  * Created 03/01/2023 by Florian Wilhelm Dirnberger
  *
- * 6bit R-2R ladder DAC hardwired to the MCP23016 digital output Pins GP0.x (this IC is an I/O expansion for I2C bus) 
- * MCP23016 is in turn connected to one of the two RP2040 I2C controllers (i.e. I2C master) for receiving bus data
+ * 6bit R-2R ladder DAC hardwired to the MCP23016 digital output Pins GP0.x (this is an I/O expansion IC for the I2C bus) 
+ * MCP23016 in turn is connected to one of the two RP2040 I2C controllers (i.e. I2C master) for receiving bus data
  * 
  * Realized with this program is a simple saw tooth generator
  *  
