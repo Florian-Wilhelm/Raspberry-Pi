@@ -23,7 +23,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 https://hackaday.io/project/178522-soil-moisture-measurement-device
 
-**Project 4 - Christmas light (exploring PWM)**
+**Project 4 - Exploring PWM**
 
 Exploring PWM and building a simple Christmas light.
 
