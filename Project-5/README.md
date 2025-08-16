@@ -12,4 +12,4 @@ Note: WD means "Watchdog".
 
 ## Example configuration
 
-![Konfiguration--HIH4020-103AT2-SFH300--edited](https://github.com/user-attachments/assets/50903d9c-34c7-4475-a250-e16391eca596)
+![Konfiguration--HIH4020-103AT2-SFH300--edited](https://github.com/user-attachments/assets/aa5d2b48-5d35-4ad3-a9d1-a353af97cdb0)
