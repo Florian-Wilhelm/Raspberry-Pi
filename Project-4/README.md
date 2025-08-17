@@ -8,4 +8,4 @@ Visualization of PWM frequency and duty cycle.
 
 ## Controlling a Brushed DC Motor
 
-https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4
+[https://ome-eng.net/wp-content/uploads/2022/01/PWM-Motorsteuerung.mp4](https://youtu.be/ix654Iyk9Wk)
