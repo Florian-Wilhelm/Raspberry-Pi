@@ -8,5 +8,5 @@ Visualization of PWM frequency and duty cycle.
 
 ## Controlling a Brushed DC Motor
 
-https://youtu.be/ix654Iyk9Wk
+![IMG_0030](https://github.com/user-attachments/assets/6ac840e8-a9f0-4e28-b089-0d6f7be789af)
 
