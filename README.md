@@ -25,7 +25,7 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 
 **Project 4 - Exploring PWM**
 
-[Testing a Brushed DC-motor.]([https://youtu.be/lahF1O3cauM](https://youtu.be/ix654Iyk9Wk))
+[Testing a Brushed DC-motor.](https://youtu.be/ix654Iyk9Wk)
 
 **Project 5 - Air humidity measurement**
 
