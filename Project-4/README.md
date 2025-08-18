@@ -1,6 +1,6 @@
 # Exploring PWM
 
-Visualization of PWM frequency and duty cycle.
+Visualization of PWM frequency and duty cycle. The Raspberry Pi Pico boasts a special PWM hardware, and using this hardware is straightforward.
 
 ## "Christmas light"
 
