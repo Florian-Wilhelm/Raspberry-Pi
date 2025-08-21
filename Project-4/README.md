@@ -8,4 +8,4 @@ Visualization of PWM frequency and duty cycle. The Raspberry Pi Pico boasts a sp
 
 ## Testing a Brushed DC-Motor
 
-![IMG_0030--edited](https://github.com/user-attachments/assets/af17d154-493b-4378-a796-297e6f4fdc38)
+![dc-motor](https://github.com/user-attachments/assets/c34b1632-ed53-495b-90dc-4d516035b0fa)
