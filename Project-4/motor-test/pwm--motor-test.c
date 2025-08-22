@@ -2,7 +2,7 @@
  * 
  * Testing a Brushed DC motor.
  * 
- * Some external electronic is necessary (transistor, diode, capacitors, resistors) in order to drive the motor with a 9V block battery.
+ * Some external electronic is necessary (transistor, diode, capacitors, resistors) in order to supply the motor with 9V - 12V.
  * See electronic literature for possible configurations.
  *  
  */
