@@ -32,8 +32,8 @@ int main() {
     
     uint f_clk_sys = (frequency_count_khz(CLOCKS_FC0_SRC_VALUE_CLK_SYS))*1000;
     
-    int freq = 200;
-    int duty = 0;    
+    int freq = 200; // 100 Hz to 20 kHz should be fine
+    int duty = 0; // start duty cycle   
     
     gpio_set_function(22, GPIO_FUNC_PWM); // DC-motor on A output of the 3rd slice
     gpio_set_function(25, GPIO_FUNC_PWM); // onBoard LED on B output of the 4th slice; additional visual control
