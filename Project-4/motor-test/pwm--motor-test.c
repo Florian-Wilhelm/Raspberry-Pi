@@ -45,10 +45,10 @@ int main() {
     uint chan__led = pwm_gpio_to_channel(25);
     
     pwm_set_enabled(slice_num__motor, true);
-    pwm_set_phase_correct (slice_num__motor, true);
+    pwm_set_phase_correct (slice_num__motor, true); // frequency will be halved
     
     pwm_set_enabled(slice_num__led, true);
-    pwm_set_phase_correct (slice_num__led, true);
+    pwm_set_phase_correct (slice_num__led, true); // frequency will be halved
     
     int i; 
     
