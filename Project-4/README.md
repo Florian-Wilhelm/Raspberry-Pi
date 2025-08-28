@@ -1,6 +1,7 @@
 # Exploring PWM
 
-Visualization of PWM frequency and duty cycle. The Raspberry Pi Pico boasts a special PWM hardware, and using this hardware is straightforward.
+Visualization of PWM frequency and duty cycle. 
+The RP2040 boasts a dedicated PWM hardware, and using this hardware is straightforward.
 
 ## "Christmas light"
 
