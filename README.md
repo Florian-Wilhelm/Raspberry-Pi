@@ -25,7 +25,7 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 
 **Project 4 - Exploring PWM (controlling LED brightness, powering a Brushless DC-Motor)**
 
-https://youtu.be/FptPwb1l7qU
+[Starting behaviour of a Brushed DC-motor](https://youtu.be/FptPwb1l7qU)
 
 **Project 5 - Air humidity measurement**
 
