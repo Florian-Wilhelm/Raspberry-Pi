@@ -23,9 +23,9 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 https://hackaday.io/project/178522-soil-moisture-measurement-device
 
-**Project 4 - Exploring PWM**
+**Project 4 - Exploring PWM (controlling LED brightness, powering a Brushless DC-Motor)**
 
-Controlling the brightness of an LED and powering a Brushless DC-Motor.
+https://youtu.be/FptPwb1l7qU
 
 **Project 5 - Air humidity measurement**
 
