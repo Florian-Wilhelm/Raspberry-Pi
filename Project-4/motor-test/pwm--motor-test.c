@@ -15,7 +15,7 @@
 uint32_t pwm_set_freq_duty(uint32_t f_clk_sys, uint slice_num, uint chan, uint32_t f, int d)
 
 {
-    // reducing the PWM frequency enough for a motor to work with, involves some maths (see literature)
+    // reducing the PWM frequency in order to be suitable for a DC-motor, involves some maths (see literature)
     uint32_t clock = f_clk_sys;
     uint32_t divider16 = clock / f / 4096 + (clock % (f * 4096) != 0); // the result in the brackets is either 1 or 0, will be added at the end
     if (divider16 / 16 == 0)
