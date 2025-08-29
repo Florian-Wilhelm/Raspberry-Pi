@@ -2,7 +2,7 @@
 
 ## Description
 
-### Configuration with two 7-Segment-Displays and Micro SD-Card
+### Arrangement with two 7-Segment-Displays and Micro SD-Card
 
 #### Software: 
 
