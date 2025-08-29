@@ -13,7 +13,3 @@ Example web browser output. Note: WD - "Watchdog".
 ### Hardware
 
 ![Konfiguration--HIH4020-103AT2-SFH300--edited](https://github.com/user-attachments/assets/aa5d2b48-5d35-4ad3-a9d1-a353af97cdb0)
-
-### Schematic
-
-<img width="830" height="650" alt="Spannungsteiler-Schaltplan" src="https://github.com/user-attachments/assets/aa6ac9ab-04dc-4d86-8dc0-d1ff8cd2da58" />
