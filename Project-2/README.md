@@ -17,5 +17,6 @@ Custom made PCB, for details see hackaday.io project page.
 ### Schematic
 
 Resistor proposals R1-R7: 47 Ohm.
+Resistor proposals R8, R9: 1 kOhm.
 
 ![Schematic-moisture-measurement-V1-2](https://github.com/user-attachments/assets/fb59eda7-8fda-497b-ade6-484a9bd17a6e)
