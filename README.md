@@ -21,7 +21,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 **Project 2 - Soil moisture measurement device**
 
-https://hackaday.io/project/178522-soil-moisture-measurement-device
+https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
 **Project 4 - Exploring PWM (controlling LED brightness, powering a Brushless DC-Motor)**
 
@@ -29,7 +29,7 @@ https://hackaday.io/project/178522-soil-moisture-measurement-device
 
 **Project 5 - Air humidity measurement**
 
-https://ome-eng.net/raspi-pico-luftfeuchte
+https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
 **Project 6 - (IoT) Geiger counter**
 
