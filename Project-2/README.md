@@ -16,4 +16,5 @@ Custom made PCB, for details see hackaday.io project page. As to the SD-Card, se
 
 #### Schematic: 
 
-![Schematic-moisture-measurement-V1-2](https://github.com/user-attachments/assets/67d4a2e7-3513-4a6c-af63-b40b20312338)
+![Schematic-moisture-measurement-V1-2](https://github.com/user-attachments/assets/56c3a6d9-56a7-4220-8789-a788d136cd40)
+
