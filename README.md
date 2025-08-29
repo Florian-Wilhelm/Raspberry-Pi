@@ -19,7 +19,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 ### Raspberry Pi Pico (and ESP8266)
 
-**Project 2 - Soil moisture measurement device**
+**Project 2 - Soil moisture measurement**
 
 https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
