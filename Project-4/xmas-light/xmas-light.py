@@ -1,4 +1,4 @@
-# Hell/Dunkel-Steuerung mehrerer LEDs (an den Pi Pico GPs) via PWM; Abschaltung bei viel Tageslicht (primitiver Algorithmus der die LEDs nicht mit einer kubischen Funktion ansteuert)
+# Hell/Dunkel-Steuerung mehrerer LEDs (an den Pi Pico GPs) via PWM; Abschaltung bei viel Tageslicht (simpler Algorithmus der die LEDs nicht mit einer kubischen Funktion ansteuert)
 # Vorwiderstände LEDs: 50-100 Ohm
 # Spannungsteilerschaltung für SFH300 Phototransistor (Serienschaltung): 5k und 10k (Kollektor an +5V, Emitter an 5k), zwischen diesen beiden Widerständen ist der Abgriff für den ADC; der 10k hängt an Masse
 from machine import Pin, PWM
