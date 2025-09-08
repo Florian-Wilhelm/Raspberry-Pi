@@ -79,7 +79,7 @@ while True:
        sample_hold = 0       
     else: # old value is maintained
        sample_hold = sample_hold+2*mx_time
-    # Driving 7-Segment-Displays, ranges equidistant;
+    # Driving 7-Segment-Displays, ranges equidistant (linearity assumed);
     # there exist far more elegant algorithms to set the GPIOs high/low (using the Single-cycle IO block (SIO)), what you see below is quite lengthy (and not scalable to further digits anyway).
     # ###
     # 0-9
@@ -1396,3 +1396,4 @@ while True:
     # print("ADC: ",  ADC_A0.read_u16())
     # print("Expanded ADC: ", ExpandedSensorValueS)     
     utime.sleep(mx_time)
+
