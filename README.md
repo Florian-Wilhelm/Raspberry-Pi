@@ -53,4 +53,4 @@ Flashing two LEDs cyclically by using the PIO (Programmable IO).
 
 **Projekt 11 - MLX90642 32x24 InfraRed (IR) array**
 
-TBD
+Thermal Imaging
