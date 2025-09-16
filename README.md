@@ -51,6 +51,6 @@ Flashing two LEDs cyclically by using the PIO (Programmable IO).
 
 [Connecting a Pico-GPS-L76B GNSS module to the Pico.](https://youtu.be/zbmgVNmPB1s)
 
-** Projekt 11 - MLX90642 32x24 InfraRed (IR) array**
+**Projekt 11 - MLX90642 32x24 InfraRed (IR) array**
 
 TBD
