@@ -7,10 +7,12 @@
 
 #define I2C_ID i2c0 
 
+// UART Pins
 #define UART_TX_PIN 0
 #define UART_RX_PIN 1
 
 #define UART_ID uart0
 
 #endif
+
 
