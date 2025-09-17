@@ -5,7 +5,7 @@
 #define SDA_PIN 4
 #define SCL_PIN 5
 
-#define I2C_ID i2c0 // this is not an independent parameter, change it according to chosen SDA and SCL pins (see Pico datasheet)
+#define I2C_ID i2c0 
 
 #define UART_TX_PIN 0
 #define UART_RX_PIN 1
@@ -13,3 +13,4 @@
 #define UART_ID uart0
 
 #endif
+
