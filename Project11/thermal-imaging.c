@@ -143,9 +143,11 @@ int main()
            i2c_write_blocking(I2C_ID, 0x66, pixelValue, 2, true);      
            i2c_read_blocking(I2C_ID, 0x66, pixelValue, 2, false); 
            
-           sleep_ms(100);     
+           sleep_ms(1);  
+
+           // decimalValueTemperature = ((pixelValue[0] << 8) + pixelValue[1]) / 50 // see data sheet for the formula
     
-           sprintf(readValue, "Pixel 0x%x%x, Value 0x%x%x \r\n", upperPixelAddress, lowerPixelAddress, pixelValue[0], pixelValue[1]); // not delivering usable results so far  
+           sprintf(readValue, "Pixel 0x%x%x, Value 0x%x%x \r\n", upperPixelAddress, lowerPixelAddress, pixelValue[0], pixelValue[1]); // not delivering good results so far  
            uart_write_blocking(UART_ID, readValue, strlen(readValue));
            
            pixelAddress = pixelAddress+1;
