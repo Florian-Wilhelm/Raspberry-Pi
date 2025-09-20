@@ -323,85 +323,10 @@ int main()
            }
            
            /*
-           sleep_ms(2);
-           
-           if (i==1){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 57, 64, 0, 0); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 57, 64, 0, 0);
-            else
-              renderImage(2, 57, 64, 0, 0);
-            
-            pixelAddress = 0x362C; 
-           }
-           
-           sleep_ms(2);
-           
-           if (i==2){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 115, 122, 0, 0); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 115, 122, 0, 0); 
-            else
-              renderImage(2, 115, 122, 0, 0);
-            
-            pixelAddress = 0x382A; 
-           }
-           
-           sleep_ms(2);
-           
-           if (i==3){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 0, 7, 3, 3); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 0, 7, 3, 3);
-            else
-              renderImage(2, 0, 7, 3, 3); 
-              
-            pixelAddress = 0x392A;
-           }
-           
-           sleep_ms(2);
-           
-           if (i==4){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 57, 64, 3, 3); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 57, 64, 3, 3); 
-            else
-              renderImage(2, 57, 64, 3, 3); 
-            
-            pixelAddress = 0x3A2A; 
-           }              
-           
-           sleep_ms(2);
-           
-           if (i==5){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 115, 122, 3, 3); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 115, 122, 3, 3);
-            else
-              renderImage(2, 115, 122, 3, 3);
-            
-            pixelAddress = 0x342C; 
-           }
-              
-           sleep_ms(2); */
-           
-           /*
            sprintf(readValue, "Pixel 0x%x%x, Value 0x%x%x, Temperature %d \r\n", upperPixelAddress, lowerPixelAddress, pixelValue[0], pixelValue[1], decimalValueTemperature); // not delivering good results so far  
            uart_write_blocking(UART_ID, readValue, strlen(readValue));
            */           
-           
-                    
-      
+ 
    }
           
     return 0;       
