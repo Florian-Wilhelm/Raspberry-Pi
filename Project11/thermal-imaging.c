@@ -173,7 +173,7 @@ int main()
       // *the array consists of 768 IR sensors
       // *each IR sensor delivers 2 Byte of data
       // *image data starts at address 0x342C (Pixel [1:1]), and ends at address 3A2A (Pixel [24:32])
-      // *raw data starts at address 0x2E2A (Pixel [1:1]), and ends at address 312A (Pixel [24:32]) 
+      // *raw data starts at address 0x2E2A (Pixel [1:1]), and ends at address 0x3428 (Pixel [24:32]) 
       // *the default refresh rate is 8Hz, default mode is continuous mode (measurements are constantly running)      
       
       uint16_t ImageDataStartAddress = 0x342C;
