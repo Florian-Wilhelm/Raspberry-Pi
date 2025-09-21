@@ -326,9 +326,7 @@ int main()
            sprintf(readValue, "Pixel 0x%x%x, Value 0x%x%x, Temperature %d \r\n", upperPixelAddress, lowerPixelAddress, pixelValue[0], pixelValue[1], decimalValueTemperature); // not delivering good results so far  
            uart_write_blocking(UART_ID, readValue, strlen(readValue));
            */           
-           
-                    
-      
+  
    }
           
     return 0;       
