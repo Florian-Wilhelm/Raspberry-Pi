@@ -173,7 +173,7 @@ int main()
       // *the array consists of 768 IR sensors
       // *each IR sensor delivers 2 Byte of data
       // *image data starts at address 0x342C (Pixel [1:1]), and ends at address 3A2A (Pixel [24:32])
-      // *raw data starts at address 0x2E2A (Pixel [1:1]), and ends at address 312A (Pixel [24:32]) 
+      // *raw data starts at address 0x2E2A (Pixel [1:1]), and ends at address 0x3428 (Pixel [24:32]) 
       // *the default refresh rate is 8Hz, default mode is continuous mode (measurements are constantly running)      
       
       uint16_t ImageDataStartAddress = 0x342C;
@@ -321,79 +321,6 @@ int main()
               sleep_ms(2);
            
            }
-           
-           /*
-           sleep_ms(2);
-           
-           if (i==1){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 57, 64, 0, 0); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 57, 64, 0, 0);
-            else
-              renderImage(2, 57, 64, 0, 0);
-            
-            pixelAddress = 0x362C; 
-           }
-           
-           sleep_ms(2);
-           
-           if (i==2){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 115, 122, 0, 0); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 115, 122, 0, 0); 
-            else
-              renderImage(2, 115, 122, 0, 0);
-            
-            pixelAddress = 0x382A; 
-           }
-           
-           sleep_ms(2);
-           
-           if (i==3){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 0, 7, 3, 3); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 0, 7, 3, 3);
-            else
-              renderImage(2, 0, 7, 3, 3); 
-              
-            pixelAddress = 0x392A;
-           }
-           
-           sleep_ms(2);
-           
-           if (i==4){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 57, 64, 3, 3); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 57, 64, 3, 3); 
-            else
-              renderImage(2, 57, 64, 3, 3); 
-            
-            pixelAddress = 0x3A2A; 
-           }              
-           
-           sleep_ms(2);
-           
-           if (i==5){
-                      
-            if (decimalValueTemperature > thresholdUp)
-              renderImage(0, 115, 122, 3, 3); 
-            else if (decimalValueTemperature < thresholdDown)
-              renderImage(1, 115, 122, 3, 3);
-            else
-              renderImage(2, 115, 122, 3, 3);
-            
-            pixelAddress = 0x342C; 
-           }
-              
-           sleep_ms(2); */
            
            /*
            sprintf(readValue, "Pixel 0x%x%x, Value 0x%x%x, Temperature %d \r\n", upperPixelAddress, lowerPixelAddress, pixelValue[0], pixelValue[1], decimalValueTemperature); // not delivering good results so far  
