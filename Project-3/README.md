@@ -8,4 +8,4 @@ Either component is connected to the I2C bus, i.e. Pin 2 (SDA) and 3 (SCL) of a 
 
 Weather data is published via MQTT, and/or displayed on the LCD.
 
-![LCD-assembly--scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/a83b0d83-194f-4272-b989-b6af7ab5d724)
+![LCD-assembly](https://github.com/user-attachments/assets/52c9048b-37ad-4093-b30d-df6ea92e4f77)
