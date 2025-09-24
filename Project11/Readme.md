@@ -9,6 +9,7 @@ Monochrome OLED display is connected for presentation purposes, later prototypes
 ## SW Release Notes 
 
 V0.24 -> OLED display
+
 V0.40 -> OLED display and IoT (rudimentary)
 
 ![MLX90642 thermal image 1](https://github.com/user-attachments/assets/f0fda1be-7b0b-41f5-977f-57cd0463a257)
