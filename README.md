@@ -12,7 +12,7 @@ See folders for short project descriptions, or click on the links for more infor
 
 https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
 
-**Project  3 - Simple MQTT weather station**
+**Project  3 - Simple (MQTT) weather station**
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
