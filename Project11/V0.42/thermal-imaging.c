@@ -130,9 +130,9 @@ int main()
     sprintf(readValue, "MLX90642 FW Version %d.%d.%d\r\n", FW_major[0], FW_minor[1], FW_minor[0]); 
     uart_write_blocking(UART_ID, readValue, strlen(readValue));      
            
-   /*
-     Initialize the TSL25911 sensor
-     */
+    /*
+    Initialize the TSL25911 sensor
+    */
     
     // see data sheet, it is a bit tricky with the registers  
      
