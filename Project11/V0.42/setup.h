@@ -68,8 +68,8 @@ int setup(uint32_t country, const char *ssid, const char *pass,
 
 int connect()
 {
-   char ssid[] = "WLAN-V4QFMV"; // obscured for privacy reasons
-   char pass[] = "5102370540478130"; // obscured for privacy reasons
+   char ssid[] = "WLAN-ABC"; // obscured for privacy reasons
+   char pass[] = "12345"; // obscured for privacy reasons
    uint32_t country = CYW43_COUNTRY_GERMANY;
    uint32_t auth = CYW43_AUTH_WPA2_MIXED_PSK;
    return setup(country, ssid, pass, auth, "Pico W", NULL, NULL, NULL);
@@ -77,3 +77,4 @@ int connect()
 
 // lwipopts.h source:
 // /home/pi/pico/pico-sdk/lib/lwip/src/include/lwip
+
