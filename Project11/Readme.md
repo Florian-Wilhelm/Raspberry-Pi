@@ -8,7 +8,7 @@ Monochrome OLED display is connected for presentation purposes, later prototypes
 
 ## SW Release Notes 
 
-V0.25 -> OLED display
+V0.26 -> OLED display and simple acoustic burglar detection
 
 V0.42 -> OLED display and IoT (rudimentary)
 
