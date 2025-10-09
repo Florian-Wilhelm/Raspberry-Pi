@@ -4,7 +4,7 @@
 
 Thermal imaging with an MLX90642 32x24 InfraRed (IR) array. 
 
-Monochrome OLED display is connected for presentation purposes, later prototypes are to be embedded in an IoT environment (for burglar detection and the like).
+Prototypes will later be used as a burglar detection, or as a simple endoscope.
 
 ## Branches of development 
 
