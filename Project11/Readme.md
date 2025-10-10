@@ -12,6 +12,8 @@ SW V0.2x -> non IoT / OLED display / acoustic burglar detection
 
 SW V0.4x -> IoT / OLED display
 
-## Arrangement and demo
+## IoT demo 
 
-![IoT-V045](https://github.com/user-attachments/assets/75331b05-0ec9-495e-a4a5-c235f87c9ed8)
+SW V0.46 (not yet uploaded)
+
+![Screenshot_20251010_081936_Chrome](https://github.com/user-attachments/assets/558838aa-6a8f-4ba6-b10c-0ef3c1a34e49)
