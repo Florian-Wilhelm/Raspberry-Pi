@@ -14,6 +14,6 @@ SW V0.4x -> IoT / OLED display
 
 ## IoT demo 
 
-SW V0.46 (not yet uploaded)
+SW V0.46
 
 ![Screenshot_20251010_081936_Chrome](https://github.com/user-attachments/assets/558838aa-6a8f-4ba6-b10c-0ef3c1a34e49)
