@@ -2,15 +2,13 @@
 
 ## Description
 
-Thermal imaging with an MLX90642 32x24 InfraRed (IR) array. 
-
-Prototypes will later be used as a burglar detection, or as a simple endoscope.
+Creating an IoT device providing thermal data and images, and realizing a very basic IR camera thru an attached display. One obvious UseCase is to make this device a burglar detection for e.g. a bicycle store room. 
 
 ## Branches of development 
 
 SW V0.2x -> non IoT / OLED display / acoustic burglar detection
 
-SW V0.4x -> IoT / OLED display
+SW V0.4x -> IoT / OLED display (not all files will be uploaded here)
 
 ## IoT demo 
 
