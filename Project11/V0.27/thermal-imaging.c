@@ -266,7 +266,7 @@ int main()
     
       while(true){   
                  
-           // still a bit unclear how to address individual pixels, but even addresses must be used
+           // still a bit unclear how to address individual pixels, but even addresses must be used; negative temperatures cannot be calculated yet
            
            uint16_t detectionAccumulatedOneLoop = 0;
                             
