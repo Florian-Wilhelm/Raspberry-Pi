@@ -24,7 +24,7 @@
 // physical connections
 #include "connections.h"
 
-// OLED SSD1306
+// OLED w/ SSD1306 controller
 #include "oled.h"
 #include "lookupTable.h"
 
@@ -59,7 +59,6 @@ uint32_t pwm_set_freq_duty(uint32_t f_clk_sys, uint slice_num, uint chan, uint32
     pwm_set_wrap(slice_num, wrap);   
     pwm_set_chan_level(slice_num, chan, wrap * d / 100);
     return wrap;
-    
 }
 
 void renderImage(uint digit, uint a, uint b, uint c , uint d)
@@ -73,7 +72,6 @@ void renderImage(uint digit, uint a, uint b, uint c , uint d)
         render(clr, &frame_area);
     else if (digit == 2)
         render(sober, &frame_area);
-               
 }
 
 void clear_startScreen()
