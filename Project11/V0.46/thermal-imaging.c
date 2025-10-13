@@ -24,7 +24,7 @@
 
 #include "connections.h"
 
-// OLED SSD1306
+// OLED w/ SSD1306 controller
 #include "oled.h"
 #include "lookupTable.h"
 
@@ -58,7 +58,6 @@ void renderImage(uint digit, uint a, uint b, uint c , uint d)
         render(clr, &frame_area);
     else if (digit == 2)
         render(sober, &frame_area);
-               
 }
 
 void clear_startScreen()
