@@ -2,7 +2,7 @@
 
 ## Description
 
-Creating an IoT device providing thermal data and images, and realizing a very basic IR camera thru an attached display. One obvious UseCase is to make this device a burglar detection for e.g. a bicycle store room. 
+Creating an IoT device providing thermal data and images (using MLX90642 32x24 InfraRed (IR) array), and realizing a very basic IR camera thru an attached display. One obvious UseCase is to make this device a burglar detection for e.g. a bicycle store room. 
 
 ## Branches of development 
 
