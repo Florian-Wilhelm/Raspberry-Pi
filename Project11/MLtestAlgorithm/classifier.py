@@ -43,7 +43,7 @@ Y = y.reshape(-1, 1)
 # train the system
 w = train(X, Y, iterations=1000, lr=0.001)
 
-# test the data
+# test the data (training data is identical to test data, only good for a quick ad-hoc test)
 test(X, Y, w)
 
 print(w) # printing the weights
