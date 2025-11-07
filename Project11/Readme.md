@@ -8,7 +8,7 @@ Creating an IoT device providing thermal data and images (by using MLX90642 32x2
 
 SW V0.2x -> non IoT / OLED display / acoustic burglar detection
 
-SW V0.4x -> IoT / OLED display (not all files will be uploaded here)
+SW V0.4x -> IoT (not all files will be uploaded here, e.g. the WiFi specific setup.h); display functions will be removed by and by
 
 ## IoT demo 
 
