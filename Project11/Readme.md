@@ -12,7 +12,7 @@ SW V0.4x -> IoT (not all files will be uploaded here, e.g. the WiFi specific set
 
 ## Thermal image 
 
-Moving object in 5m distance in an outdoors area, SW V0.492 (not yet uploaded). All 768 pixels are read and visualized in a spreadsheet.
+Moving object in 5m distance in an outdoors area, SW V0.492 (not yet uploaded here). All 768 pixels are read and visualized.
 
 ![Moving-Object-marked](https://github.com/user-attachments/assets/5e45dc47-a529-4d92-a069-48e9517c1bd4)
 
