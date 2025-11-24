@@ -10,12 +10,11 @@ See folders for short project descriptions, or click on the links for more infor
 
 **Project 1 - Plant irrigation system**
 
-https://ome-eng.net/automatische-bewaesserung-raspberry-pi/ 
+https://hackaday.io/project/177954-remotely-controlled-plant-irrigation-system
 
 **Project  3 - Simple (MQTT) weather station**
 
 https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
-
 
 ### Raspberry Pi Pico (and ESP8266)
 
