@@ -52,5 +52,5 @@ Flashing two LEDs cyclically by using the PIO (Programmable IO).
 
 **Project 11 - Thermal imaging with MLX90642 32x24 InfraRed (IR) array**
 
-https://hackaday.io/project/204048-thermal-imaging-for-burglar-detection
+https://hackaday.io/project/204048-infrared-home-intrusion-system
 
