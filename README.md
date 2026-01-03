@@ -2,7 +2,7 @@
 
 This repo contains experimental code, generic code examples and programs (I use (Micro)Python and C) for Raspberry Pi and Raspberry Pi Pico projects (beginner to advanced level). 
 
-![Electronic-projects-collage](https://github.com/user-attachments/assets/e0617a3c-50e4-4e01-871a-ebb18c3dc25f)
+![Electronic-projects-collage](https://github.com/user-attachments/assets/79c19fe2-eaf2-4b9f-8519-5c49299643e7)
 
 See folders for short project descriptions, or click on the links for more information or a short video presentation.
 
