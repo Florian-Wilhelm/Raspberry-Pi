@@ -4,7 +4,7 @@ This repo contains experimental code, generic code examples and programs (I use 
 
 ![Electronic-projects-collage](https://github.com/user-attachments/assets/79c19fe2-eaf2-4b9f-8519-5c49299643e7)
 
-See folders for short project descriptions, or click on the links for more information or a short video presentation.
+See folders for short project descriptions (Pico projects), or click on the links for more information or a short video presentation.
 
 ## Projects
 
