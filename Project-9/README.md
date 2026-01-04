@@ -4,9 +4,9 @@ See RP2040 datasheet chapter 2.15., 2.16., 2.17., and the SDK documentation chap
 
 ## 1. Measuring the current 
 
-There is a linear dependency between the MCU current and the system clock, abbreviated clk_sys ("dynamic power consumption"). 
+There is a linear dependency between the MCU current and the system clock (abbreviated clk_sys), so called "dynamic power consumption". 
 
-About 5 mA or less is the "static power consumption", which is always present and to a great deal due to FET leakage currents within the MCU (or so says the theory). There are other causes for offsets, so take the graph below with a grain of salt.
+About 5 mA or less is the "static power consumption", which is always present and to a great deal due to FET leakage currents within the MCU (so say the literature sources). There are other causes for offsets, so take the graph below with a grain of salt.
 
 ![Current-over-clk_sys](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/1136ca16-1971-4c13-b5f3-f4026da0bb4b)
 
