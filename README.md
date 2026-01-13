@@ -40,9 +40,9 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://hackaday.io/project/188593-6bit-digital-analog-converter
 
-**Project 8 - PIO blinky**
+**Project 8 - TBD**
 
-Flashing two LEDs cyclically by using the PIO (Programmable IO).
+tbd
 
 **Project 9 - Exploring the RP2040 clocks**
 
