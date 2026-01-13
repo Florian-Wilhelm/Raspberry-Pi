@@ -24,9 +24,7 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
-**Project 4 - Exploring PWM (controlling LED brightness, powering a Brushless DC-Motor)**
-
-[Starting behaviour of a Brushed DC-motor](https://youtu.be/FptPwb1l7qU)
+**Project 4 - TBD**
 
 **Project 5 - Air humidity measurement**
 
@@ -41,8 +39,6 @@ https://hackaday.io/project/184266-geiger-counter
 https://hackaday.io/project/188593-6bit-digital-analog-converter
 
 **Project 8 - TBD**
-
-tbd
 
 **Project 9 - Exploring the RP2040 clocks**
 
