@@ -5,11 +5,11 @@
 Creating an IoT device providing thermal data and images (by using an MLX90642 32x24 InfraRed (IR) array), and realizing a very basic IR camera thru an attached display. 
 One obvious UseCase is to make this device a burglar detection / home intrusion system for e.g. a bicycle store room. Another UseCase could be monitoring terrariums and the like.
 
-## Branches of development 
+## Demo Software 
 
-SW V0.2x -> non IoT / OLED display / acoustic burglar detection
+SW V0.28 -> non IoT / OLED display / acoustic burglar detection
 
-SW V0.4x -> IoT (not all necessary files can be uploaded, in order to build a webserver you need several files in the SDK); OLED display functions will be removed in subsequent SW-Versions
+SW V0.48 -> IoT (not all necessary files can be uploaded, in order to build a webserver you need several files in the SDK); OLED display functions will be removed in subsequent SW-Versions (0.49x)
 
 ## Thermal image 
 
