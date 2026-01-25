@@ -5,9 +5,8 @@
  * MLX90642 IR array serves as main sensor
  * TSL25911 ambient light sensor is an additional component for reference
  * 
- * OLED for thermal display (only for presentation purposes), some data output on the serial port as I see fit
- * SW 0.2x -> non IoT / OLED display / acoustic burglar detection
- * SW 0.4x -> IoT / OLED display
+ * OLED for thermal display (only for presentation purposes), some data output on the serial port as I see fit 
+ * buzzer activation for show effect
  *  
  */
 
