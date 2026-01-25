@@ -9,7 +9,7 @@ One obvious UseCase is to make this device a burglar detection / home intrusion 
 
 SW V0.2x -> non IoT / OLED display / acoustic burglar detection
 
-SW V0.4x -> IoT (not all files will be uploaded here, e.g. the WiFi specific setup.h); OLED display functions will be removed by and by, for rendering the data will take place on a computer.
+SW V0.4x -> IoT (not all necessary files can be uploaded, in order to build a webserver you need several files in the SDK); OLED display functions will be removed in subsequent SW-Versions
 
 ## Thermal image 
 
