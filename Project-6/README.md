@@ -24,7 +24,7 @@ See comments in the source code file "geigerCounter.c" for further information.
 
 ## Example Visual Output
 
-With GPS module (see project 10 folder for further information). 
+With GPS module (see Project10 folder for further information). 
 
 ![OLED-scaled](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/4041ded5-5f8f-4de6-808a-c2b74051ebaa)
 
