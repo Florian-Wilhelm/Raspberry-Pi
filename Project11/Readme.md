@@ -10,7 +10,7 @@ SW V0.28 -> non IoT / OLED display
 
 SW V0.48 -> IoT (note: not all necessary files can be uploaded here, in order to build a webserver you need several SDK files which are all over the place in the Pi file system)
 
-## "Production level" Software (not to be uploaded in this particular repository)
+## "Production level" Software (not to be uploaded in this repository)
 
 SW V0.49 / 1.x -> IoT, rudimentary display functions remain; the webserver provides the complete sensor data that can be rendered as one sees fit 
 
