@@ -1,6 +1,7 @@
 ## About
 
 This repository contains code examples for Raspberry Pi and Raspberry Pi Pico projects. 
+
 It will not be regularly updated, and it will not contain code beyond an experimental stage (no "production level code" that will be uploaded elsewhere). 
 
 ![Electronic-projects-collage](https://github.com/user-attachments/assets/79c19fe2-eaf2-4b9f-8519-5c49299643e7)
