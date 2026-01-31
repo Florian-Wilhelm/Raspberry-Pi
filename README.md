@@ -10,7 +10,7 @@ See folders for short project descriptions (Pico projects), or click on the link
 
 ## Projects
 
-note: in no particular order
+Note: in no particular order
 
 ### Raspberry Pi
 
