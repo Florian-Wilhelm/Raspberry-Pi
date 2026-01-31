@@ -12,7 +12,7 @@ SW V0.48 -> IoT (note: not all necessary files can be uploaded here, in order to
 
 ## "Production level" Software (not to be uploaded in this repository)
 
-SW V0.49 / 1.x -> IoT, rudimentary display functions remain; the webserver provides all sensor data that can be rendered as one sees fit 
+SW V0.49 / 1.0x -> IoT, rudimentary display functions remain; the webserver provides all sensor data that can be rendered as one sees fit 
 
 ## Thermal image 
 
