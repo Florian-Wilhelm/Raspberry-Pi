@@ -16,43 +16,43 @@ note: in no particular order
 
 **Project 1 - Plant irrigation system**
 
-<pre> https://hackaday.io/project/177954-remotely-controlled-plant-irrigation-system
+https://hackaday.io/project/177954-remotely-controlled-plant-irrigation-system
 
 **Project  3 - Simple (MQTT) weather station**
 
-<pre> https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
+https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 ### Raspberry Pi Pico (and ESP8266)
 
 **Project 2 - Soil moisture measurement**
 
-<pre> https://hackaday.io/project/178522-moisturehumidity-measurement-device
+https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
 **Project 4 - TBD**
 
 **Project 5 - Air humidity measurement**
 
-<pre> https://hackaday.io/project/178522-moisturehumidity-measurement-device
+https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
 **Project 6 - (IoT) Geiger counter**
 
-<pre> https://hackaday.io/project/184266-geiger-counter
+https://hackaday.io/project/184266-geiger-counter
 
 **Project 7 - 6bit R-2R ladder DAC connected to MCP23016 I/O expansion for I2C bus**
 
-<pre> https://hackaday.io/project/188593-6bit-digital-analog-converter
+https://hackaday.io/project/188593-6bit-digital-analog-converter
 
 **Project 8 - TBD**
 
 **Project 9 - Exploring the RP2040 clocks**
 
-<pre> [Exploring the RP2040 clocks and experimenting with external oscillators.](https://youtu.be/lahF1O3cauM)
+[Exploring the RP2040 clocks and experimenting with external oscillators.](https://youtu.be/lahF1O3cauM)
 
 **Project 10 - Pico and Pico-GPS-L76B GNSS module**
 
-<pre> [Connecting a Pico-GPS-L76B GNSS module to the Pico.](https://youtu.be/zbmgVNmPB1s)
+[Connecting a Pico-GPS-L76B GNSS module to the Pico.](https://youtu.be/zbmgVNmPB1s)
 
 **Project 11 - Thermal imaging with MLX90642 32x24 InfraRed (IR) array**
 
-<pre> https://hackaday.io/project/204048-infrared-home-intrusion-system
+https://hackaday.io/project/204048-infrared-home-intrusion-system
 
