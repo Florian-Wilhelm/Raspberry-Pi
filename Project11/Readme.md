@@ -1,4 +1,4 @@
-# Home intrusion detection by thermal imaging
+# Home intrusion detection thru thermal imaging
 
 ## Description
 
