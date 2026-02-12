@@ -30,7 +30,7 @@
 
 void initUART()
 {
-  uart_init(uart0, 115200);
+  uart_init(UART_ID, 115200);
   gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
   gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
   uart_set_format(UART_ID, 8, 1, UART_PARITY_NONE);
