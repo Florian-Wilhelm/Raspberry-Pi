@@ -18,7 +18,7 @@ SW V0.49x / 1.0x -> IoT, rudimentary display functions remain; the webserver pro
 
 Example visualization of a human upper body. The Python scripts which do that can be found in this repository. Ressources for the Pi camera can be found in the raspberrypi github repository (https://github.com/raspberrypi/picamera2/tree/main).
 
-![20260105_07h31m01s_grim--collage](https://github.com/user-attachments/assets/fe56669e-a2cf-4040-bdb2-330a13e2d072)
+![Schematic__Rev_1_00](https://github.com/user-attachments/assets/b672f659-3d1a-48e9-bd0a-52fbce7327a9)
 
 ![thumbnail-collage](https://github.com/user-attachments/assets/bcc4dd39-b12b-46b2-996c-a4660ba12d13)
 
