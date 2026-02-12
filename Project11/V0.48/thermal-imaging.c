@@ -261,9 +261,7 @@ int main()
     
       while(true){   
                  
-           // still a bit unclear how to address individual pixels, but even addresses must be used
-                            
-           // the following could be done shorter with a 2nd loop 
+           // the following could be done shorter with nested loops, but who cares  
                 
            for (int i=0x01; i <= 0x0F; i++) 
            
