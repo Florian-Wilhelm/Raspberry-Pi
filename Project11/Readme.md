@@ -6,7 +6,7 @@ Creating a burglar detection / home intrusion system consisting of a 32x24 Infra
 
 ## Demo Software (uploaded here)
 
-SW V0.28 -> non IoT / OLED display
+SW V0.29 -> non IoT / OLED display
 
 SW V0.48 -> IoT (note: not all necessary files can be uploaded here, in order to build a webserver you need several SDK files which are all over the place in the Pi file system)
 
