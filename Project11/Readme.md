@@ -12,7 +12,7 @@ SW V0.48 -> IoT, the webserver provides parts of the sensor data (note: not all 
 
 ## "Production level" Software (not to be uploaded in this repository)
 
-SW V0.49x / 1.0x -> IoT, the webserver provides the complete sensor data that can be rendered as one sees fit 
+SW 1.0x -> IoT, the webserver provides the complete sensor data that can be rendered as one sees fit 
 
 ## Schematic
 
