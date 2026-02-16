@@ -4,7 +4,7 @@
 
 Radiation measurement device with Raspberry Pi Pico and STS-5 tube.
 
-## Prototype SW 
+## Prototype Software 
 
 **Obsolete SW** (kept for measurement purposes and presentation):
 
