@@ -18,7 +18,7 @@ while 1:
 	extracted_info = []
 	extracted_info_square = []
 
-	response = requests.get('http://192.168.2.106/Index.ssi')
+	response = requests.get('http://192.168.2.106/Index.ssi') # modify if necessary
 
 	with open("temperatureData.txt", "w") as file:
 		file.write(response.text)
@@ -80,18 +80,12 @@ while 1:
 	plt.matshow(matrix_24x32)
 	plt.show(block=False)
 	
-	# remove no longer needed files
-	os.remove('/home/florian/pico/pico-projects/thermal-imaging/webcrawling/temperatureData.txt')
-	os.remove('/home/florian/pico/pico-projects/thermal-imaging/webcrawling/temperatureDataRendered.txt')
-	os.remove('/home/florian/pico/pico-projects/thermal-imaging/webcrawling/temperatureDataRenderedSquare.txt')
-	os.remove('/home/florian/pico/pico-projects/thermal-imaging/webcrawling/IR-Sensor-komplett.txt')
+	# remove no longer needed files, path is to be modified
+	#os.remove('/(...)/temperatureData.txt')
+	#os.remove('/(...)/temperatureDataRendered.txt')
+	#os.remove('/(...)/temperatureDataRenderedSquare.txt')
+	#os.remove('/(...)/IR-Sensor-komplett.txt')
     
 	input("press any key to continue...")
 	
-	plt.pause(2)
-	
-	
-	#Z = np.loadtxt("IR-Sensor-komplett.txt", unpack=True)
-	#plt.plot(Z, "ro")
-	#plt.show()
-    
+	plt.pause(2)	
