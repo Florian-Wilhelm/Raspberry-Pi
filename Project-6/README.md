@@ -6,11 +6,11 @@ Radiation measurement device with Raspberry Pi Pico and STS-5 tube.
 
 ## Prototype Software 
 
-**Obsolete SW** (kept for measurement purposes and presentation):
+**Obsolete** (kept for measurement purposes and presentation):
 
 V2.08 -> LCD, System clock 125 MHz
 
-**Current SW:**
+**Latest**
 
 V3.93 -> OLED display, System clock <3 MHz
 
