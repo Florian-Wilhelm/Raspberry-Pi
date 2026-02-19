@@ -6,18 +6,18 @@ An IoT device comprising a Raspberry Pi Pico, three sensors (including the HIH40
 
 ### Software
 
-Below an example web browser output. 
+Below an example web browser output (note: WD means "Watchdog"). 
 
-You can hardcode them, but with SW V2.00 it is possible to modify the WiFi credentials via Picotool (the .uf2 files have to be located in the respective directory):
+![Webserver-IoT](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/fcef041a-d983-4783-be21-395024e1c47a)
+
+You can hardcode them, but with SW V2.00 it is possible to modify the WiFi credentials via Picotool (the .uf2 file has to be located in the respective directory):
 
 *$ picotool config HIH4020-humidityMeasurement.uf2 -s SSID "my WiFi"*
 
 *$ picotool config HIH4020-humidityMeasurement.uf2 -s PASS "001122334455"*
 
-![Webserver-IoT](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/fcef041a-d983-4783-be21-395024e1c47a)
-
-Note: WD means "Watchdog".
-
 ### Hardware
+
+An ad-hoc arrangement for experimental use.
 
 ![Konfiguration--HIH4020-103AT2-SFH300--edited](https://github.com/user-attachments/assets/aa5d2b48-5d35-4ad3-a9d1-a353af97cdb0)
