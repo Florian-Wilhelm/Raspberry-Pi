@@ -10,9 +10,9 @@ Below an example web browser output.
 
 With SW 2.00, it is possible to modify the WiFi credentials via Picotool:
 
-$ picotool config picotool-variables.uf2 -s SSID "my WiFi"
+*$ picotool config picotool-variables.uf2 -s SSID "my WiFi"
 
-$ picotool config picotool-variables.uf2 -s PASS "001122334455"
+$ picotool config picotool-variables.uf2 -s PASS "001122334455"*
 
 ![Webserver-IoT](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/fcef041a-d983-4783-be21-395024e1c47a)
 
