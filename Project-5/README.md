@@ -8,7 +8,7 @@ An IoT device comprising a Raspberry Pi Pico, three sensors and the ESP8266. Not
 
 Below an example web browser output. 
 
-With SW V2.00, it is possible to modify the WiFi credentials via Picotool:
+You can hardcode them, but with SW V2.00 it is possible to modify the WiFi credentials via Picotool:
 
 *$ picotool config HIH4020-humidityMeasurement.uf2 -s SSID "my WiFi"*
 
