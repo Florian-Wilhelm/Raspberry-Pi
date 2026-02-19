@@ -9,9 +9,9 @@
  * NTC 103AT2 (ambient temperature) - ADC1 (GP27)
  * Phototransistor SFH 300 (ambient light) - ADC2 (GP28) 
  * 
- * note: as you may have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU        
- * 
+ * note: as you correctly have guessed this is NOT a Pico W project; this assembly uses the classic Pico and an Espressif ESP8266 MCU        
  */
+
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
