@@ -4,7 +4,7 @@
 
 Creating a burglar detection / home intrusion system consisting of a 32x24 InfraRed (IR) array and a Raspberry Pi Pico W posing as an IoT device. 
 
-## Test Software (uploaded here)
+## Test Software
 
 SW V0.29 -> non IoT, 60 pixels are displayed on a 0,96'' OLED display
 
