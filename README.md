@@ -2,7 +2,7 @@
 
 This repository contains test code for Raspberry Pi and Raspberry Pi Pico projects. 
 
-Actual prototype and production level code will be uploaded in other repositories. 
+Actual prototype and "production level" code will be uploaded in other repositories. 
 
 ![Electronic-projects-collage](https://github.com/user-attachments/assets/79c19fe2-eaf2-4b9f-8519-5c49299643e7)
 
