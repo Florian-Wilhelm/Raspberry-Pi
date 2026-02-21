@@ -6,13 +6,11 @@ Radiation measurement device with Raspberry Pi Pico and STS-5 tube.
 
 ## Test Software 
 
-Actual prototype code that includes all features will be uploaded in another repository.
-
 V3.93 -> OLED display, System clock <3 MHz
 
 V4.18 -> OLED display, System clock 12 MHz, IoT / BLE with RN4870 IC
 
-See comments in the source code file "geigerCounter.c" for further information.
+Actual prototype code that includes all features will be uploaded in another repository.
 
 ## Schematic
 
