@@ -4,7 +4,7 @@
 
 An IoT device comprising a Raspberry Pi Pico, three sensors (including the HIH4020 air humidity sensor) and the ESP8266. Note: no SSL/TLS is or will be implemented (i.e. certificates), so you'll get only a HTTP connection, thus code is only meant for experimental use.
 
-### Software
+## Test Software
 
 Below an example web browser output (note: WD means "Watchdog"). 
 
@@ -16,7 +16,7 @@ You can hardcode them, but with SW V2.00 it is possible to modify the WiFi crede
 
 *$ picotool config HIH4020-humidityMeasurement.uf2 -s PASS "001122334455"*
 
-### Hardware
+## Hardware
 
 An ad-hoc arrangement for experimental use.
 
