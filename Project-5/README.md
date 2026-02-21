@@ -6,7 +6,7 @@ An IoT device comprising a Raspberry Pi Pico, three sensors (including the HIH40
 
 ## Test Software
 
-Below an example web browser output (note: WD means "Watchdog"). 
+SW V2.00 -> below an example web browser output (note: WD means "Watchdog")  
 
 ![Webserver-IoT](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/fcef041a-d983-4783-be21-395024e1c47a)
 
