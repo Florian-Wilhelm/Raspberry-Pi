@@ -8,7 +8,7 @@ An IoT device comprising a Raspberry Pi Pico, three sensors (including the HIH40
 
 SW V2.00 -> below an example web browser output (note: WD means "Watchdog")  
 
-![Webserver-IoT](https://github.com/Florian-Wilhelm/Raspberry-Pi/assets/77980708/fcef041a-d983-4783-be21-395024e1c47a)
+![Screenshot_20260221_082506_Chrome](https://github.com/user-attachments/assets/9e813d88-88c5-4820-94d9-8a30f8fa005e)
 
 You can hardcode them, but with SW V2.00 it is possible to modify the WiFi credentials via Picotool (the .uf2 file has to be located in the respective directory):
 
