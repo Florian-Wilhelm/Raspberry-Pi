@@ -6,7 +6,8 @@ Soil moisture measurement device showing a double-digit value on two 7-Segment-D
 
 ## Test Software
 
-"MoistureMeasurement-CSens-RSens-OLED.py", to be saved as "main.py" to run automatically. Sensor type (capacitive or resistive) is detected automatically.
+"MoistureMeasurement-CSens-RSens-OLED.py", to be saved as "main.py" to run automatically. No version management for this quick&dirty script.
+Sensor type (capacitive or resistive) is detected automatically.
 
 ## Hardware
 
