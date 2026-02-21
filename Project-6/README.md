@@ -10,6 +10,8 @@ V3.93 -> OLED display, System clock <3 MHz
 
 V4.18 -> OLED display, System clock 12 MHz, IoT / BLE with RN4870 IC
 
+## Prototype Software (not to be uploaded in this repository)
+
 Actual prototype code that includes all features will be uploaded in another repository.
 
 ## Schematic
