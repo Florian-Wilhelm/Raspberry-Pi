@@ -46,7 +46,7 @@ https://hackaday.io/project/188593-6bit-digital-analog-converter
 
 **Project 8 - Ambient light measurement with TSL25911 sensor**
 
-Spin-off from thermal imaging project
+Sensor is being used in the thermal imaging project
 
 **Project 9 - Exploring the RP2040 clocks**
 
