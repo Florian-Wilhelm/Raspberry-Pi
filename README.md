@@ -44,7 +44,7 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://hackaday.io/project/188593-6bit-digital-analog-converter
 
-**Project 8 - Ambient light measurement with TSL25911 sensor**
+**Project 8 - Ambient light measurement with TSL2591 sensor**
 
 Sensor is being used in the thermal imaging project
 
