@@ -8,7 +8,7 @@ Creating a burglar detection / home intrusion system consisting of a 32x24 (=768
 
 SW V0.29 -> non IoT, 60 FIR pixels are displayed on a 0,96'' OLED display
 
-SW V0.48 -> IoT, the webserver provides sensor data of 60 FIR pixels (note: not all necessary files can be uploaded here, in order to build a webserver you need several SDK files which are all over the place in the Pi file system)
+SW V0.48 -> IoT, the webserver provides sensor data of 60 FIR pixels (note: not all necessary files can be uploaded here, in order to build a webserver you need several SDK files which are all over the place in the Raspberry Pi file system)
 
 ## Prototype Software (not to be uploaded in this repository)
 
