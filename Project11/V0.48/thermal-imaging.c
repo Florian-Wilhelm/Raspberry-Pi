@@ -273,7 +273,7 @@ int main()
              upperPixelAddress = (pixelAddress & 0xFF00) >> 8;
              lowerPixelAddress = pixelAddress & 0x00FF;
                  
-             uint8_t pixelValue[4] = {upperPixelAddress, lowerPixelAddress};
+             uint8_t pixelValue[4] = {upperPixelAddress, lowerPixelAddress}; // does not really matter when the size of this array is larger than necessary, remaining elements are set to 0 anyway
     
              i2c_write_blocking(I2C_ID, 0x66, pixelValue, 2, true);      
              i2c_read_blocking(I2C_ID, 0x66, pixelValue, 2, false); 
