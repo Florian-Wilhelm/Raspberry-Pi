@@ -157,7 +157,7 @@ int main()
 		
       char readValue[32];
     
-      // Acquiring the TSL25911 ambient light data; the function TSL25911_ReadWriteI2C() could be used as well, this way I find it a little more readable though
+      // Acquiring the TSL25911 ambient light data
      
       uint8_t TSL25911_LB_CH0[] = {0xB4};    
     
