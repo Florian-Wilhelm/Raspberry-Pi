@@ -157,7 +157,7 @@ int main()
 		
       char readValue[32];
     
-      // Acquiring the TSL25911 ambient light data
+      // Acquiring the actual TSL25911 ambient light data
      
       uint8_t TSL25911_LB_CH0[] = {0xB4};    
     
