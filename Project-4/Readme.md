@@ -6,7 +6,7 @@ Pressure and Temperature measurement with the ubiquitous BMP280 sensor.
 
 ## Test Code
 
-Data is provided on either OLED display and on the serial port .
+Data is provided on an OLED display and optionally on the serial port .
 
 ## Hardware
 
