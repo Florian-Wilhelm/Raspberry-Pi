@@ -10,7 +10,7 @@ Data is provided on either OLED display and on the serial port .
 
 ## Hardware
 
-I've created the PCB for the burglar detection project originally, but it is a generic design for I2C projects.
+I've created the PCB for the burglar detection project originally, but it is a generic design for I2C projects. The extra Pull-Up resistors you see on the photo are not connected. 
 
 ![20260323_124544](https://github.com/user-attachments/assets/b176fd69-7eac-4c25-b1f6-7e76dabb88bb)
 
