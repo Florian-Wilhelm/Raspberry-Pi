@@ -1,0 +1,17 @@
+# Pressure and Temperature Measurement
+
+## Description
+
+Pressure and Temperature measurement with the ubiquitous BMP280 sensor.
+
+## Test Code
+
+Data is provided on either OLED display and on the serial port .
+
+## Hardware
+
+I've created the PCB for the burglar detection project originally, but it is a generic design for I2C projects.
+
+![20260323_124544](https://github.com/user-attachments/assets/b176fd69-7eac-4c25-b1f6-7e76dabb88bb)
+
+![20260323_181942](https://github.com/user-attachments/assets/c870c289-847d-4764-9f57-6e861f141076)
