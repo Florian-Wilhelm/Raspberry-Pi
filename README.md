@@ -28,9 +28,9 @@ https://hackaday.io/project/181570-simple-weather-station-lcd-mqtt
 
 https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
-**Project 4 - deleted**
+**Project 4 - Pressure and Temperature measurement**
 
-tbd
+Just another project with the ubiquitous BMP280 sensor
 
 **Project 5 - Air humidity (RH) measurement**
 
