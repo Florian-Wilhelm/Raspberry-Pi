@@ -2,7 +2,7 @@
 
 ## Description
 
-Barometric pressure and temperature measurement with the ubiquitous BMP280 sensor (here in the form of a breakout board).
+Barometric pressure and ambient temperature measurement with the ubiquitous BMP280 sensor (here in the form of a breakout board).
 
 ## Test Code
 
