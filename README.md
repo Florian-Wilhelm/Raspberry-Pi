@@ -1,6 +1,6 @@
 ## About
 
-This repository contains test code for Raspberry Pi and Raspberry Pi Pico projects. 
+This repository contains test code for Raspberry Pi and Raspberry Pi Pico projects, mostly concerning sensors. 
 
 Actual prototype and "production level" code will be uploaded in other repositories. 
 
@@ -44,9 +44,9 @@ https://hackaday.io/project/184266-geiger-counter
 
 https://hackaday.io/project/188593-6bit-digital-analog-converter
 
-**Project 8 - Ambient light measurement with TSL2591 sensor**
+**Project 8 - Ambient light measurement**
 
-Sensor is being used in the thermal imaging project
+TSL2591 sensor is being used in the thermal imaging project
 
 **Project 9 - Exploring the RP2040 clocks**
 
