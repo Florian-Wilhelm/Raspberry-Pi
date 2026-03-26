@@ -16,6 +16,8 @@ SW 1.0x -> IoT, the webserver provides the complete sensor data that can be rend
 
 ## Schematic
 
+Generic design for I2C projects.
+
 ![Schematic__Rev_1_00](https://github.com/user-attachments/assets/b672f659-3d1a-48e9-bd0a-52fbce7327a9)
 
 ## Thermal image 
