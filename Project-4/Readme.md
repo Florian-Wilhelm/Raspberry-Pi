@@ -2,7 +2,7 @@
 
 ## Description
 
-Barometric pressure and ambient temperature measurement with the ubiquitous BMP280 sensor (here in the form of a breakout board).
+Barometric pressure and ambient temperature measurement with the ubiquitous BMP280 sensor (here in the form of a breakout board). Values can be used to calculate the current altitude above mean sea level.
 
 ## Test Code
 
