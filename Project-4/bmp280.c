@@ -299,8 +299,7 @@ void bmp280_get_calib_params(struct bmp280_calib_param* params) {
 
 int main() {
 	
-	// Change clk_sys to be 48MHz. The simplest way is to take this from PLL_USB
-    // which has a source frequency of 48MHz
+	// reducing the power consumption by reducing clk_sys, we do not need a high system clock for this use case
     clock_configure(clk_sys,
                     CLOCKS_CLK_SYS_CTRL_SRC_VALUE_CLKSRC_CLK_SYS_AUX,
                     CLOCKS_CLK_SYS_CTRL_AUXSRC_VALUE_CLKSRC_PLL_USB,
@@ -319,7 +318,6 @@ int main() {
 	
     stdio_init_all();  
     
-    // I2C is "open drain", pull ups to keep signal high when no data is being sent
     i2c_init(i2c_default, 50 * 1000);
     gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
