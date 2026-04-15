@@ -30,7 +30,7 @@ https://hackaday.io/project/178522-moisturehumidity-measurement-device
 
 **Project 4 - Pressure and Temperature measurement**
 
-Just another project with the ubiquitous BMP280 sensor
+Yet another project with the ubiquitous BMP280 sensor
 
 **Project 5 - Air humidity (RH) measurement**
 
