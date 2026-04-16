@@ -311,7 +311,7 @@ int main()
     sleep_ms(1000);    
       
     // declare binary information
-    // official RasPi examples use 0x1111 for the first parameter ("tag"), and 0x3333 for the second ("id"); but other parameters ought to work as well for they are not used here anyway
+    // official RasPi examples use 0x1111 for the first parameter ("tag"), and 0x3333 for the second ("id"); but other parameters ought to work as well for they are not used here in any meaningful way anyway
     bi_decl(bi_ptr_string (0x1111, 0x3333, SSID, "WiFi-123", 64));
     bi_decl(bi_ptr_string (0x1111, 0x3333, PASS, "12345", 64));
    
