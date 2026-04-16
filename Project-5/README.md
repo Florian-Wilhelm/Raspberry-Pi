@@ -14,7 +14,7 @@ Since no SSL/TLS is or will be implemented (connection is HTTP not HTTPS), I wou
 
 ![Screenshot_20260221_082506_Chrome](https://github.com/user-attachments/assets/9e813d88-88c5-4820-94d9-8a30f8fa005e)
 
-You can hardcode the WiFi credentials in your own build, but it is also possible to modify them in the uploaded .uf2-file via Picotool. Copy the file to a respective directory, then use the following shell commands:
+You can hardcode the WiFi credentials in your own build, but it is also possible to modify them in the here uploaded .uf2-file via Picotool. Download the file to a respective directory, change to that directory (or use absolute paths) on the shell via cd command, then type the following:
 
 *$ picotool config HIH4020-humidityMeasurement.uf2 -s SSID "WiFi-123"*
 
