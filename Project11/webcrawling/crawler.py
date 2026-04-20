@@ -77,7 +77,7 @@ while 1:
 	
 	plt.close(1)
 
-	plt.matshow(matrix_24x32)
+	plt.matshow(matrix_24x32) # interpolation with e.g. "plt.matshow(matrix_24x32, interpolation='bicubic')", see https://matplotlib.org/3.1.3/gallery/images_contours_and_fields/interpolation_methods.html for more information
 	plt.show(block=False)
 	
 	# remove no longer needed files, path is to be modified
