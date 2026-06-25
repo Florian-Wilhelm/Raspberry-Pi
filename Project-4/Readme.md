@@ -4,7 +4,7 @@
 
 Barometric pressure and ambient temperature measurement with the ubiquitous BMP280 sensor (here in the shape of a breakout board, manufacturer "joy-it"). 
 
-Values can be used to calculate the current altitude above mean sea level, but depending on what formulas you are using the result can be very inaccurate for the lack of knowledge about real conditions on sea level. The underlying physics are quite involved.
+Values can be used to calculate the current altitude above mean sea level, but depending on what formulas you are using (see source code) the result can be very inaccurate for the lack of knowledge about real conditions on sea level. The underlying physics are quite involved.
 
 ## Test Code
 
