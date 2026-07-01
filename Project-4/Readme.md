@@ -18,6 +18,6 @@ I've created the PCB for the burglar detection project originally, but it is a g
 
 Values can be used to calculate the current altitude above mean sea level, but depending on what formulas you are using (see source code) the result can be very inaccurate for the lack of knowledge about real conditions on sea level. The underlying physics are quite involved.
 
-Comparing calculated data with actual GPS data:
+Comparing calculated data with actual GPS data (as to the GPS module, see project 10):
 
 <img width="800" height="480" alt="GPS-BMP280-Pico" src="https://github.com/user-attachments/assets/2776844a-04a1-4d13-8f5a-6a3e884189be" />
