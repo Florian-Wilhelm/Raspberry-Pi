@@ -16,7 +16,7 @@ I've created the PCB for the burglar detection project originally, but it is a g
 
 ![20260323_181942](https://github.com/user-attachments/assets/c870c289-847d-4764-9f57-6e861f141076)
 
-Values can be used to calculate the current altitude above mean sea level, but depending on what formulas you are using (see source code) the result can be very inaccurate for the lack of knowledge about real conditions on sea level. The underlying physics are quite involved.
+Values can be used for an ad-hoc calculation of the current altitude above mean sea level, but depending on what formulas you are using (see source code) the result can be very inaccurate for the lack of knowledge about real conditions on sea level. The underlying physics are quite involved and beyond the scope of this project.
 
 Comparing calculated data with actual GPS data (as to the GPS module, see project 10):
 
