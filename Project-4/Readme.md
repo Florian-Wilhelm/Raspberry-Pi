@@ -18,7 +18,7 @@ I've created the PCB for the burglar detection project originally, but it is a g
 
 Values can be used for an ad-hoc calculation of the current altitude above mean sea level (when you are moving about in the outdoors for instance), yet the result will be very inaccurate for the lack of knowledge about "real" conditions on sea level. The underlying physics are pretty involved, discussing the formulas (see source code) is beyond the scope of this project.
 
-In a fixed weather station where the actual altitude above mean sea level is known, the pressure on sea level can be calculated thru the barometric formula. 
+In a stationary weather station where the actual altitude above mean sea level is known, the corresponding pressure on sea level can be calculated thru the barometric formula. 
 
 Comparing calculated data with actual GPS data (as to the GPS module, see project 10):
 
