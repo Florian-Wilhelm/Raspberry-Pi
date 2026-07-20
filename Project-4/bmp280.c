@@ -381,7 +381,7 @@ int main() {
          
         // the following formulas are taken from internet sources
         // they cannot deliver an even remotely accurate value as to the actual altitude for lack of knowledge about real conditions on sea level, the underlying physics are complicated (obviously)
-        int32_t altitude_A = 8.314*((temperature/100.0)+273.15)/(9.81*0.02896) * log(101325.0/pressure);        
+        int32_t altitude_A = 8.314*((temperature/100.0)+273.15)/(9.81*0.02896) * log(101325.0/pressure); // pressure value according to ISA; 8.314 is the molar gas constant         
         int32_t altitude_B = (288.15/0.0065) * (1.0 - (pow((pressure/101325.0), (1.0/5.255)))); // pressure and temperature values according to ISA
 		
 		renderAltitude(altitude_A, 0, 0);
