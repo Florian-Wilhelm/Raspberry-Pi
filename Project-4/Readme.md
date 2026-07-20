@@ -16,6 +16,8 @@ I've created the PCB for the burglar detection project originally, but it is a g
 
 ![20260323_181942](https://github.com/user-attachments/assets/c870c289-847d-4764-9f57-6e861f141076)
 
+## Barometric formula
+
 Values can be used for an ad-hoc calculation of the current altitude above mean sea level (when you are moving about in the outdoors for instance), yet the result will be very inaccurate for the lack of knowledge about "real" conditions on sea level. The underlying physics are pretty involved, discussing the formulas (see source code) is beyond the scope of this project.
 
 In a stationary weather station where the actual altitude above mean sea level is known, the corresponding pressure on sea level can be calculated thru the barometric formula (that's what publicly available weather stations do).
