@@ -6,7 +6,7 @@ Barometric pressure and ambient temperature measurement with the ubiquitous BMP2
 
 ## Test Code
 
-Data is provided on an OLED display and optionally on the serial port.
+Data is provided on an OLED display and optionally on the serial port, if connected to a Raspberry Pi.
 
 ## Hardware
 
