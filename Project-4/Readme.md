@@ -6,7 +6,7 @@ Barometric pressure and ambient temperature measurement with the ubiquitous BMP2
 
 ## Test Code
 
-Data is provided on an OLED display and optionally on the serial port, if connected to a Raspberry Pi.
+Data is provided on an OLED display and, if connected to a Raspberry Pi, on the serial port.
 
 ## Hardware
 
@@ -18,9 +18,9 @@ I've created the PCB for the burglar detection project originally, but it is a g
 
 ## Barometric formula
 
-Values can be used for an ad-hoc calculation of the current altitude above mean sea level (when you are moving about in the outdoors for instance), yet the result will be very inaccurate for the lack of knowledge about "real" conditions on sea level. The underlying physics are pretty involved, discussing the formulas (see source code) is beyond the scope of this project.
+Values can be used for an ad-hoc calculation of the current altitude above mean sea level (when you are moving about in the outdoors, for instance), yet the result will be very inaccurate for the lack of knowledge about "real" conditions on sea level. The underlying physics are pretty involved, discussing the formulas (see source code) is beyond the scope of this project.
 
-In a stationary weather station where the actual altitude above mean sea level is known, the corresponding pressure on sea level can be calculated thru the barometric formula (that's what publicly available weather stations do).
+In a stationary weather station where the actual altitude above mean sea level is known, the corresponding pressure on sea level can be calculated thru the barometric formula (that's what weather stations usually do).
 
 Comparing calculated data with actual GPS data (as to the GPS module, see project 10):
 
