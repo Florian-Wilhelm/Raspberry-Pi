@@ -10,22 +10,24 @@ Python scripts in this repo are slightly modified versions of scripts in that .z
 
 #### Hardware:
 
-There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header. Button, SD-Card board and OLED are off-the-shelf components.
-
-## Example Configuration
-
-### Push button, Micro SD-Card and OLED SSD1306
-
-Demonstration and testing via thonny. GPS Data will be stored permanently on the SD-Card, and is also available as text output in the Thonny shell. 
-
-(note: tests are not necessarily carried out with the scripts in this repo, those are just examples).
+There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header. Button, SD-Card board and  0.96'' OLED are off-the-shelf components.
 
 Schematic Micro SD-Card board:
 
 [https://files2.elv.com/public/13/1315/131591/Internet/131591_msda1_schaltplan.pdf](https://media.elv.com/file/131591_msda1.pdf)
 
+## Example Configuration
+
+### Push button, Micro SD-Card and OLED SSD1306
+
+Demonstration and testing via thonny. GPS Data will be stored permanently on the SD-Card, and is also available as text output in the Thonny shell as well as visible on the OLED display. 
+
+The GPS data on the second photo is generated while standing next to the Tabarettahütte (Ortlergebirge, South Tyrol), Pico and GPS module get supplied by a power bank.
+
+Note: tests are not necessarily carried out with the scripts in this repo, those are just examples.
+
 ![344368826-2cae6269-d276-4e12-a081-d1e77e937b67](https://github.com/user-attachments/assets/c9d366d2-c749-4118-a355-9b1bc5232a29)
 
 <img width="900" height="506" alt="20260730_Tabarettahuette-GPS" src="https://github.com/user-attachments/assets/ea08d78b-b2c4-48e8-86d7-f09f837ae63f" />
 
-The GPS data on the second photo is generated while standing next to the Tabarettahütte (Ortlergebirge, South Tyrol), Pico and GPS module get supplied by a power bank.
+
