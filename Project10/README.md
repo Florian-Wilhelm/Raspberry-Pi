@@ -1,6 +1,6 @@
 # Raspberry Pi Pico and Pico-GPS-L76B GNSS module
 
-### Software:
+### Software
 
 File "Pico-GPS-L76B_Code2.zip" is copied from the waveshare wiki:
 
@@ -8,7 +8,7 @@ https://www.waveshare.com/wiki/Pico-GPS-L76B
 
 Python scripts in this repo are modified versions of scripts in that .zip. Script is stored as "main.py" in the Pico file system, so it starts automatically.
 
-### Hardware:
+### Hardware
 
 There is no trouble putting the GPS module onto the standard Raspberry Pi Pico header. Push button, SD-Card board and 0.96'' OLED are off-the-shelf components for an example arrangement.
 
