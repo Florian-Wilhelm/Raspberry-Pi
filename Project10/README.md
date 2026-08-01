@@ -22,7 +22,7 @@ GPS Data will be stored permanently on the SD-Card, and is also available as tex
 
 The GPS data on the second photo is generated while standing next to the Tabarettahütte (Ortlergebirge, South Tyrol), Pico and GPS module get supplied by a power bank.
 
-Note: this project is purely experimental, so my test arrangements are always slightly different.
+Note: this project is purely experimental, so my hardware arrangements are always slightly different (and so are the scripts I'm using).
 
 ![344368826-2cae6269-d276-4e12-a081-d1e77e937b67](https://github.com/user-attachments/assets/c9d366d2-c749-4118-a355-9b1bc5232a29)
 
