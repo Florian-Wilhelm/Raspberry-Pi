@@ -22,6 +22,6 @@ Values can be used for an ad-hoc calculation of the current altitude above mean 
 
 In a stationary weather station where the actual altitude above mean sea level is known, the corresponding pressure on sea level can be calculated thru the barometric formula (that's what weather stations usually do).
 
-Comparing calculated data with actual GPS data (as to the GPS module, see Project 10):
+Comparing calculated data (altitude above mean sea level, first two rows) with actual GPS data (as to the GPS module, see Project 10):
 
 <img width="800" height="480" alt="GPS-BMP280-Pico" src="https://github.com/user-attachments/assets/2776844a-04a1-4d13-8f5a-6a3e884189be" />
