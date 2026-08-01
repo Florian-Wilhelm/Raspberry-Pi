@@ -6,7 +6,7 @@ File "Pico-GPS-L76B_Code2.zip" is copied from the waveshare wiki:
 
 https://www.waveshare.com/wiki/Pico-GPS-L76B
 
-Python scripts in this repo are slightly modified versions of scripts in that .zip. Script is stored as "main.py" in the Pico file system, so it starts automatically.
+Python scripts in this repo are modified versions of scripts in that .zip. Script is stored as "main.py" in the Pico file system, so it starts automatically.
 
 ### Hardware:
 
