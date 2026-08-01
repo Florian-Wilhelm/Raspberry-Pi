@@ -6,7 +6,7 @@ File "Pico-GPS-L76B_Code2.zip" is copied from the waveshare wiki:
 
 https://www.waveshare.com/wiki/Pico-GPS-L76B
 
-Python scripts in this repo are slightly modified versions of scripts in that .zip.  
+Python scripts in this repo are slightly modified versions of scripts in that .zip. Script is saved as "main.py" in the Pico file system, so it starts automatically.
 
 #### Hardware:
 
@@ -26,6 +26,6 @@ Schematic Micro SD-Card board:
 
 ![344368826-2cae6269-d276-4e12-a081-d1e77e937b67](https://github.com/user-attachments/assets/c9d366d2-c749-4118-a355-9b1bc5232a29)
 
-GPS data generated on a mountain in Bavaria, Pico and GPS module get supplied by a power bank.
+<img width="900" height="506" alt="20260730_Tabarettahuette-GPS" src="https://github.com/user-attachments/assets/ea08d78b-b2c4-48e8-86d7-f09f837ae63f" />
 
-Script is saved as "main.py" in the Pico file system, so it starts automatically.
+The GPS data on the second photo is generated while standing next to the Tabarettahütte (Ortlergebirge, South Tyrol), Pico and GPS module get supplied by a power bank.
