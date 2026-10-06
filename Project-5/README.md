@@ -30,7 +30,7 @@ With all that being said, you'll probably see that the given code example is onl
 
 ## Hardware
 
-An ad-hoc arrangement. Wiring sensors to ADC1-ADC3 see source code. RH measurement cannot be very accurate, for a multitude of reasons (resistor tolerances, fluctuating supply voltage, inadequate ADCs, inaccurate temperature compensation).
+An ad-hoc arrangement. Wiring sensors to ADC1-ADC3 see source code. RH measurement cannot be very accurate, for a number of reasons (resistor tolerances, fluctuating supply voltage, inadequate ADCs, inaccurate temperature compensation).
 
 Wiring ESP8266 to Pico (all other pins not connected):
 
