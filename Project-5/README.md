@@ -21,6 +21,7 @@ You can hardcode the WiFi credentials in your own build, but it is also possible
 *$ picotool config HIH4020-humidityMeasurement.uf2 -s PASS "001122334455"*
 
 The .uf2-file can also be accessed in the device's BOOTSEL mode (then omit the filename when typing the commands). 
+
 The downside with this method is that the WiFi credentials are now plaintext in the .uf2-file and readable in a HEX-Editor.
 
 ![plaintext](https://github.com/user-attachments/assets/3e5d2040-7ced-4214-88fd-daaddf9500a5)
