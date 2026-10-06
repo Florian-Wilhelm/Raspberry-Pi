@@ -22,7 +22,7 @@ Generic design for I2C projects.
 
 ## Thermal image 
 
-Example visualization of a human upper body. The Python scripts which do that can be found in this repository ("webcrawling" folder).
+Example thermal visualization of a human upper body. The Python scripts which do that can be found in this repository ("webcrawling" folder).
 
 ![thumbnail-collage](https://github.com/user-attachments/assets/bcc4dd39-b12b-46b2-996c-a4660ba12d13)
 
