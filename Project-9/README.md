@@ -12,7 +12,7 @@ About 5 mA or less is the "static power consumption", which is always present an
 
 ## 2. Soldering an external clock source
 
-Desoldering R14, C16 and C17, and soldering a crystal oscillator module OUT Pin to Pico XIN (for my demo video used rather at random a 14.31 MHz crystal oscillator module). 
+Desoldering R14, C16 and C17, and soldering a crystal oscillator module OUT Pin to Pico XIN (for my demo video I used rather at random a 14.31 MHz crystal oscillator module). 
 
 XOUT is not needed, but of course you need a common ground.
 
