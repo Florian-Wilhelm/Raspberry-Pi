@@ -1,6 +1,6 @@
 /**
  * 
- * Created 19/09/2022
+ * Created 19/09/2022 as an IoT project
  * -modified 10/08/2023 -> watchdog implementation
  * -modified 23/02/2026 -> making WiFi credentials (SSID, PASS) accessible via Picotool
  *
