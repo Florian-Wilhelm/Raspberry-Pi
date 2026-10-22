@@ -2,7 +2,7 @@
  * Created 22/08/2022 by Florian Wilhelm Dirnberger, modified 22/10/2026
  *
  * Purely a demonstration code how to write several Raspberry Pi Pico GPIO ports at once by means of the:   
- *  A. the Programmable Input/Output (PIO)
+ *  A. Programmable Input/Output (PIO)
  *  B. Single-cycle IO block (SIO)
  * 
  * See the RP2040 datasheet for more details.
