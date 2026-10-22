@@ -10,7 +10,7 @@ Data is provided on an off-the-shelf SSD1306 0.96'' OLED display and, if connect
 
 ## Hardware
 
-I've created the PCB for the burglar detection project originally (see Project 11), but it is a generic design for I2C projects obviously. The two extra 3.9k Pull-Up resistors you recognize on the photo are not wired. 
+I've created the PCB for the burglar detection project originally (Project 11), but it is a generic design for I2C projects obviously. The two extra 3.9k Pull-Up resistors you see on the photo are not wired here. 
 
 ![20260323_124544](https://github.com/user-attachments/assets/b176fd69-7eac-4c25-b1f6-7e76dabb88bb)
 
