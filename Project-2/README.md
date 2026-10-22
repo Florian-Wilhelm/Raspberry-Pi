@@ -11,6 +11,8 @@ Sensor type (capacitive or resistive) is detected automatically.
 
 If you are looking for a C-Code or an IoT example, please check out the Project-5 folder.
 
+For knowing how to write several GPIO pins at once elegantly, please check out the PIO-SIO folder.
+
 ## Hardware
 
 Custom made PCB, for details see hackaday.io project page.
