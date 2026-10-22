@@ -8,7 +8,7 @@ An IoT device comprising a Raspberry Pi Pico, three sensors (including the HIH40
 
 SW V2.XX -> below an example web browser output (WD means "Watchdog"). 
 
-Port forwarding within the Local Area Network is not necessary; if you wanted to access this particular device from the internet, the router would have to forward port 78 and you would need to know the router's public IP address.  
+Access within the Local Area Network is straightforward; if you wanted to access this particular device from the internet, the router would have to forward port 78 and you would need to know the router's public IP address.  
 
 Since no SSL/TLS is or will be implemented (connection is HTTP not HTTPS), I would advise against making such an IoT device accessible to the wider world.
 
