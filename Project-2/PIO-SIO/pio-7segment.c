@@ -11,7 +11,7 @@
  * necessary additional electronic components to see something happen are two CD4511BE BCD-to-7-Segment Latch Decoder, and fourteen resistors (no multiplexing implemented).
  *
  *  Mapping:
- *  1267   Pins of CD4511BE (you can easily google the datasheet)
+ *  1267   Pins of either CD4511BE (you can easily google the datasheet)
  *  BCDA   BCD (Binary Coded Decimal) input for CD4511BE
  *  2345   used GPIO Pins of the Pico (PIO Output)
  *  6789   used GPIO Pins of the Pico (SIO Output)
