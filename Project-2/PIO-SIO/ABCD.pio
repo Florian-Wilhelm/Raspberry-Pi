@@ -1,0 +1,7 @@
+.program ABCD
+	set pindirs, 0xF
+	pull block
+again:
+	out pins, 4	
+		pull block
+	jmp again
