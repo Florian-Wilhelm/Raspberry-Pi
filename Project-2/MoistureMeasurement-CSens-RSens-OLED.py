@@ -1,4 +1,4 @@
-# Raspberry Pi Pico project: https://hackaday.io/project/178522-soil-moisture-measurement-device
+# Raspberry Pi Pico project: https://hackaday.io/project/178522-moisturehumidity-measurement-device
 # Soil moisture measurement and display on two "multiplexed" 7-Segment-Displays, sensor type detection and display on OLED (when connected)
 # ###
 import utime
