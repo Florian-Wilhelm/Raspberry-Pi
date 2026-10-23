@@ -1,5 +1,5 @@
 /**
- * Created 22/08/2022 by Florian Wilhelm Dirnberger, modified 22/10/2026
+ * Created 22/08/2022 by Florian Wilhelm Dirnberger, modified 23/10/2026
  *
  * Purely a demonstration code how to write several Raspberry Pi Pico GPIO ports at once by means of the:   
  *  A. Programmable Input/Output (PIO)
