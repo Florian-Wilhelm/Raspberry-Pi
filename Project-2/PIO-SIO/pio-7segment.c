@@ -7,8 +7,8 @@
  * 
  * See the RP2040 datasheet for more details.
  *
- * Program counts from 0 to 9 and starts over again, digits are displayed on two 7-Segment-Display (e.g. BC04-11SEKWA is usable);
- * necessary additional electronic components to see something happen are two CD4511BE BCD-to-7-Segment Latch Decoder, and fourteen resistors (no multiplexing implemented).
+ * Program counts from 0 to 9 and starts over again, digits are displayed on two 7-Segment-Display (e.g. BC04-11SEKWA w/ common cathode is usable);
+ * necessary additional electronic components to see something happen are two CD4511BE BCD-to-7-Segment Latch Decoder, and fourteen 47 Ohm resistors (no multiplexing implemented).
  *
  *  Mapping:
  *  1267   Pins of either CD4511BE (you can easily google the datasheet)
