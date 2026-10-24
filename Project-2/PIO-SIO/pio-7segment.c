@@ -68,8 +68,8 @@ int main()
 		
 	uint sm = pio_claim_unused_sm(pio1, true);
 	pio_sm_config c = ABCD_program_get_default_config(offset);	
-	sm_config_set_set_pins(&c, 2, 4);
-	sm_config_set_out_pins(&c, 2, 4);	
+	sm_config_set_set_pins(&c, 2, 4); // using 4 pins starting at GP2
+	sm_config_set_out_pins(&c, 2, 4); // using 4 pins starting at GP2	
 	pio_gpio_init(pio1, 2);
 	pio_gpio_init(pio1, 3);
 	pio_gpio_init(pio1, 4);
