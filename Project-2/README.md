@@ -15,6 +15,10 @@ For knowing how to write several GPIO ports at once elegantly, please check out 
 
 ## Hardware
 
-Custom made PCB, for details see hackaday.io project page.
+Custom made PCB (for details see hackaday.io project page):
 
 ![IMG_4593](https://github.com/user-attachments/assets/03f5d652-503a-43cc-9c1c-243ff662a956)
+
+With the PIO/SIO Code running on a prototype board arrangement:
+
+<img width="800" height="520" alt="IMG_0473" src="https://github.com/user-attachments/assets/5313bb80-49e3-4323-ad41-7d2e5cae94a9" />
