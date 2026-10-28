@@ -9,9 +9,9 @@ Soil moisture measurement device showing a double-digit value on two 7-Segment-D
 "MoistureMeasurement-CSens-RSens-OLED.py", to be saved as "main.py" in order to run once the supply voltage is connected.
 Sensor type (capacitive or resistive) is detected automatically.
 
-If you are looking for a C-Code or an IoT example, please check out the Project-5 folder.
+If you are looking for a respective IoT example, please check out the Project-5 folder (programmed in C).
 
-For knowing how to write several GPIO ports at once elegantly, please check out the PIO-SIO folder.
+For knowing how to write several GPIO ports at once elegantly, please check out the PIO-SIO folder (also programmed in C).
 
 ## Hardware
 
